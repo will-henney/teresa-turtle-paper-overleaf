@@ -17,6 +17,8 @@
 \usepackage{etoolbox}
 \robustify\bfseries
 \robustify\itshape
+\usepackage{romanbar}
+
 \bibliographystyle{mnras}
 
 \sisetup{
@@ -375,6 +377,61 @@ which would further reinforce this symmetry.
   \label{fig:outer-lobe-components}
 \end{figure*}
 
+\newcounter{Syscounter}
+\newcommand\Sys[1]{%
+  \setcounter{Syscounter}{#1}%
+  \ensuremath{\mathrm{\Roman{Syscounter}}}%
+}
+\newcommand\SysP[1]{\ensuremath{\Sys{#1}^+}}
+\newcommand\SysM[1]{\ensuremath{\Sys{#1}^-}}
+
+The emission from the outer lobes is much fainter than the inner shells,
+and is most easily detected in \oiii{}.
+Figure~\ref{fig:outer-lobe-components} shows all the outer lobe velocity components
+that we have been able to measure from the \oiii{} slits:
+blue-shifted components in panel~a and red-shifted components in panel~b.
+As with the low-ionization knot complexes (see \S~\ref{sec:knot-complexes}),
+there are many apparent pairings between blue and red components on opposite sides of the nebula.
+This is illustrated in the lower panels of Figure~\ref{fig:outer-lobe-components},
+where we classify the components into four high-velocity systems,
+\Sys{1} to \Sys{4}
+with \(|V| = \text{\SIrange{18}{25}{km.s^{-1}}}\) (panel~c)
+and six intermediate-velocity systems,
+\Sys{5} to \Sys{10}
+with \(|V| = \text{\SIrange{5}{14}{km.s^{-1}}}\) (panel~d).
+Nearly all of these systems have a blue and a red component
+which are approximately symmetrically arranged about the central star.
+For instance, the blue-shifted \SysM{2} component in the north
+is paired with the red-shifted \SysP{2} component in the south.
+Note, however, that \SysM{3} and \SysP{7} have no opposite counterparts.
+
+The high-velocity systems seem to define three separate flow axes.
+Most notably, system~\Sys{1}, with \(\text{PA} = \ang{155 \pm 5}\),
+is closely aligned with axis~A of the high-ionization shells at \(\text{PA} \approx \ang{160}\)
+(see \S~\ref{sec:high-ioniz-shells}),
+and also has the same sense of inclination (receding to the north).
+Although system~\Sys{2}, with  \(\text{PA} = \ang{171 \pm 5}\),
+is also marginally consistent in projection with axis~A,
+the sense of inclination is opposite (receding to the south),
+implying that the axis is distinct,
+and we name it axis~C.
+System~\Sys{4}, with  \(\text{PA} = \ang{120 \pm 15}\), defines yet another axis,
+which we name axis~D.
+Note that none of the outer lobe components are aligned with axis~B of the high-ionization shells.
+
+The intermediate velocity systems (Fig.~\ref{fig:outer-lobe-components}d)
+are less well collimated than the high-velocity components,
+but seem to be aligned with the same three axes: A, C, and D.
+This is most clearly seen in the East and West Lobes,
+where systems~\Sys{5} and \Sys{10} overlap the higher velocity \Sys{4} along axis~D.
+They may represent slower moving entrained material or bow shock wings from the same flow.
+The same is true of the North and South Lobes,
+where systems~\Sys{6}, \Sys{7}, \Sys{8}, and \Sys{9}
+overlap the higher velocity \Sys{1} and \Sys{2}.
+However, the fact that axis~A and axis~C have similar projected position angles
+makes it hard to assign each intermediate velocity system to one axis or the other.
+
+
 \subsection{Haloes}
 \label{sec:haloes}
 
@@ -389,6 +446,7 @@ which would further reinforce this symmetry.
   }
   \label{fig:halo-components}
 \end{figure}
+
 
 
 \section{Discussion}
