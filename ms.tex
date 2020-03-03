@@ -1,38 +1,58 @@
-%                                                                 aa.dem
-% AA vers. 8.2, LaTeX class for Astronomy & Astrophysics
-% demonstration file
-%                                                       (c) EDP Sciences
-%-----------------------------------------------------------------------
+\documentclass[useAMS, usenatbib]{mnras}
+\pdfsuppresswarningpagegroup=1
 %
-%\documentclass[referee]{aa} % for a referee version
-%\documentclass[onecolumn]{aa} % for a paper on 1 column  
-%\documentclass[longauth]{aa} % for the long lists of affiliations 
-%\documentclass[rnote]{aa} % for the research notes
-%\documentclass[letter]{aa} % for the letters 
-%\documentclass[bibyear]{aa} % if the references are not structured 
-% according to the author-year natbib style
-
-%
-\documentclass{aa}  
-
-%
+\usepackage[spanish,es-minimal,english]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{txfonts}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage[options]{hyperref}
-% To add links in your PDF file, use the package "hyperref"
-% with options according to your LaTeX or PDFLaTeX drivers.
-%
+\graphicspath{{tere-figs/}{figs/}}
 
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{newtxtext}
+\usepackage[varg,varvw,smallerops]{newtxmath}
+\usepackage{booktabs}
+\hypersetup{colorlinks=True, linkcolor=blue!50!black, citecolor=black,
+  urlcolor=blue!50!black}
+\usepackage{etoolbox}
+\robustify\bfseries
+\robustify\itshape
+
+\bibliographystyle{mnras}
+
+\sisetup{
+  % explicit""+" is useful for velocities
+  retain-explicit-plus = true,
+  % prefer 10^6 over 1 x 10^6
+  retain-unity-mantissa = false,
+  % Use x +/- e instead of x(e)  
+  separate-uncertainty = true,
+  % Make sure to pick up bold font when used in section heading for instance
+  detect-weight = true,
+}
+
+%%
+%% Will macros
+%%
+% A better \ion command that works in more circumstances
+\newcommand\ION[2]{#1\,\scalebox{0.9}[0.8]{\uppercase{#2}}}
+\newcounter{ionstage}
+\renewcommand{\ion}[2]{\setcounter{ionstage}{#2}% 
+  \ensuremath{\mathrm{#1\,\scriptstyle\Roman{ionstage}}}}
+\newcommand\hii{\ion{H}{2}}
+\newcommand\nii{[\ion{N}{2}]}
+\newcommand\oiii{[\ion{O}{3}]}
+
+
+%%
+%% Teresa macros
+%%
 \newcommand{\Sub}[1]{_\mathrm{#1}}
 \newcommand{\SSub}[1]{_\mathrm{\scriptscriptstyle #1}}
 \newcommand{\Sup}[1]{^\mathrm{#1}}
 \newcommand{\kms}{\ensuremath{\mathrm{km\ s}^{-1}}}
 \newcommand{\pcc}{\ensuremath{\mathrm{cm}^{-3}}}
-\newcommand{\nii}{[\ion{N}{2}]}
 \newcommand{\sii}{[\ion{S}{2}]}
-\newcommand{\oiii}{[\ion{O}{3}]}
 \newcommand{\heii}{\ion{He}{2}}
 \newcommand\OIlam{[\ion{O}{1}]\,6300\,\AA\@}
 \newcommand\SIIlam{[\ion{S}{2}]\,6731\,\AA\@}
@@ -54,7 +74,6 @@
 \newcommand{\minute}{\ensuremath{^\mathrm{m}}}
 \newcommand{\teff}{\ensuremath{T_\mathrm{eff}}}
 
-\begin{document} 
 
 \title{The complex structure and peculiar internal motions of the planetary nebula NGC 6210}
 
@@ -64,16 +83,52 @@
 %    Universidad Nacional Aut\'onoma de M\'exico} Campus Ensenada,
 %  Ensenada, Baja California, 22800, M\'exico}
 %\affil{tere@astrosen.unam.mx, jal@astrosen.unam.mx, wsteffen@astrosen.unam.mx, richer@astrosen.unam.mx}
- %\date{Received August 15, 2019; accepted October 20, 2019}
 
-\abstract
-{A comprehensive kinematic study has been carried out on the planetary nebula (PN) NGC 6210. Multiple long-slits, echelle spectra have been obtained over the face of this nebula mapping its full shell structure, the opposite pairs of extended, twisted arms and the bipolar collimated outflows and bullets. Public {\it HST} imagery has been used to identify kinematic elements with structural components. The long-slit spectroscopic information has been combined into channel maps that greatly facilitate visualizing the otherwise intricate expansion pattern of this  planetary nebula. The global morphology of NGC 6210 is  reminiscent of other planetary nebulae with extended X-ray emission, suggesting the presence of a central hot bubble produced by shocked stellar wind. In spite of the dramatic structure of this PN substantial expanding radial motions are only found in the material surrounding the central, inner shell. The slow radial motions of the collimated outflows and the bullet-like knots indicate that they are  moving away from the core very close to the plane of the sky, nearly perpendicular to the line of sight}
+\author[López et al.]{
+  J. A. López,\(^1\)\thanks{
+    jal@astro.unam.mx,
+    tere@astro.unam.mx,
+    w.henney@irya.unam.mx,
+    richer@astro.unam.mx
+  }
+  Ma.\ T. García-Díaz,\(^1\)\footnotemark[1]
+  William J. Henney\(^2\)\footnotemark[1]
+  and M. G. Richer\(^1\)\footnotemark[1]
+  \\
+  \(^1\)\foreignlanguage{spanish}{
+    Instituto de Astronomía,
+    Universidad Nacional Autónoma de México,
+    Ensenada, Baja California, 22800, México}
+  \\
+  \(^2\)\foreignlanguage{spanish}{
+    Instituto de Radioastronomía y
+    Astrofísica, Universidad Nacional Autónoma de México, Apartado
+    Postal 3-72, 58090 Morelia, Michaoacán, Mexico}
+}
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2020}
 
 
 
-\keywords{Planetary Nebulae: individual (NGC~6210)
+
+\begin{document} 
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\begin{abstract}
+  A comprehensive kinematic study has been carried out on the planetary nebula (PN) NGC 6210. Multiple long-slits, echelle spectra have been obtained over the face of this nebula mapping its full shell structure, the opposite pairs of extended, twisted arms and the bipolar collimated outflows and bullets. Public {\it HST} imagery has been used to identify kinematic elements with structural components. The long-slit spectroscopic information has been combined into channel maps that greatly facilitate visualizing the otherwise intricate expansion pattern of this  planetary nebula. The global morphology of NGC 6210 is  reminiscent of other planetary nebulae with extended X-ray emission, suggesting the presence of a central hot bubble produced by shocked stellar wind. In spite of the dramatic structure of this PN substantial expanding radial motions are only found in the material surrounding the central, inner shell. The slow radial motions of the collimated outflows and the bullet-like knots indicate that they are  moving away from the core very close to the plane of the sky, nearly perpendicular to the line of sight
+\end{abstract}
+
+
+\begin{keywords}
+  Planetary Nebulae: individual (NGC~6210)
   -- ISM: kinematics and dynamics -- ISM blowout
-  -- techniques: imaging spectroscopy}
+  -- techniques: imaging spectroscopy
+\end{keywords}
 
 \maketitle
 
@@ -213,7 +268,7 @@ of a Th/Ar lamp to an accuracy of $\pm$1 \kms{} when converted to
 radial velocity.  All spectra presented in this paper are corrected to
 heliocentric velocity (\vhel). 
 The Figure 3 shows the position-velocity ({\it P-V})  arrays of \Halam\,
-\NIIlam \A, \OIIIlam, respectively, where the heliocentric velocities are used,
+\NIIlam \AA, \OIIIlam, respectively, where the heliocentric velocities are used,
 and positions are specified as arcsecond offsets (x,y).
 
 Using FORTRAN and phython routines, we produced  velocity cubes in  \NIIlam{} and \oiii{} emission lines, in order to 
@@ -372,20 +427,20 @@ W., \& Richer, M.~G.\ 2009, \apj, 699, 1633
 
 \begin{figure*}[!t]
 \centering
-  \includegraphics[width=0.7\textwidth]{Figure1.pdf}}
+  \includegraphics[width=0.7\textwidth]{Figure1.pdf}
   \caption{ }
 \end{figure*}
 
 \begin{figure*}[!t]
 \centering
-  \includegraphics[width=0.4\textwidth]{Figure2a.pdf}}
+  \includegraphics[width=0.4\textwidth]{Figure2a.pdf}
   \caption{ }
 \end{figure*}
 
 
 \begin{figure*}[!t]
 \centering
-  \includegraphics[width=1\textwidth]{Figure3.pdf}}
+  \includegraphics[width=1\textwidth]{Figure3.pdf}
   \caption{ }
 \end{figure*}
 
@@ -486,7 +541,12 @@ W., \& Richer, M.~G.\ 2009, \apj, 699, 1633
 
 
 
+% Don't change these lines
+\bsp	% typesetting comment
+\label{lastpage}
 
 \end{document}
-
-\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
