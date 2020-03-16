@@ -9,3 +9,4 @@ auto
 *.pdf
 *.synctex.gz
 *.llt
+*.synctex*
