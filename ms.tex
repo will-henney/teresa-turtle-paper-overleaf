@@ -20,7 +20,7 @@
 \bibliographystyle{mnras}
 
 \sisetup{
-  % explicit""+" is useful for velocities
+  % explicit "+" is useful for velocities
   retain-explicit-plus = true,
   % prefer 10^6 over 1 x 10^6
   retain-unity-mantissa = false,
@@ -39,6 +39,7 @@
 \renewcommand{\ion}[2]{\setcounter{ionstage}{#2}% 
   \ensuremath{\mathrm{#1\,\scriptstyle\Roman{ionstage}}}}
 \newcommand\hii{\ion{H}{2}}
+\newcommand\heii{\ion{He}{2}}
 \newcommand\nii{[\ion{N}{2}]}
 \newcommand\oiii{[\ion{O}{3}]}
 
@@ -501,6 +502,38 @@ and show a spoke-like morphology on the \textit{HST} images.
 It is represented by dot-dashed ellipses in Figure~\ref{fig:shell-velocity-components} and small green triangle symbols in Figure~\ref{fig:shell-velocity-axes}.
 They do not show any marked kinematic pattern,
 but are broadly compatible with the velocities of nearby portions of the intermediate shell. 
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-heii-shell-annotated}
+  \caption{
+    Reconstructed velocity channel maps from the \heii{} slit spectra,
+    showing the highest ionization gas in the nebula.
+    The color image is constructed from 3 channels, each of width \SI{20}{km.s^{-1}},
+    as indicated in the figure.  Contours show the \oiii{} HST image. 
+  }
+  \label{fig:heii-shell-annotated}
+\end{figure}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-heii-shell-components}
+  \caption{
+    Velocity features in the highest-ionization gas,
+    which have been identified in the \heii{} slits.
+    Left panel shows blue-shifted features,
+    while right panel shows red-shifted features,
+    each labelled with their line-of-sight velocity
+    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
+    The line width is a qualitative indicator of the brightness of each feature,
+    with dashed lines showing the very faintest features.
+  }
+  \label{fig:heii-shell-components}
+\end{figure*}
+
+
+
 
 \subsection{Low-ionization knot complexes}
 \label{sec:knot-complexes}

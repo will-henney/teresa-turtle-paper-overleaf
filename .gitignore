@@ -6,7 +6,8 @@ auto
 *.fls
 *.log
 *.out
-*.pdf
+ms.pdf
+turtle-paper.pdf
 *.synctex.gz
 *.llt
 *.synctex*
