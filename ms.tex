@@ -821,8 +821,8 @@ the halo components are more easily identifiable in regions where the outer lobe
     (3)~Outflow axis that feature is best aligned with, if any.
     (4)~Line-of-sight velocity, derived from longslit spectra.
     (5)~Plane-of-sky velocity, derived from proper motions assuming \(D = \SI{2}{kpc}\).
-    (6)~Total velocity: \(V_{\text{tot}} = ( V_{\text{los}}^2 + V_{\text{pos}}^2 )^{1/2}\).
-    (7)~Inclination of velocity vector to line of sight: \(\tan i = V_{\text{los}} / V_{\text{pos}}\).
+    (6)~Total pattern velocity: \(V_{\text{tot}} = [ (1.2 V_{\text{los}})^2 + V_{\text{pos}}^2 ]^{1/2}\) (see text for explanation of the factor 1.2).
+    (7)~Inclination of velocity vector to line of sight: \(\tan i = 1.2 V_{\text{los}} / V_{\text{pos}}\).
     (8)~Projected radius of feature from central star.
     (9)~True radius, assuming that velocity vector is strictly radial: \(R = R_{\text{pos}} / \cos i\).
     (10)~Kinematic timescale: \(t_{\text{kin}} = R_{\text{pos}} / V_{\text{pos}}\).
@@ -830,7 +830,27 @@ the halo components are more easily identifiable in regions where the outer lobe
   \end{tabular}
 \end{table*}
 
-Combine radial velocities with proper motions.
+For those nebular features where both proper motion and radial velocity measurements exist,
+it is possible to estimate the full three-dimensional velocity vector.
+Under the assumption that all motions are strictly radial,
+one can also find the three-dimensional position.
+These are given in Table~\ref{tab:3d} for a wide variety of nebular features
+in the inner shells, intermediate shell, low-ionization knots, and outer lobes.
+
+When combining radial velocities and proper motion measurements,
+it is necessary to account for the fact that radial velocities measure the material speed,
+whereas proper motions measure pattern speeds of shocks or ionization fronts \citep{Mellema:2004a}. 
+The exact correction factor (material speed divided by pattern speed)
+is model-dependent (e.g., Appendix~A of \citealp{ODell:2009c}),
+but is predicted to be generally larger than unity
+\citetext{see Fig.~8 of \citealp{Jacob:2013a}}
+unless the nebula is in the recombination phase.
+For simplicity, we adopt a constant correction factor of 1.2 for all entries in Table~\ref{tab:3d},
+which is consistent with the predicted value for expansion velocities greater than \SI{30}{km.s^{-1}}
+\citetext{see Fig.~5 of \citealp{Schonberner:2018a}}.
+
+Note that the uncertainties given in the table are derived from observational errors only,
+and they do not include the systematic uncertainty in the distance
 
 \begin{figure*}
   \includegraphics[width=\linewidth]
