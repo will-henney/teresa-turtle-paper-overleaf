@@ -29,6 +29,7 @@
   % Make sure to pick up bold font when used in section heading for instance
   detect-weight = true,
 }
+\DeclareSIUnit\msun{\text{\ensuremath{M_\odot}}}
 
 %%
 %% Will macros
@@ -41,6 +42,7 @@
 \newcommand\hii{\ion{H}{2}}
 \newcommand\nii{[\ion{N}{2}]}
 \newcommand\oiii{[\ion{O}{3}]}
+\newcommand\Wav[1]{\ensuremath{\lambda #1}}
 
 
 %%
@@ -58,7 +60,7 @@
 \newcommand\SIIlamshort{[\ion{S}{2}]\,6716\,\AA\@}
 \newcommand\SIIlamboth{[\ion{S}{2}]\,6716,6731\,\AA\@}
 \newcommand\SIIIlam{[\ion{S}{3}]\,6312\,\AA\@}
-\newcommand\NIIlam{[\ion{N}{2}]\,6584\,}
+\newcommand\NIIlam{[\ion{N}{2}]\,6583\,}
 \newcommand\NIIlamlam{[\ion{N}{2}]\,6548,6584\,\AA\@}
 \newcommand\OIIIlam{[\ion{O}{3}]\,5007\,\AA\@}
 \newcommand\HeIIlam{HeII\,4686\,\AA\@}
@@ -933,7 +935,7 @@ but is predicted to be generally larger than unity
 unless the nebula is in the recombination phase.
 For simplicity, we adopt a constant correction factor of 1.2 for all entries in Table~\ref{tab:3d},
 which is consistent with the predicted value for expansion velocities greater than \SI{30}{km.s^{-1}}
-\citetext{see Fig.~5 of \citealp{Schonberner:2018a}}.
+\citetext{see Fig.~3 of \citealp{Schonberner:2019a}}.
 
 Note that the uncertainties given in the table are derived from observational errors only,
 and they do not include the systematic uncertainty in the distance
@@ -944,9 +946,6 @@ and they do not include the systematic uncertainty in the distance
   \caption{Three dimensional reconstruction of the nebular structure and kinematics. }
   \label{fig:cut-axis-3d}
 \end{figure*}
-
-\subsection{Dynamical ages}
-\label{sec:dynamical-ages}
 
 \begin{figure}
   \includegraphics[width=\linewidth]
@@ -967,6 +966,164 @@ and they do not include the systematic uncertainty in the distance
       }
   \label{fig:ages}
 \end{figure}
+
+
+
+\subsection{Density and ionization structure of the nebula}
+\label{sec:ionization-structure}
+
+\begin{table*}
+  \caption{Physical parameters of nebular components}
+  \label{tab:summary}
+  \begin{tabular}{
+    l % Component
+    r % Ha flux
+    r % Density
+    S % Mass
+    r % ioniz param
+    S % tstart
+    S % tstop
+    S % Mdot
+    }
+    \toprule
+    {}          & {\Ha{} flux} & {Ionized Density} & {Ionized Mass}    & {Ionization Parameter} & {\(t_{\text{start}}\)} & {\(t_{\text{end}}\)} & {\(\dot{M}\)}\\
+    {Component} & {\% of total}& {\si{H.cm^{-3}}} & {\(M_\odot\)} & {\num{1e-4}}         & {\SI{1000}{yr}}      & {\SI{1000}{yr}}    & {\si{\msun.yr^{-1}}}\\
+    \midrule
+    {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} & {(7)} & {(8)} \\
+    \addlinespace
+    Inner shells & 44\% & 4000--5000 & 0.078 & 36--70 & -4 & -1.5 & 3.1e-5\\
+    Intermediate shell & 13\% & 700--1000 & 0.135 & 80--140 & -10 & -4 & 2.3e-5\\
+    Knot complexes & 42\% & 2000--5000 & 0.063 & 4--50 & -8 & -1.5 & 9.7e-6\\
+    Outer Lobes & 1\% & 160--320 & 0.024 & 86--224 & -8 & -2 & 4e-6\\
+    Inner Halo & 0.5\% & 80--160 & 0.030 & 200--340 & -20 & -10 & 3e-6\\
+    Outer Halo & 0.2\% & 15--40 & 0.042 & 540--760 & -40 & -20 & 2.1e-6\\
+    \addlinespace
+    NW knot & 0.01\% & 6700 & 1e-5 & 6 & -7.1 & -6.7 & 2.5e-8\\
+    SE knot & 0.08\% & 8200 & 6e-5 & 34 & -1.25 & -0.95 & 2e-7\\
+    N knot &  0.02\% & 3000 & 3e-5 & 12 & -3.0 & -2.7 & 1e-7\\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+To further investigate the structure of NGC~6210,
+we have used HST WFPC2 narrow-band images to derive the surface brightness in the lines \Ha{} \Wav{6563}, \Hb{} \Wav{4861}, \nii{} \Wav{6583}, and \oiii{} \Wav{5007}.
+Flux calibration is carried out following the procedure outlined in \citet{Rubin:2002a}, which accounts for contamination of each emission line filter by non-target lines and atomic continuum emission \citetext{see also \citealp{Ueta:2019a}}.
+Foreground dust extinction is corrected for using the observed Balmer decrement, \(\Ha/\Hb\),
+assuming an intrinsic value of 2.85 and the reddening law of \citet{Cardelli:1989a},
+yielding an average extinction of \(C(\Hb) = 0.13\) for the nebula.
+The total intrinsic \Ha{} flux for the nebula is then found by summing over the entire HST image,
+yielding \(F(\Ha) = \SI{3.176e-10}{erg.s^{-1}.cm^{-2}}\),
+which is almost identical to that found by previous studies \citep{Liu:2004a}.
+
+For each of the nebular features listed in Table~\ref{tab:3d},
+we have measured the \Ha{} surface brightness \(S(\Ha)\) and flux \(F(\Ha) = S(\Ha)\,d\Omega\),
+where \(d\Omega\) is the solid angle of each feature.
+Results aggregated by type of feature are presented in the upper section Table~\ref{tab:summary}.
+Column~2 gives the fraction of the total \Ha{} flux due to each component,
+which is dominated by roughly equal contributions from the high-ionization inner shells and the low-ionization knot complexes, summing to over 85\% of the total.
+
+\begin{figure}
+  \includegraphics[width=0.8\linewidth]
+  {figs/turtle-density-combined}
+  \caption{
+    (a)~Ionized density of different nebular features as a function of true distance from the central star.
+    Densities are derived from the \Ha{} surface brightness, as explained in the text,
+    and distances are deprojected using the kinematic information of Table~\ref{tab:3d}.
+    Gray lines show power-law density distributions of \(n \propto R^{-2}\) (dashed)
+    and \(n \propto R^{-4}\) (dotted).
+    (b)~Comparison between densities derived from \Ha{} surface brightness and densities derived from the \sii{} 6716/6731 line ratio for the small number of features that are detected in our single Mezcal \sii{} slit spectrum. 
+      }
+  \label{fig:density-plots}
+\end{figure}
+
+Assuming a homogeneous fully-ionized emission region of hydrogen density \(n\) and line-of-sight depth \(dz\), the \Ha{} surface brightness due to recombinations is predicted to be 
+\begin{equation}
+  \label{eq:sha-density}
+  S(\Ha) = \frac{1.0932\, \alpha_{\text{eff}}\, E(\Ha) \, n^2 \, dz} {4\pi}
+  % n = \left( \frac{4\pi\, S(\Ha)}{\alpha_{\text{eff}}\, E(\Ha)\,dz } \right)^{1/2}
+\end{equation}
+where \(\alpha_{\text{eff}} = \SI{8.6e-14}{cm^{3}.s^{-1}}\) is an effective recombination coefficient \citep{Osterbrock:2006a}%
+\footnote{We assume \(T = \SI{9500}{K}\) and that the Lyman lines are optically thick, while the Lyman continuum is optically thin, as appropriate for a matter-bounded nebula.}
+and \(E(\Ha) = h c / \lambda = \SI{3.027e-12}{erg}\).
+The factor \num{1.0932} accounts for the free electron contribution from Helium, assumed to be singly ionized.
+Therefore, if \(dz\) can be determined for each feature, then the ionized density follows as \(n \propto [S(\Ha) / dz]^{1/2}\).
+We estimate \(dz\) differently for knot-like and shell-like features.
+For the first, we take \(dz = (dr\, ds)^{1/2}\), where \(dr\) is the projected width of the knot in the radial direction and \(ds\) is the width in the transverse direction.
+For the second we take the maximum chord length of the shell, calculated as \(dz = 2 [R_c^2 - (R_c - dr)^2]^{1/2}\), where \(R_c\) is the shell radius of curvature and \(dr\) is the shell thickness
+(limiting cases are \(dz \approx 2 R_c\) for thick shells and \(dz \approx 2 (2 R_c\, dr)^{1/2}\) for thin shells).
+
+Resultant densities are shown in column~3 of Table~\ref{tab:summary} and are plotted against true (deprojected) radius in Figure~\ref{fig:density-plots}a.
+It can be seen that a very wide range of densities is present in the nebula, from \(\approx \SI{4000}{cm^{-3}}\) in the inner shells and knot complexes down to \(\approx \SI{30}{cm^{-3}}\) in the outer halo.
+For most components, there is a consistent steep decline of density with radius,
+which is well approximated by \(n \propto R^{-4}\) (gray dotted line in the figure).
+The exception to this rule is the outlying low-ionization knots,
+located at about \SI{0.2}{pc} from the star, which have a density 20--50 times higher than the other components at a comparable radius.
+
+As a check on our \Ha{}-derived densities, we also calculate densities from Mezcal observations of the red \sii{} doublet for a single slit position (Slit~S of Fig.~2).
+This passes through five distinct spatio-kinematic features in the inner nebula,
+allowing us to measure the line ratio \(I(6716)/I(6731)\) for each
+(unfortunately, \sii{} emission from the outer lobes and halo is undetectably weak).
+Because the relative spectrograph efficiency between the doublet wavelengths is not well-determined,
+we have calibrated the line ratios by forcing the average value over the entire slit to be \(I(6716)/I(6731) = 0.60\), in agreement with the spectrophotometry of \citet{Liu:2004a}.
+Results are shown in Figure~\ref{fig:density-plots}b,
+calculated with PyNeb \citep{Luridiana:2015a} using atomic data from \citet{Podobedova:2009a} and \citet{Tayal:2010a}.
+It can be seen that there is a reasonable agreement between the two density diagnostics,
+which justifies our decision not to use any filling factor correction in equation~\eqref{eq:sha-density}.
+The need for a filling factor is obviated by carefully calculating the line-of-sight depth of each emission component separately.
+
+In a similar way, the ionized mass of each component can be calculated as
+\begin{equation}
+  \label{eq:mass}
+  M = \frac{4\pi D^2\, \bar{m}\, F(\Ha) }{\alpha_{\text{eff}}\, E(\Ha)\, n} \ , 
+\end{equation}
+where \(D\) is the distance from Earth (assumed \SI{2}{kpc}) and \(\bar{m} \approx \SI{2.17e-24}{g}\) is the mean mass per hydrogen nucleon.
+The total ionized mass of the nebula is found to be \SI{0.372}{\msun} and results for individual components are shown in column~4 of Table~\ref{tab:summary}.
+It is interesting to note that the high-density components (inner shell plus knot complexes)
+only represent about one-third of the total ionized mass,
+despite dominating the emission line flux.
+The intermediate shell is the most massive single component (\SI{0.135}{\msun}),
+also roughly one-third of the total,
+with the remaining third corresponding to the outer lobes and halos.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]
+  {figs/mass-loss-history-annotated}
+  \caption{
+    Reconstruction of the mass-loss history of NGC~6210.
+    Horizontal bars show the time period and mass-loss rate that led to the formation of each nebular component, as labeled.
+    Only the average mass-loss rate is shown,
+    although for the cases of the knot complexes and lobes the ejection was highly intermittent and non-isotropic during the indicated period.
+      }
+  \label{fig:mass-loss-history}
+\end{figure}
+
+
+The masses can be combined with the kinematic ages (column~10 of Table~\ref{tab:3d}) to estimate the mass loss history of the nebula.
+This is given in columns~6 to~8 of Table~\ref{tab:summary} and illustrated in Figure~\ref{fig:mass-loss-history}.
+
+
+
+\begin{figure}
+  \includegraphics[width=\linewidth]
+  {figs/line-ratios-vs-ion-parameter}
+  \caption{
+    Diagnostic line ratios plotted against ionization parameter for different nebular features:
+    (a)~\nii/\Ha, (b)~\oiii/\Hb.
+    Large yellow symbols show knot complexes and small yellow symbols show individual knots, as labeled.
+    Large blue symbols show the inner peanut shells, and small blue symbols show the intermediate shell.
+    Red symbols show the outer lobes and black symbols show the halo.
+    Since the \nii{} line is not detected from the lobes and halo,
+    only upper limits are available for these components in panel~a.
+    The ionization parameter is calculated from the \Ha{} surface brightness and the three-dimensional reconstruction, as explained in the text.
+    The thick gray line in each panel shows a toy model of fixed elemental abundance and temperature as labeled,
+    with varying ion fraction as determined by optically thin photoionization equilibrium as a function of ionization parameter.  
+      }
+  \label{fig:line-ratios}
+\end{figure}
+
+
+\subsection{Dynamical ages}
+\label{sec:dynamical-ages}
 
 
 
