@@ -42,7 +42,10 @@
 \newcommand\hii{\ion{H}{2}}
 \newcommand\nii{[\ion{N}{2}]}
 \newcommand\oiii{[\ion{O}{3}]}
+\newcommand\oii{[\ion{O}{2}]}
 \newcommand\Wav[1]{\ensuremath{\lambda #1}}
+% Chemical formulae
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
 
 
 %%
@@ -1150,6 +1153,36 @@ eventually reaching the present-day value of \(\dot{M} = \SI{9.12e-9}{M_\odot.yr
   \label{fig:line-ratios}
 \end{figure}
 
+There is a marked difference in appearance of the nebula between
+high-ionization lines such as \oiii{} (Fig.~\ref{fig:proper-motions-oiii})
+and low-ionization lines such as \sii{}, \oii{} and \nii{} (Fig.~\ref{fig:proper-motions-nii}),
+implying that there are strong variations in the degree of ionization.
+The appearance in \Ha{} is broadly similar to \oiii{},
+which suggests that the doubly ionized ions, such as \chem{O^{2+}} and \chem{N^{2+}},
+are the dominant stages,
+whereas the singly ionized ions, such as \chem{O^{+}} and \chem{N^{+}},
+have low abundance in most of the nebula.
+This in turn implies that the nebula must be optically thin in the \chem{H^0} and \chem{He^0} ionizing continua,
+which is also consistent with the fact that the \nii{} emission is \emph{not} concentrated in an outer ring,
+as would be expected for an optically thick nebula
+\citetext{for example, the Ring Nebula, \citealp{ODell:2013b}}.
+
+\newcommand\Fion{\ensuremath{F_{\text{ion}}}}
+\newcommand\ionpar{\ensuremath{U_{\text{ion}}}}
+In an optically thin nebula, the flux of ionizing photons at each point is \(\Fion = Q / 4\pi R^{2}\),
+where \(Q\) is the ionizing photon luminosity.
+The local ionization parameter is defined as \(\ionpar = \Fion / n c\), where \(c\) is the speed of light. 
+We have calculated \(\ionpar\) for each of the features listed in Table~\ref{tab:3d}
+and list in column~5 of Table~\ref{tab:summary} the range of values found for each component.
+In this calculation, we use the density of each feature as calculated from the \Ha{} surface brightness (\S~\ref{sec:density-structure})
+and assume \(Q = \SI{4.9e47}{s^{-1}}\), which we derive from the CSPN stellar atmosphere models of \citet{Krticka:2020a} using the stellar parameters of \citet{Herald:2011a}.
+In Figure~\ref{fig:line-ratios} we plot the line ratios \nii{} \Wav{6583}/\Ha{} and \oiii{} \Wav{5007}/\Hb{} against the ionization parameter for each feature.
+The \nii{} and \oiii{} surface brightness were determined from HST images, as outlined in \S~\ref{sec:density-structure}.
+
+It is apparent from the table and figure that there is a wide range of ionization parameters in the nebula.
+The steep decline in density with radius (faster than \(R^{-2}\)) means that the ionization parameter tends to increase with radius, although the lowest values are associated with the knot complexes, owing to their relatively high densities as compared with other features at similar radii.
+Figure~\ref{fig:line-ratios} shows that the \nii/\Ha{} ratio varies by two orders of magnitude and is clearly anti-correlated with \ionpar.
+The \oiii/\Hb{} ratio, on the other hand, shows no correlation with \ionpar{} and indeed varies little within the nebula.
 
 \section{Conclusions}
 \label{sec:conclusions}
