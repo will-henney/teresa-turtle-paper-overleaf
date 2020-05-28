@@ -17,6 +17,14 @@
 \robustify\bfseries
 \robustify\itshape
 
+\usepackage[shortlabels]{enumitem}
+
+% Float placement
+\makeatletter
+\renewcommand{\fps@figure}{pt}
+\renewcommand{\fps@table}{pt}
+\makeatother
+
 \bibliographystyle{mnras}
 
 \sisetup{
@@ -182,8 +190,8 @@ Most of the spectra presented here are included in the San Pedro M\'artir Kinema
 \citep{Lopez:2012a}.
 
  \begin{figure}
-\centering
-  \includegraphics[width=0.4\textwidth]{tere-figs/Figure2a}
+   \centering
+   \includegraphics[width=0.38\textwidth]{tere-figs/Figure-i+s}
   \caption{Top panel shows the slit positions from the 2015 run, these are indicated as solid lines and 
 labeled at the top against an [O III] HST image. Dashed lines refer to additional slit positions from other runs
 and are labeled at the bottom of the image. The middle and bottom panels show the slit positions from 
@@ -273,7 +281,7 @@ in Figure 3 as isovelocity channel maps, each isovelocity map is 20
 
 \begin{figure*}
   \centering
-  \includegraphics[width=1\textwidth]{tere-figs/Figure3}
+  \includegraphics[width=0.95\textwidth]{tere-figs/Figure3}
   \caption{Position--velocity line profiles for the slit positions from the 2015 run are shown in sets where
 the H$\alpha$ bi-dimensional line profile is on the left panel of the set, the \oiii{} line profile is on the central panel 
 and the \nii{} line profile is on the right panel. The corresponding slit positions are indicated at the top of
@@ -596,7 +604,7 @@ with smaller absolute values around the periphery.
 On the other hand, there is also a clear tendency for bluer velocities towards the east
 and redder velocities towards the west.
 
-Figure~14 shows the \heii{} velocity components projected on to the same two axes,
+Figure~\ref{fig:heii-shell-velocity-axes} shows the \heii{} velocity components projected on to the same two axes,
 A and B,
 which were found above from analysis of the \oiii{} shell kinematics.
 The velocity and spatial scales are the same as in Figure~\ref{fig:shell-velocity-axes}
@@ -743,7 +751,8 @@ which show that the \oiii{} emission associated with the complexes is more diffu
 
 \begin{figure*}
   \centering
-  \includegraphics[width=\linewidth]{figs/turtle-lobes-simplified}
+  \includegraphics[width=\linewidth, trim=50 30 0 0]
+  {figs/turtle-lobes-simplified}
   \caption{
     Velocity components and systems in the outer lobes.
     (a)~Blue-shifted components identified in individual slits.
@@ -768,10 +777,6 @@ Figure~\ref{fig:outer-lobe-components} shows all the outer lobe velocity compone
 that we have been able to measure from the \oiii{} slits:
 blue-shifted components in panel~a and red-shifted components in panel~b.
 We have not included all of the \oiii{} components that lie outside the inner and shells, since some of these are closely associated with the low ionization knot complexes discussed above in \S~\ref{sec:knot-complexes}.
-In these cases, the \oiii{} component is weaker than the corresponding \nii{} component,
-slightly more spatially extended,
-and with a velocity magnitude that is about \SI{5}{km.s^{-1}} smaller
-(for both red and blue-shifted knots).
 Such \oiii{} components are omitted from the figure 
 with the exception of the N knot and the NW knot (see Fig.~\ref{fig:knot-complexes}).
 
@@ -872,10 +877,11 @@ This is particularly true on the western side of the north and south lobes.
 In these regions, there is a selection effect whereby
 the halo components are more easily identifiable in regions where the outer lobe emission is weaker. 
 
-\section{Discussion}
-\label{sec:discussion}
+\section{Three dimensional nebular structure}
+\label{sec:three-dimens-struct}
 
-\subsection{Velocities and positions in three dimensions}
+
+\subsection{Velocities and positions of nebular features}
 \label{sec:veloc-posit-three}
 
 \newcommand\AxP[1]{\ensuremath{\mathrm{#1}^+}}
@@ -1179,7 +1185,7 @@ with the remaining third corresponding to the outer lobes and halos.
     Only the average mass-loss rate is shown,
     although for the cases of the knot complexes and lobes the ejection was highly intermittent and non-isotropic during the indicated period.
     The red vertical line shows the end of the period of high mass-loss.
-    Since then, the mass loss rate has declined to a much lower value. 
+    Since then, the mass loss rate has declined to a much lower value, as indicated by the gray arrow.
       }
   \label{fig:mass-loss-history}
 \end{figure}
@@ -1305,7 +1311,60 @@ Indeed, our measurements (Fig.~\ref{fig:line-ratios}b) show that \oiii{}/\Hb{} r
 consistent with \chem{O^{2+}/O \approx 1}.
 
 
+\setlist{leftmargin=*}
 
+\section{Discussion}
+\label{sec:discussion}
+
+Despite the complex structure of NGC~6210 revealed by our observations,
+the broad division into different components (shells, knots, lobes, halo)
+is similar to that seen in many other nebulae
+\citep{Balick:1987b}
+and needs to be analyzed in the light of theories of planetary nebula formation and evolution.
+The basic framework for interpreting planetary nebulae has long been the
+Generalised Interacting Stellar Winds paradigm \citep{Kwok:1978a, Kahn:1985a}:
+a slow, dense wind is emitted while the central star is in the cool
+Asymptotic Giant Branch phase, which is subsequently ionized after the central star has lost the majority of its outer envelope,
+revealing the hot stellar core.
+At the same time, a fast, tenuous stellar wind from the core interacts with the envelope to form a dense, shocked shell.
+This scenario has been elaborated in great detail in subsequent studies that include additional physics and couple the nebular evolution to the evolution of the central star \citep[for example,][]{Frank:1994b, Garcia-Segura:1997a, Villaver:2002a, Perinotto:2004a, Garcia-Segura:2006a, Steffen:2013a, Toala:2014a}.
+More recently, it has become increasingly clear that binary interactions play a vital role in the shaping of planetary nebulae
+\citetext{\citealp{Boffin:2019a} and references therein}.
+For sufficiently close binaries, Roche lobe overflow can lead to a common-envelope phase and the ejection of a bipolar or elliptical nebula \citep{Garcia-Segura:2018a}.
+For wider binaries, the situation is less clear but various processes can lead to non-spherical mass ejection in this case also \citep{Kim:2012c, Chen:2017b, Chen:2020a}.
+
+
+The 
+The nested structure of the nebula
+
+Inner shells are ``core'' in Balick, ``rim'' 
+
+Summarise stellar and nebular studies.
+
+Properties of central star. 
+
+Peimbert type of PN, N/O means not Type~I, peculiar velocity \SI{<60}{km.s^{-1}} means not type III, therefore type~II.  So mass of 1.2 to \SI{2}{\msun} and age of 1 to \SI{5}{Gyr}.
+
+Oxygen abundance should reflect initial conditions. Nitrogen abundance depends on stellar mass. \citet{Stanghellini:2018a}
+
+Various ways in which the nebula is lop-sided:
+\begin{enumerate}[1.]
+\item The inner shell emission in \oiii{} and \Ha{} shows brightness asymmetries in both position and velocity.
+  The redshifted half of the shell is roughly twice as bright as the blueshifted half,
+  while both halves show spatial asymmetries along axis~A, but in opposite senses:
+  redshifted emission is 2.5 times brighter on the north side,
+  while blueshifted emission is 1.5 times brighter on the south side.
+  Because the inner shell dominates the total flux, this leads to a north--south asymmetry in the nebula as a whole,
+  with the peak brightness region lying 2~arcsec north of the central star. 
+\item In the \heii{} line, the inner shell has an opposite asymmetry: it is brighter to the south than to the north.
+   Such an asymmetry is hard to explain if the \chem{He^{2+}} zone of the nebula is ionization-bounded \dots
+ \item With the low-ionization knots, the principle asymmetry is in velocity,
+   with the redshifted knots being brighter by a factor of 2,
+   and also 
+\end{enumerate}
+
+
+Starfish pre-planetary nebula has four lobes \citep{Sahai:2005b}
 
 
 \section{Conclusions}
