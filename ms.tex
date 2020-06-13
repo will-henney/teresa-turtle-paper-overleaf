@@ -37,7 +37,8 @@
   % Make sure to pick up bold font when used in section heading for instance
   detect-weight = true,
 }
-\DeclareSIUnit\msun{\text{\ensuremath{M_\odot}}}
+\DeclareSIUnit\msun{\text{M\ensuremath{_\odot}}}
+\DeclareSIUnit\lsun{\text{L\ensuremath{_\odot}}}
 
 %%
 %% Will macros
@@ -89,7 +90,7 @@
 
 \title{The complex structure and peculiar internal motions of the planetary nebula NGC 6210}
 
-\author[López et al.]{
+\author[Henney et al.]{
   William J. Henney,\(^1\)\thanks{
     w.henney@irya.unam.mx,
     jal@astro.unam.mx,
@@ -891,7 +892,7 @@ the halo components are more easily identifiable in regions where the outer lobe
   \caption{Positions and velocities of nebular features in three dimensions}
   \label{tab:3d}
   \centering
-  %\setlength\tabcolsep{5pt}
+  % \setlength\tabcolsep{5pt}
   \sisetup{
     table-format = >2.0(1),
     table-auto-round,
@@ -909,7 +910,7 @@ the halo components are more easily identifiable in regions where the outer lobe
     S[table-format = >1.1(2)] % t
     }
     \toprule
-             & {PA} &        & {\(V_\text{los}\)} &  {\(V_\text{pos}\)} &  {\(V_\text{tot}\)} & {\(i\)} & {\(R_\text{proj}\)} & {\(R\)} & {\(t_\text{kin}\)}\\
+    & {PA} &        & {\(V_\text{los}\)} &  {\(V_\text{pos}\)} &  {\(V_\text{tot}\)} & {\(i\)} & {\(R_\text{proj}\)} & {\(R\)} & {\(t_\text{kin}\)}\\
     {Feature} & {\si{\degree}} & {Axis} & {\si{km.s^{-1}}}   &  {\si{km.s^{-1}}}  & {\si{km.s^{-1}}} & {\si{\degree}} & {\si{\arcsecond}} & {pc} & {\SI{1000}{yr}}\\
     \midrule
     {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} & {(7)} & {(8)} & {(9)} & {(10)} \\
@@ -1038,7 +1039,7 @@ as discussed in \S~\ref{sec:knot-complexes}.
     which also indicates the values for each of the four axes: A, B, C, and D.
     The position angle is calculated modulo \ang{180} so that the positive and negative arm of each axis have the same color.
     Also shown (gray ellipses) are the expansion velocity and range of radii of the inner and outer halo features (\S~\ref{sec:haloes}).
-      }
+  }
   \label{fig:ages}
 \end{figure}
 
@@ -1119,7 +1120,7 @@ which is dominated by roughly equal contributions from the high-ionization inner
     Gray lines show power-law density distributions of \(n \propto R^{-2}\) (dashed)
     and \(n \propto R^{-4}\) (dotted).
     (b)~Comparison between densities derived from \Ha{} surface brightness and densities derived from the \sii{} 6716/6731 line ratio for the small number of features that are detected in our single Mezcal \sii{} slit spectrum. 
-      }
+  }
   \label{fig:density-plots}
 \end{figure}
 
@@ -1169,7 +1170,7 @@ the ionized mass of each component can be calculated as
   M = \frac{4\pi D^2\, \bar{m}\, F(\Ha) }{\alpha_{\text{eff}}\, E(\Ha)\, n} \ , 
 \end{equation}
 where \(D\) is the distance from Earth (assumed \SI{2}{kpc}) and \(\bar{m} \approx \SI{2.17e-24}{g}\) is the mean mass per hydrogen nucleon.
-The total ionized mass of the nebula is found to be \SI{0.372}{\msun} and results for individual components are shown in column~4 of Table~\ref{tab:summary}.
+The total ionized mass of the nebula \emph{including the halo} is found to be \SI{0.372}{\msun} and results for individual components are shown in column~4 of Table~\ref{tab:summary}.
 It is interesting to note that the high-density components (inner shell plus knot complexes)
 only represent about one-third of the total ionized mass,
 despite dominating the emission line flux.
@@ -1187,7 +1188,7 @@ with the remaining third corresponding to the outer lobes and halos.
     although for the cases of the knot complexes and lobes the ejection was highly intermittent and non-isotropic during the indicated period.
     The red vertical line shows the end of the period of high mass-loss.
     Since then, the mass loss rate has declined to a much lower value, as indicated by the gray arrow.
-      }
+  }
   \label{fig:mass-loss-history}
 \end{figure}
 
@@ -1204,7 +1205,7 @@ so the sudden jump that is apparent \SI{10,000}{yr} ago may have been a more gra
 Also, this method can only estimate mass loss before \SI{1500}{yr} ago, which is the kinematic timescale of the inner shell.
 Since that time, the mass-loss rate is expected to have declined significantly
 due to the central star transitioning to higher effective temperature and smaller radius,
-eventually reaching the present-day value of \(\dot{M} = \SI{9.12e-9}{M_\odot.yr^{-1}}\) at a wind velocity of \(V = \SI{2150}{km.s^{-1}}\) \citep{Herald:2011a}.
+eventually reaching the present-day value of \(\dot{M} = \SI{9.12e-9}{\msun.yr^{-1}}\) at a wind velocity of \(V = \SI{2150}{km.s^{-1}}\) \citep{Herald:2011a}.
 This is indicated on the figure by the gray downward pointing arrow.
 
 
@@ -1225,7 +1226,7 @@ This is indicated on the figure by the gray downward pointing arrow.
     The ionization parameter is calculated from the \Ha{} surface brightness and the three-dimensional reconstruction, as explained in the text.
     The thick gray line in each panel shows a toy model of fixed elemental abundance and temperature as labeled,
     with varying ion fraction as determined by optically thin photoionization equilibrium as a function of ionization parameter.  
-      }
+  }
   \label{fig:line-ratios}
 \end{figure}
 
@@ -1317,7 +1318,6 @@ consistent with \chem{O^{2+}/O \approx 1}.
 \section{Discussion}
 \label{sec:discussion}
 
-
 Despite the complex structure of NGC~6210 revealed by our observations,
 the broad division into different components (shells, knots, lobes, halo)
 is similar to that seen in many other nebulae
@@ -1335,7 +1335,7 @@ More recently, it has become increasingly clear that binary interactions play a 
 For sufficiently close binaries, Roche lobe overflow can lead to a common-envelope phase and the ejection of a bipolar or elliptical nebula \citep{Garcia-Segura:2018a}.
 For wider binaries, the situation is less clear but various processes can lead to non-spherical mass ejection in this case also \citep{Kim:2012c, Chen:2017b, Chen:2020a}.
 
-A large fraction of planetary nebulae show deviations from axisymmetry \citep{Soker:2001a}.
+A significant fraction of planetary nebulae show deviations even from axisymmetry \citep{Soker:2001a}.
 In the cases where these deviations are moderate,
 then they may be explained by binary interactions in which the stars are on eccentric orbits,
 or the presence of hot or cold spots in the AGB star envelope \citep{Soker:2002b}.
@@ -1346,6 +1346,105 @@ that it has been proposed that interacting triple systems are responsible for th
 NGC~6210 falls into this category and has been proposed to be the outcome of either a ``tight binary in a wide orbit'' or a ``tight binary merger'' scenario \citep{Soker:2016b}.
 However, given the multitude of evolutionary pathways available in hierarchical triple systems \citep{Toonen:2016a, Toonen:2020a},
 other scenarios are also possible.
+Sub-arc second imaging observations of young planetary nebulae \citep{Sahai:1998a, Sahai:2011a}
+and preplanetary nebulae \citep{Sahai:2007a}
+show that such asymmetries can appear very early in the evolution of the nebula,
+before the central star is hot enough to emit ionizing photons.
+
+\subsection{Comparison with post-AGB stellar evolution tracks}
+\label{sec:comparison-with-post}
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/hr-pne-annotated}
+  \caption{
+    HR diagram of planetary nebula central stars,
+    showing the observed luminosity and effective temperature of the Turtle
+    (large star symbol),
+    compared with post-AGB evolutionary tracks from
+    \citet{Miller-Bertolami:2016a}
+    (solid lines, labelled with initial stellar mass in solar masses).
+    Small star symbols show an evolutionary time along each track equal
+    to the kinematic age of the intermediate shell of NGC~6210,
+    with purple shading indicating 50\% variation about this value.
+    Open triangle symbols show sources from \citet{Bear:2017a}
+    that are suspected to harbor triple star systems on the basis of the nebular morphology.
+    Filled symbols shows the sample of ``young-adult'' nebulae
+    that have been selected to be physically similar to NGC~6210
+    and which are illustrated in Figure~\ref{fig:cousins}.
+  }
+  \label{fig:hr-diagram}
+\end{figure}
+
+Figure~\ref{fig:hr-diagram} shows the Turtle central star on
+the Hertzsprung--Russell diagram (large star symbol).
+Post-AGB stellar evolutionary tracks for approximately solar metallicity \citep{Miller-Bertolami:2016a} are indicated by solid lines for initial masses between \SI{1}{\msun} and \SI{3}{\msun}
+(final masses of \SI{0.532}{\msun} to \SI{0.706}{\msun}),
+with evolution proceeding from right to left, followed by top to bottom.
+
+Comparison of the Turtle's central star
+(\(\teff = \SI{75 \pm 13}{kK}\), \(L \approx \SI{7400 \pm 3500}{\lsun}\))
+with the evolutionary tracks would seem to imply an initial mass of \SI{2}{\msun},
+but such an inference is unwarranted since the uncertainty in the stellar luminosity is of the same order as the vertical offset between the different mass tracks.
+The evolutionary timescale in this phase is a very steep function of mass
+(\(t \sim M^{-5}\); \citealp[Fig.~4]{Miller-Bertolami:2019a}), so comparison with the kinematic expansion timescale of the nebula allows a much more precise mass estimate.
+Small black star symbols on the evolutionary tracks indicate evolutionary times of \SI{3500}{yr}, which is the approximate expansion timescale of the intermediate shell.
+This shell represents the ``superwind'' material,
+initially ejected as a slow neutral outflow at the end of the AGB phase,
+and subsequently ionized and accelerated by thermal pressure gradients
+once \(\teff > \SI{20000}{K}\) (see \S~\ref{sec:anatomy} for details).
+As such, it is the nebular component whose kinematic timescale should most closely match the evolutionary timescale \citetext{see discussion in \S~2.3.4 of \citealp{Schonberner:2005a}}.
+Light purple shading shows a variation of \(\pm 50\%\) about this timescale to account for possible shell acceleration/deceleration and observational uncertainties.
+It is immediately clear that the only the \num{1.25} and \SI{1.5}{\msun} models are at all consistent with the Turtle's central star.
+The \SI{2}{\msun} model evolves so fast that within a few thousand years it would be a hot, low luminosity star on the vertical white-dwarf cooling track,
+whereas the \SI{1}{\msun} model evolves so slowly that it would still be a B-type star with a low-excitation, ionization-bounded nebula. 
+The \SI{1.25}{\msun} model provides the best fit,
+which implies a lower luminosity of \SI{5000}{\lsun}
+and a slightly closer distance of \SI{1.7}{kpc},
+but this is still within the estimated uncertainties and would not significantly effect the analysis in the rest of the paper.
+
+This estimate of the central star mass is consistent with nebular abundance studies
+\citep{Liu:2004a, Pottasch:2009a, Delgado-Inglada:2009a, Bohigas:2015c}, which show no evidence for chemical enrichment: \(\chem{O/H} \approx \num{4e-4}\), \(\chem{N/O} \approx 0.15\), \(\chem{C/O} \approx 0.25\).
+Spectral signatures of crystalline silicates are seen at mid-infrared wavelengths
+\citep{Delgado-Inglada:2014a}, which is further evidence for O-rich chemistry.
+Predictions for C and N enrichment as a function of mass
+vary significantly with initial metallicity
+and between different AGB evolution codes \citep[Figs.~8 and 9 of][]{Henry:2018a},
+but all models agree that \(M < \SI{1.5}{\msun}\) is required to maintain \chem{N/O} and \chem{C/O} at or below solar values, as seen in the Turtle.
+\citet{Pottasch:2009a} deduced \(M = \SI{0.9}{\msun}\) because the models of \citet{Karakas:2007a} result in noticeable N enrichment for \(M \ge \SI{1}{\msun}\),
+contrary to what is observed in the Turtle,
+but they noted that such a low mass is inconsistent with the kinematic age of the nebula,
+as we discuss above.
+However, other stellar evolution simulations \citep{Ventura:2005a, Di-Criscienzo:2016a}
+do allow \(\chem{N/O} \approx 0.15\) for initial masses as high as \SI{1.25}{\msun},
+which removes this inconsistency.
+
+A mass of \SI{1.25}{\msun} is also consistent with the fact that the Turtle is at a high Galactic latitude, \(b = \ang{37.7}\),
+implying a large height \(|z| \sim \SI{1}{kpc} \) above the Galactic plane.
+Combined with the large peculiar velocity, \(|\Delta V| = \SI{56}{km.s^{-1}}\),
+this leads to a classification as Type~III \citep{Quireza:2007a} according to the scheme of \citet{Peimbert:1978a},
+which places the star in the ``thick disk'' stellar population
+with ages \SI{> 5}{Gyr}
+and masses \(\loa \SI{1.2}{\msun}\) \citep{Maciel:1994b, Stanghellini:2018a}.
+
+Finally, an initial stellar mass of \SI{1.25}{\msun} corresponds to a final mass of \SI{0.566}{\msun} in the \citet{Miller-Bertolami:2016a} models,
+meaning that about \SI{0.7}{\msun} should have been lost to mass-loss,
+most of which occurs during the AGB phase.
+This is consistent with the nebular mass determinations that we make in \S~\ref{sec:reconstr-mass-loss},
+where we find a total ionized mass of \SI{0.4}{\msun}.
+Our measurement is an underestimate,
+since the ionized halo becomes too faint to observe beyond a radius of \SI{1}{pc},
+meaning that we are only detecting the last \SI{e5}{years} of mass loss.
+We show in \S~\ref{sec:ioniz-struct-nebula} that the Turtle is optically thin to H-ionizing radiation and there is no detectable \chem{H_2} emission \citep{Kastner:1996a},
+so there is unlikely to be any significant hidden reservoir of neutral gas in the nebula.
+Note that our nebular mass determination is much higher than previous estimates for the Turtle,
+for instance \citep{Bohigas:2015c} find only \SI{0.046}{\msun}.
+This is mainly because those authors only included the emission from the bright,
+high-density inner nebula in their estimate,
+whereas, as we show in Table~\ref{tab:summary}, the outer faint low-density components
+(intermediate shell, lobes, and halo) dominate the total mass.
+
+\subsection{Detailed anatomy of the Turtle}
+\label{sec:anatomy}
 
 The innermost nebular components of NGC~6210 are the nested high ionization shells:
 the inner peanut shell, with a radius of about \SI{0.05}{pc}
@@ -1366,12 +1465,25 @@ that has been compressed by a shock driven by the fast stellar wind from the cen
 }
 The expansion velocity of the inner shell (\num{30} to \SI{50}{km.s^{-1}})
 is higher than that of the intermediate shell (\num{20} to \SI{30}{km.s^{-1}}),
-which is the opposite to the trend that is typically seen in multiple-shell planetary nebulae \citep{Corradi:2007a}.  In a sample of 20 high-luminosity nebulae, \citet{Schonberner:2014a} find that the intermediate shell expansion velocity lies in the range \num{20} 
+which is the opposite to the trend that is typically seen in multiple-shell planetary nebulae \citep{Corradi:2007a}.
+In a sample of 20 high-luminosity nebulae, \citet{Schonberner:2014a} find that the intermediate shell expansion velocity lies in the range \num{20} to \SI{40}{km.s^{-1}},
+while the inner shell velocity is always slower at \num{10} to \SI{30}{km.s^{-1}}.
+On the other hand, a faster inner shell such as the Turtle's
+is not totally unprecedented,
+with a particularly extreme example being NGC~2392,
+where the inner shell has an observed expansion velocity of up to \SI{120}{km.s^{-1}} \citep{Garcia-Diaz:2012a}.
+In both nebulae the inner shell is non-spherical,
+with fastest expansion along the line of sight in NGC~2392,
+but in the plane of the sky in the case of the Turtle.
+In addition, the Turtle's inner shell is not cylindrically symmetric but rather shows two distinct axes, A and B (\S~\ref{sec:high-ioniz-shells}).
 
-In broad terms, 
+Outside of this nested shell structure lie two further highly anisotropic outflow systems with very different characteristics:
+the lobes and the knot complexes.  The lobes are highly 
 
 
-and which expands 
+
+\textbf{UNFINISHED}
+
 
 The outermost component of NGC~6210 is the halo
 (see Fig.~\ref{fig:halo-knots} and Fig.~\ref{fig:halo-components}),
@@ -1385,19 +1497,6 @@ The halo is not a recombining one like \citet{Corradi:2000a}
 
 
 ADD is of order 3 for N, O, and Ne \citep{Bohigas:2015c}
-
-The 
-The nested structure of the nebula
-
-Inner shell is ``core'' in Balick, ``rim'' 
-
-Summarise stellar and nebular studies.
-
-Properties of central star. 
-
-Peimbert type of PN, N/O means not Type~I, peculiar velocity \SI{<60}{km.s^{-1}} means not type III, therefore type~II.  So mass of 1.2 to \SI{2}{\msun} and age of 1 to \SI{5}{Gyr}.
-
-Oxygen abundance should reflect initial conditions. Nitrogen abundance depends on stellar mass. \citet{Stanghellini:2018a}
 
 Various ways in which the nebula is lop-sided:
 \begin{enumerate}[1.]
@@ -1415,6 +1514,72 @@ Various ways in which the nebula is lop-sided:
    and also 
 \end{enumerate}
 
+\subsection{Comparison with other planetary nebulae}
+\label{sec:comp-with-other}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/cousins-of-the-turtle}
+  \caption{
+    A selection of planetary nebulae that are similar to NGC~6210
+    in terms of central star effective temperature and atmospheric abundances,
+    as well as nebular radius, luminosity and ionizing optical depth.
+    All nebulae are shown at the same physical scale (see scale bar of \SI{0.2}{pc}).
+    Each row corresponds to a different Peimbert type, from bottom to top:
+    Type~III, Type~IIb, Type~IIa,
+    in decreasing order of stellar population age
+    and increasing order of stellar mass.
+    Within each row, the nebulae are arranged from left to right
+    in order of increasing geometric complexity.
+    Image credits: Judy Schmidt/HST for all except
+    NGC~1535 (Mount Lemmon SkyCenter, University of Arizona)
+    and outer portions of NGC~6309 \citep{Rubio:2015a}.
+  }
+  \label{fig:cousins}
+\end{figure*}
+
+
+Planetary nebulae as a class are extremely diverse,
+so we will concentrate our comparison on those nebulae that are similar to NGC~6210,
+either in morphology,
+or in other physical characteristics, such as size, brightness, ionization,
+and chemical composition.
+
+For morphological similarity, we use the sample of nebulae from \citet{Bear:2017a},
+identified based on deviations from axisymmetry or point symmetry.
+Of the 89 nebulae in this sample, 24 have central star effective temperatures and luminosities listed in the catalog of \citet{Weidmann:2020a},
+and these are shown as open triangle symbols in Figure~\ref{fig:hr-diagram},
+with those listed as ``Triple progenitor'' shown by larger symbols 
+and those listed as ``Likely triple'' shown by smaller symbols.
+It can be seen that the putative triple-star sources are widely distributed along the evolutionary tracks,
+implying that the effects of triple interactions
+can be seen for a wide variety of nebula ages and central star masses.
+It is notable, however, that only one of the triple sources has a luminosity below \SI{300}{\lsun},
+whereas such low-luminosity central stars represent a significant fraction 
+in other samples of well-measured sources,
+such as the ``Golden Astrometry PNe'' sample \citep{Gonzalez-Santamaria:2019a}.
+Such sources are typically old, with very extended nebulae, so their relative absence may be due to the signatures of triple-interaction becoming increasingly ``washed out'' as the nebula expands.
+On the other hand, it may also be that asymmetries in such nebulae tend to be ascribed to interaction with the interstellar medium instead of triple interactions,
+and increasing incompleteness of the \citet{Weidmann:2020a} catalog for fainter stars is another likely contributing factor.
+
+For physical (non-morphological) similarity, we select a primary sample of Peimbert Type~III nebulae from the catalog of \citet{Quireza:2007a} that satisfy all the following criteria:
+\begin{enumerate}[1.]
+\item Moderate stellar effective temperature \(\SI{50}{kK} < \teff < \SI{100}{kK}\).
+\item Optically thin nebula: ratio of \ion{He}{1} to \ion{H}{1} Zanstra temperature \(\ge 1.3\) \citep{Phillips:2003c}.
+\item Within a distance of \SI{4}{kpc} of the Earth
+  (distances are taken from \citealp{Frew:2016a}). 
+\item Similar nebular physical size to NGC~6210: \(\SI{0.08}{pc} < R < \SI{0.2}{pc}\).
+\item Central star with H-rich spectral classification, principally O(H). \citep{Weidmann:2020a}
+\end{enumerate}
+This yields 5 sources in addition to the Turtle:
+NGC~1535, IC~368, Jonckheere~320,  NGC~5307, and NGC~6326.
+The central stars are plotted on the HR diagram as orange symbols in Figure~\ref{fig:hr-diagram}
+and the nebulae themselves are illustrated in the bottom row of Figure~\ref{fig:cousins}.
+
+
+
+\textbf{UNFINISHED}
+
 
 Starfish pre-planetary nebula has four lobes \citep{Sahai:2005b}
 
@@ -1426,11 +1591,9 @@ Velocity mapping of the Turtle Nebula, NGC~6210, in multiple emission lines
 reveals a complex structure of shells and collimated outflows,
 expanding along at least 5 different axes. 
 
+\textbf{UNFINISHED}
 
-\begin{enumerate}[1.]
-\item 
-\item High-ionization 
-\end{enumerate}
+
 
 
 \bibliography{turtle-paper-refs}
