@@ -677,7 +677,7 @@ which has the same sense as the slightly larger gradient seen in \oiii{} along t
 \end{figure}
 
 The \nii{} emission from the nebula is dominated by small-scale knots,
-as can be appreciated on the \textit{HST} images (Figure~XXX).
+as can be appreciated on the \textit{HST} images (Figure~\ref{fig:hst}).
 These knots have typical sizes \(< 1''\) and so are not spatially resolved
 in our ground-based spectroscopy.
 A small number of isolated knots are individually detected in our spectra,
@@ -1394,7 +1394,7 @@ and subsequently ionized and accelerated by thermal pressure gradients
 once \(\teff > \SI{20000}{K}\) (see \S~\ref{sec:anatomy} for details).
 As such, it is the nebular component whose kinematic timescale should most closely match the evolutionary timescale \citetext{see discussion in \S~2.3.4 of \citealp{Schonberner:2005a}}.
 Light purple shading shows a variation of \(\pm 50\%\) about this timescale to account for possible shell acceleration/deceleration and observational uncertainties.
-It is immediately clear that the only the \num{1.25} and \SI{1.5}{\msun} models are at all consistent with the Turtle's central star.
+It is immediately clear that only the \num{1.25} and \SI{1.5}{\msun} models are at all consistent with the Turtle's central star.
 The \SI{2}{\msun} model evolves so fast that within a few thousand years it would be a hot, low luminosity star on the vertical white-dwarf cooling track,
 whereas the \SI{1}{\msun} model evolves so slowly that it would still be a B-type star with a low-excitation, ionization-bounded nebula. 
 The \SI{1.25}{\msun} model provides the best fit,
@@ -1446,6 +1446,10 @@ whereas, as we show in Table~\ref{tab:summary}, the outer faint low-density comp
 \subsection{Detailed anatomy of the Turtle}
 \label{sec:anatomy}
 
+\subsubsection{Shells}
+\label{sec:shells}
+
+
 The innermost nebular components of NGC~6210 are the nested high ionization shells:
 the inner peanut shell, with a radius of about \SI{0.05}{pc}
 and the intermediate shell, with a radius of about \SI{0.1}{pc}.
@@ -1476,27 +1480,78 @@ In both nebulae the inner shell is non-spherical,
 with fastest expansion along the line of sight in NGC~2392,
 but in the plane of the sky in the case of the Turtle.
 In addition, the Turtle's inner shell is not cylindrically symmetric but rather shows two distinct axes, A and B (\S~\ref{sec:high-ioniz-shells}).
+Axis~A corresponds to the projected major axis of the inner shell,
+which lies close to the plane of the sky,
+while axis~B is inclined at roughly \ang{40} to the plane of the sky
+and corresponds to the largest net velocity gradient across the shell.
+Axis~B also coincides with the major axis of the intermediate shell,
+which seems to have a simpler, more elliptical morphology,
+albeit slightly lop-sided.
 
-Outside of this nested shell structure lie two further highly anisotropic outflow systems with very different characteristics:
-the lobes and the knot complexes.  The lobes are highly 
+\subsubsection{Lobes and knots}
+\label{sec:lobes-knots}
 
 
+Outside of the nested shell structure lie two highly anisotropic outflow systems with very different characteristics:
+the lobes and the knot complexes.
+The lobes, located at radii of \num{0.15} to \SI{0.25}{pc},
+are high-ionization and show a bow-shock morphology in \oiii{},
+with maximum outflow velocities of \SI{90}{km.s^{-1}}.
+They are arranged on three bipolar axes: A, C, and D (Figure~\ref{fig:outer-lobe-components}),
+all of which are close to the plane of the sky (Figure~\ref{fig:cut-axis-3d}).
+The kinematic ages of the flows along axes C and D are similar to or slightly larger than that of the intermediate shell (Figures~\ref{fig:ages} and \ref{fig:axis-history}),
+suggesting that these lobes were ejected contemporaneously with the ``birth'' of the planetary nebula \SI{3500}{yr} ago.
+The flow along axis~A is younger (about \SI{2000}{yr}), implying that it was ejected more recently, after the central star had already begun to ionize the nebula.
+This is the same axis as the major axis of the inner shell (Figure~\ref{fig:shell-velocity-axes}),
+which has a similar kinematic timescale of \SI{1500}{yr}.
+Another difference between the axes is that the red-shifted arm of axis~A uniquely shows a low-ionization \nii{}-bright feature, the N~knot,
+which shares the kinematics of the more diffuse \oiii{} emission.
 
-\textbf{UNFINISHED}
+The knot complexes are much lower ionization than the lobes and are most prominent in \nii{}.
+The redshifted knot complexes are also located at radii of \num{0.15} to \SI{0.25}{pc},
+but, unlike the lobes, their outflow axis (axis~E) is close to the line of sight (Figure~\ref{fig:inclinations}),
+so that in images of the nebula they appear superimposed on the inner and intermediate shells.
+The blueshifted knot complexes lie significantly closer to the star,
+at radii of \num{0.07} to \SI{0.15}{pc},
+with the closest of them (SE~Blue complex) lying physically inside the intermediate shell.
+The outflow velocities of the knot complexes range from \num{30} to \SI{70}{km.s^{-1}},
+which are slower than the lobes, but faster than the shells.
+As we found with the lobes,
+there is evidence for a change in the outflow direction about \SI{3500}{yr} ago,
+but in the case of the knot complexes it is a much more dramatic shift of \ang{180},
+from exclusively red-shifted ejections before that time to exclusively blue-shifted ejections afterward (see Figure~\ref{fig:axis-history}).
+The density of the knot complexes ranges from \num{2000} to \SI{5000}{cm^{-3}},
+which is comparable to the density of the inner shell
+and is more than an order of magnitude denser than the lobes,
+which accounts for the low ionization of the knots.
 
+\subsubsection{Halo}
+\label{sec:halo}
 
-The outermost component of NGC~6210 is the halo
+The outermost component of NGC~6210 is the fully ionized attached halo
 (see Fig.~\ref{fig:halo-knots} and Fig.~\ref{fig:halo-components}),
 which can be divided into three parts:
 the inner halo, outer halo, and halo knots.
 The inner halo and outer halo form a single smooth, circularly symmetric structure,
-extending from roughly \num{0.1} to \SI{0.5}{pc} from the central star
-The components of NGC~6210 can be divided 
+extending from roughly \num{0.1} to at least \SI{0.7}{pc} from the central star.
+The distinction between the two is purely kinematic,
+with the outer halo showing much narrower lines than the inner halo,
+which we interpret as a lower outflow velocity (Table~\ref{tab:summary}).
+The halo knots are chains of bright condensations,
+visible in the outer halo beyond \SI{0.5}{pc} to the NNW and ENE
+(Figures~\ref{fig:halo-knots} and \ref{fig:halo-components}),
+each with diameter \(\approx \SI{0.05}{pc}\) and low radial velocities
+\(< \SI{5}{km.s^{-1}}\).
 
-The halo is not a recombining one like \citet{Corradi:2000a}
+In terms of the GISW model, the halo represents the fossil AGB wind.
+The wind is originally neutral,
+but it is flash-ionized when the intermediate shell becomes optically thin to EUV radiation.
+Since the propagation of the ionization front through the halo is always R-type \citep{Kahn:1954a},
+the gas experiences no mechanical effect and maintains its original density and velocity profile.
 
+\subsubsection{Asymmetries}
+\label{sec:asymmetries}
 
-ADD is of order 3 for N, O, and Ne \citep{Bohigas:2015c}
 
 Various ways in which the nebula is lop-sided:
 \begin{enumerate}[1.]
