@@ -377,24 +377,6 @@ detection algorithm. The most salient features in these images are indicated and
   \label{fig:proper-motions-nii}
 \end{figure}
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=\linewidth]{figs/turtle-peanut-map}
-  \caption{
-    Velocity features in the high-ionization shells,
-    which have been identified in the \oiii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
-    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
-    Solid lines show features in the inner shell,
-    dashed lines show features in the intermediate shell,
-    and dot-dashed lines show miscellaneous features between the two shells.
-    The line width is a qualitative indicator of the brightness of each feature.
-    The background grayscale shows a high-pass filtered version of the HST \oiii{} image.
-  }
-  \label{fig:shell-velocity-components}
-\end{figure*}
 
 \begin{figure}
   \centering
@@ -547,22 +529,6 @@ but are broadly compatible with the velocities of nearby portions of the interme
   \label{fig:heii-shell-annotated}
 \end{figure}
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=\linewidth]{figs/turtle-heii-shell-components}
-  \caption{
-    Velocity features in the highest-ionization gas,
-    which have been identified in the \heii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
-    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
-    The line width is a qualitative indicator of the brightness of each feature,
-    with dashed lines showing the very faintest features.
-    The background grayscale image is the same as in Fig.~\ref{fig:shell-velocity-components}.
-  }
-  \label{fig:heii-shell-components}
-\end{figure*}
 
 \begin{figure}
   \centering
@@ -621,21 +587,6 @@ which has the same sense as the slightly larger gradient seen in \oiii{} along t
 
 \subsection{Low-ionization knot complexes}
 \label{sec:knot-complexes}
-
-\begin{figure*}
-  \centering
-  \includegraphics[width=\linewidth]{figs/turtle-knot-complex-map}
-  \caption{
-    Velocity features in the low-ionization knot complexes,
-    which have been identified in the \nii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
-    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
-    The line width is a qualitative indicator of the brightness of each feature.
-  }
-  \label{fig:knot-complex-map}
-\end{figure*}
 
 \begin{figure*}
   \centering
@@ -752,18 +703,17 @@ which show that the \oiii{} emission associated with the complexes is more diffu
 
 \begin{figure*}
   \centering
-  \includegraphics[width=\linewidth, trim=50 30 0 0]
-  {figs/turtle-lobes-simplified}
+  \includegraphics[width=\linewidth]
+  {figs/turtle-lobes-simplified-systems}
   \caption{
-    Velocity components and systems in the outer lobes.
-    (a)~Blue-shifted components identified in individual slits.
-    (b)~Red-shifted components identified in individual slits.
-    (c)~Classification of components into seven high-velocity systems (colored shapes)
+    Velocity systems in the outer lobes.
+    (a)~Classification of components into seven high-velocity systems (colored shapes)
     along three different axes (heavy dashed lines).
-    (d)~Same but for eleven intermediate velocity systems.
+    (b)~Same but for eleven intermediate velocity systems.
   }
-  \label{fig:outer-lobe-components}
+  \label{fig:outer-lobe-systems}
 \end{figure*}
+
 \newcounter{Syscounter}
 \newcommand\Sys[1]{%
   \setcounter{Syscounter}{#1}%
@@ -827,22 +777,6 @@ makes it hard to assign each intermediate velocity system to one axis or the oth
 \subsection{Haloes}
 \label{sec:haloes}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/turtle-halo-map}
-  \caption{
-    Velocity components in the halo, all measured from the \oiii{} spectra with slit positions as indicated.
-    Components are divided into three classes:
-    inner halo (pink ellipses), outer halo (yellow ellipses),
-    and halo knots (green ellipses).
-    The inner portion of the background image is
-    the same high-pass-filtered \textit{HST} image
-    shown in Figs.~\ref{fig:shell-velocity-components} and~\ref{fig:outer-lobe-components}.
-    The outer portion of the background image is a deep \oiii{} exposure of the halo
-    obtained with Mezcal in direct imaging mode (see Fig.~YYY).
-  }
-  \label{fig:halo-components}
-\end{figure}
 
 Figure~\ref{fig:halo-components} shows the velocity components
 from the \oiii{} slits that are close to the systemic velocity,
@@ -1652,6 +1586,90 @@ expanding along at least 5 different axes.
 
 
 \bibliography{turtle-paper-refs}
+\appendix
+
+\section{Velocity features in individual slits}
+\label{sec:veloc-feat-indiv}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-peanut-map}
+  \caption{
+    Velocity features in the high-ionization shells,
+    which have been identified in the \oiii{} slits.
+    Left panel shows blue-shifted features,
+    while right panel shows red-shifted features,
+    each labelled with their line-of-sight velocity
+    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
+    Solid lines show features in the inner shell,
+    dashed lines show features in the intermediate shell,
+    and dot-dashed lines show miscellaneous features between the two shells.
+    The line width is a qualitative indicator of the brightness of each feature.
+    The background grayscale shows a high-pass filtered version of the HST \oiii{} image.
+  }
+  \label{fig:shell-velocity-components}
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-heii-shell-components}
+  \caption{
+    Velocity features in the highest-ionization gas,
+    which have been identified in the \heii{} slits.
+    Left panel shows blue-shifted features,
+    while right panel shows red-shifted features,
+    each labelled with their line-of-sight velocity
+    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
+    The line width is a qualitative indicator of the brightness of each feature,
+    with dashed lines showing the very faintest features.
+    The background grayscale image is the same as in Fig.~\ref{fig:shell-velocity-components}.
+  }
+  \label{fig:heii-shell-components}
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-knot-complex-map}
+  \caption{
+    Velocity features in the low-ionization knot complexes,
+    which have been identified in the \nii{} slits.
+    Left panel shows blue-shifted features,
+    while right panel shows red-shifted features,
+    each labelled with their line-of-sight velocity
+    with respect to the nominal systemic velocity of \SI{40}{km.s^{-1}}.
+    The line width is a qualitative indicator of the brightness of each feature.
+  }
+  \label{fig:knot-complex-map}
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]
+  {figs/turtle-lobes-simplified-components}
+  \caption{
+    Velocity components in the outer lobes.
+    (a)~Blue-shifted components identified in individual slits.
+    (b)~Red-shifted components identified in individual slits.
+  }
+  \label{fig:outer-lobe-components}
+\end{figure*}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-halo-map}
+  \caption{
+    Velocity components in the halo, all measured from the \oiii{} spectra with slit positions as indicated.
+    Components are divided into three classes:
+    inner halo (pink ellipses), outer halo (yellow ellipses),
+    and halo knots (green ellipses).
+    The inner portion of the background image is
+    the same high-pass-filtered \textit{HST} image
+    shown in Figs.~\ref{fig:shell-velocity-components} and~\ref{fig:outer-lobe-components}.
+    The outer portion of the background image is a deep \oiii{} exposure of the halo
+    obtained with Mezcal in direct imaging mode (see Fig.~\ref{fig:halo-knots}).
+  }
+  \label{fig:halo-components}
+\end{figure*}
 
 
 % Don't change these lines
