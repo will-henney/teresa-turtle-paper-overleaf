@@ -159,8 +159,10 @@
 
 
 \begin{keywords}
-  Planetary Nebulae: individual (NGC~6210)
-  -- ISM: kinematics and dynamics -- ISM blowout
+  planetary nebulae: individual: NGC~6210
+  -- stars: AGB and post-AGB
+  -- stars: jets
+  -- stars: mass-loss
   -- techniques: imaging spectroscopy
 \end{keywords}
 
@@ -168,7 +170,49 @@
 
 \section{INTRODUCTION}
 \label{sec:introduction}
-NGC 6210 is a bright and relatively large PN in the northern sky. The first photographic image of NGC 6210 was published by \citet{Duncan:1937a}. In that old, fuzzy image a pair of twisted arms protruding in opposite directions from a blurred,  bright, nebular core are apparent. Several studies have discussed the inner kinematic motions of this object, e.g. \citet{Osterbrock:1966a, Weedman:1968a, Becker:1984a, Icke:1989a}. However, none of those studies had the spatial coverage and spectral resolution needed to produce a reliable spatio-kinematic model of this PN. 
+NGC~6210 is a bright and relatively large planetary nebula (PN) in the northern constellation of Hercules, first described by Friedrich Georg Wilhelm von~\citet{Struve:1827a}.\footnote{
+  Facsimile available at \url{https://books.google.com.mx/books?id=Rs9JAAAAcAAJ&pg=PA88
+}.
+}
+Early photographic images \citep{Curtis:1918a, Duncan:1937a} already revealed the complex shape of the nebula, described by \citeauthor{Duncan:1937a} as having a ``\textit{bizarre form}''.
+Other descriptions of the nebula include ``\textit{resembling the popular artist's conception of an atom}'' \citep{Feibelman:1971a},
+or ``\textit{a mid-air collision of two intergalactic warships}'' \citep{OMeara:2007a},
+or, more succinctly, ``\textit{messy}'' \citep{Soker:2016b}.
+More recent images, obtained with the \textit{Hubble Space Telescope} (\textit{HST})%
+\footnote{
+  \url{https://www.spacetelescope.org/images/opo9836f/}
+  and \url{https://www.spacetelescope.org/images/potw1026a/}.}
+are shown in Figure~\ref{fig:hst}.
+
+The most important morphological features are labelled in the upper panels.
+The brightest part of the nebula is within the inner shell, which is elongated approximately NNW--SSE,
+with a peanut-like shape.
+The larger intermediate shell is elongated on a roughly perpendicular axis
+and is offset from the central star towards the WSW.
+Outside these shells are the four lobes of the nebula, which form the ``flippers'' of the Turtle.
+In \nii{}, all these components (with the exception of the lobes) can still be seen,
+but they are not as bright as a series of individual low-ionization knots and knot complexes.
+The N~knot is the farthest from the star and is superimposed on the N~lobe,
+with no counterpart to the S.
+The NW knot and SE knot form a symmetrical pair, although the SE knot is closer to the star.
+The brightest of the more diffuse knot complexes are concentrated to the N and W of the star.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figs/turtle-overview}
+\caption{
+  Images from the \textit{HST} WFPC2 camera of NGC~6210.
+  (a)~A logarithmic stretch and an edge-detection algorithm are applied to an  \oiii{} \Wav{5007} image,
+  in order to accentuate small-scale structure and remove large-scale radial brightness gradients.
+  The most salient nebular features are labeled for reference.
+  (b)~Same, but for \nii{} \Wav{6583}.
+  (c)~Two-color composite image of \oii{} \Wav{3727} (red) and \oiii{} \Wav{5007} (green).
+  Image credit: Robert Rubin and Christopher Ortiz (NASA/ESA Ames Research Center), Patrick Harrington and Nancy Jo Lame (University of Maryland), Reginald Dufour (Rice University), and NASA/ESA.
+  (d)~Three-color composite image of \nii{} \Wav{6583} (red), broad \(V\) band (green), and \oiii{} \Wav{5007} (blue). Image credit: ESA/Hubble and NASA.}
+\label{fig:hst}
+\end{figure}
+
+Several studies have discussed the inner kinematic motions of this object, e.g. \citet{Osterbrock:1966a, Weedman:1968a, Becker:1984a, Icke:1989a}. However, none of those studies had the spatial coverage and spectral resolution needed to produce a reliable spatio-kinematic model of this PN. 
 The best kinematic study to date on NGC 6210 is probably the one published by \citet{Phillips:1996a}  who obtained 11 long-slits centered on the nebular core, with each slit at different position angles thus providing a good spatial coverage but with only limited, low and medium spectral resolution. From these data they suggested a reasonable, though somewhat basic, kinematic model for the ionized nebula. NGC 6210 jumped into fame thanks to the {\it HST} images obtained during the 1996 - 1998 period under the observing programs 6347 (K. Borkowski), 6792 (R. Rubin), 7501 (A. Hajian)  and 11122 (B. Balick). These images showed for the first time the extraordinarily complex morphology of NGC 6210. Incidentally the  {\it HST} and ground-based imagery prompted the nickname "the turttle" for this nebula, given the shape of its main body and extended arms that resemble the shell of a turttle with a long neck and its fins. The distance estimates to NGC 6210 vary roughly from 1.5 to 2.0 kpc. \citep{Hajian:1995a} derive a distance to NGC 6210 from VLA 6 cm  expansion parallax measurements of 1.57$\pm0.40$ kpc, considering an expansion velocity of 23 \kms, whereas \citet{Frew:2016a} derives a distance of \SI{2.1 \pm 0.5}{kpc} to this object from its H$\alpha$ surface brightness method.
 
 In this work we present a thorough spectral mapping of all the morphological elements of the PN obtained at high spectral resolution that allow 
@@ -183,6 +227,7 @@ Finally, in \S~\ref{sec:conclusions} we summarise our conclusions.
 Technical details of the per-slit velocity components,
 density calibration,
 and ionization diagnostics are given in a series of appendices.
+
 
 \section{OBSERVATIONS AND DATA REDUCTION}
 \label{sec:observations}
@@ -361,17 +406,6 @@ with respect to the center of the nebula.}
 
 
 
-\begin{figure}
-\centering
-%\includegraphics[width=0.7\textwidth]{tere-figs/Figure8}
-%\includegraphics[width=0.327\textwidth]{tere-figs/opo9836f}
-%\includegraphics[width=0.32\textwidth]{tere-figs/N6210_ruso}
-\includegraphics[width=\linewidth]{sketch}
-\caption{mages from the HST archive are shown on the bottom panels,  \oiii{} (left) and \nii{} (right), and their
-corresponding images are shown in the top panels processed with a natural logarithm function and an edge 
-detection algorithm. The most salient features in these images are indicated and labeled for reference.}
-\label{fig:hst}
-\end{figure}
 
 
 
@@ -413,6 +447,7 @@ detection algorithm. The most salient features in these images are indicated and
     \SI{95}{km.s^{-1}} for an assumed distance of \SI{2}{kpc}.}
   \label{fig:proper-motions-oiii}
 \end{figure}
+
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/nii-propermotions}
@@ -446,25 +481,31 @@ detection algorithm. The most salient features in these images are indicated and
 \section{Proper motions}
 \label{sec:proper-motions}
 
-The data used in this study to measure the proper motions of the turttle nebula consist of images which were retrieved from the HST archive. The \nii{} observations were made in two separate observing runs: on 1998 June 30, as part of program 7501, with Hajian, Arsen R., as PI. During this run, six images were obtained with the WFPC2, with an exposure time of 100 s (three images) y 40 s (three images) using the F658N filter. The second-epoch data were obtained on 2008 January 18, from the science program 11122, with Bruce Balick, as PI, who employed the same configuration as in program 7501 to acquire three images with the F658N filter, using 400 s exposure times for all of them. For all of the images, we used the drizzled images (processed with Astrodrizzle). 
-
-Proper motions are calculated from HST WFPC2 imaging at two epochs separated by approximately 10 years,
+We employ archival emission line images from the Wide-Field Planetary Camera~2 \citetext{WFPC2, \citealp{Holtzman:1995a}} of the \textit{Hubble Space Telescope} (\textit{HST}) to derive plane-of-sky motions in the nebula.
+The images, which we downloaded from the Barbara~A. Mikulski Archive for Space Telescopes,%
+\footnote{MAST, \url{https://archive.stsci.edu/}}
+come from observations made between 1997 (Cycle 6) and 2008 (Cycle~16) via proposal IDs 6792, 7501, 8773, and 11122.
+Images were aligned with Astrodrizzle%
+\footnote{\url{https://drizzlepac.readthedocs.io}}
+and proper motions were estimated from pairs of images seperated by 10 to 12 years,
+% The data used in this study to measure the proper motions of the turttle nebula consist of images which were retrieved from the HST archive. The \nii{} observations were made in two separate observing runs: on 1998 June 30, as part of program 7501, with Hajian, Arsen R., as PI. During this run, six images were obtained with the WFPC2, with an exposure time of 100 s (three images) y 40 s (three images) using the F658N filter. The second-epoch data were obtained on 2008 January 18, from the science program 11122, with Bruce Balick, as PI, who employed the same configuration as in program 7501 to acquire three images with the F658N filter, using 400 s exposure times for all of them. For all of the images, we used the drizzled images (processed with Astrodrizzle). 
 using the FLCT method \citep{Welsch:2004a, Fisher:2008a}.\footnote{
   We used version 1.07 of FLCT, obtained from \url{http://cgem.ssl.berkeley.edu/cgi-bin/cgem/FLCT/home},
   together with version 1.04 of the Python wrapper pyflct,
   obtained from \url{https://github.com/PyDL/pyflct}.}
-Results are shown in Figures~\ref{fig:proper-motions-oiii} and~\ref{fig:proper-motions-nii} for \oiii{} and \nii{}, respectively.
+Results are shown in Figures~\ref{fig:proper-motions-oiii} and~\ref{fig:proper-motions-nii} for \oiii{} (filter F502N) and \nii{} (filter F658N), respectively.
 In both cases, the images were remapped to a uniform square pixel grid at the WFC resolution of \SI{0.1}{arcsec.pix^{-1}} before applying the algorithm.
 The resultant per-pixel motions between the two epochs are found to be of order \SI{0.5}{pix} (\(\approx \SI{5}{mas.yr^{-1}}\))
 and these raw results were then corrected by applying a global shift to force the motion of the central star to be zero.
 The systematic error from the global alignment of the two epochs is estimated to be \SI{1.5}{mas.yr^{-1}},
 which is expected to dominate the proper motion uncertainties in the brighter parts of the nebula.
-In fainter and more featureless regions of the nebula, the proper motions are increasingly affected by random noise,
-which can be seen in parts of the lobes in Figure~\ref{fig:proper-motions-oiii}.
-
-The corrected results, as shown in the figures, can be seen to display motions that are predominantly radial from the central star.
+In fainter and more featureless regions of the nebula, the proper motions are increasingly affected by random noise, 
+which we indicate by partially transparent arrows in the figures, 
+such as can be seen in parts of the lobes in Figure~\ref{fig:proper-motions-oiii}.
 To convert the angular motions into transverse velocities, we assume a distance of \SI{2}{kpc},
 so that \SI{10}{mas.yr^{-1}} is equivalent to \SI{95}{km.s^{-1}}.
+
+In both lines, We find motions that are predominantly radial from the central star.
 From the \oiii{} images (Fig.~\ref{fig:proper-motions-oiii}),
 the fastest plane-of-sky motions are of order \SI{60}{km.s^{-1}},
 and are chiefly along the NNW--SSE direction,
@@ -473,7 +514,6 @@ the NW~knot, the N~jet, and the end-cap of the S~lobe.
 Motions along the perpendicular ENE--WSW direction are typically slower,
 of order \SI{30}{km.s^{-1}}.
 Note that proper motions are unavailable for the end cap of the N lobe since the second epoch HST image does not cover this region.
-
 The \nii{} images (Fig.~\ref{fig:proper-motions-nii}) show a similar expansion pattern for the features that are visible in both lines.
 Remarkably low plane-of-sky velocities of \(\le \SI{15}{km.s^{-1}}\) are seen for the \nii{}-bright knot complexes immediately north and west of the central star. 
 
@@ -1834,7 +1874,8 @@ We hope that our detailed elucidation of the Turtle's complicated history of ani
 We are grateful for financial support provided by Dirección General de
 Asuntos del Personal Académico, Universidad Nacional Autónoma de
 México, through grants Programa de Apoyo a Proyectos de Investigación
-e Inovación Tecnológica  IN107019 and \textbf{Ensenada grant?}.  
+e Inovación Tecnológica  IN107019 and \textbf{Ensenada grants?}.  
+\textbf{Acknowledge OAN-SPM?} \textbf{Thank specific técnicos?}
 
 \bibliography{turtle-paper-refs}
 \appendix
