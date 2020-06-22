@@ -247,53 +247,6 @@ and ionization diagnostics are given in a series of appendices.
 
 \section{Longslit Spectroscopy}
 \label{sec:observations}
-
-Longslit echelle spectroscopic observations of the nebula NGC~6210 were performed with the
-2.1~m telescope at the Observatorio Astronómico Nacional at San Pedro Mártir (OAN-SPM), Baja California, México.
-We used the Manchester Echelle Spectrometer (MES-SPM) \citep{Meaburn:2003a} on the 2.1 m telescope in its $f$/7.5 configuration.
-The MES-SPM is a long-slit, echelle spectrometer that has no cross-disperser; it isolates single orders using interference filters.
-We used a 90\,\AA\, and 50\,\AA\, bandwidth filter to isolate the 87th and 114th orders containing the \Ha\,$+$\,\NIIlam\, and \OIIIlam\, nebular emission lines, respectively.
-Spectroscopic data on NGC 6210 was collected within our regular observing programs over nine observing runs from 1998 to 2019.
-Table~\ref{table:pa5} shows the log of observations,
-and the location of each slit is shown on an \oiii{} \textit{HST} archive image in Figure~\ref{fig:slit-positions}.
-In the top panel the vertical solid lines represent the set of 11 slits obtained in the 2015 run.
-The vertical dashed lines represent 12 slit positions from other runs, in some cases they are highly coincident in location with the 2015 set but selected for reasons such as different exposure times or spectral range.
-The middle panel shows 5 slit positions oriented E-W and the bottom panel 6 slit positions obtained at position angles that align with specific features, such as collimated outflows or the twisted arms of the nebula.
-In order to establish the exact position with respect to the nebula of the slit in each pointing, we use an automatic procedure available in MES-SPM prior to the spectroscopic exposure.
-
-During the 21 year span of the observations, the spectrograph was fitted with a variety of CCD detectors: \mbox{TEK-1} (1998), \mbox{SITE-3} (2003--2004), Marconi E2V-4240 (2011-2019).
-The \mbox{TEK-1} and \mbox{SITE-3} detectors consisted of \(1024 \times 1024\) square pixels, 
-each \SI{24}{\um} on a side,
-used with \(2\times2\) binning to give a plate scale of \SI{0.624}{arcsec} per double-binned pixel
-and a projected slit length of \SI{5.32}{arcmin}.
-The spectral resolution was \SI{11.5}{km.s^{-1}} for the \SI{150}{\um} (\SI{1.9}{arcsec}) slit
-and \SI{4.6}{km.s^{-1}} for the \SI{70}{\um} (\SI{0.95}{arcsec}) slit.
-The Marconi detector has \(2048 \times 2048\) square pixels, each \SI{13.5}{\um} on a side.
-Again, \(2\times2\) binning was used to give a plate scale of \SI{0.352}{arcsec} per double-binned pixel
-and a projected slit length of \SI{5.47}{arcmin},
-with a spectral resolution of \SI{11.9}{km.s^{-1}} (\SI{150}{\um} slit)
-or \SI{5.9}{km.s^{-1}} (\SI{70}{\um} slit).
-
-% During data reduction we noticed saturation in several slit positions near the core of the nebula. Therefore we decided to obtain in 2015 a new set of uniform and evenly spaced observation. \Ha{}, \NIIlam{} and \OIIIlam{} where observed for each slit position. We used the Marconi 2 (E2V-4240) detector with an identical set up as the one used in the 2013 run. Long-slit spectra were obtained at 11 different positions across the nebula, stepped from east to west and the slit oriented N -S.
-
-Figure~\ref{fig:pv-array} shows the position-velocity arrays of (left-to-rght)
-\Ha{} \Wav{6563}, \nii{} \Wav{6583}, and \oiii{} \Wav{5007} for the 11 individual positions from the 2015 run.
-The velocity scale is heliocentric 
-and the scale along the slit is specified as arcsecond offsets from the central star.
-% We derive a heliocentric
-% systemic velocity, \(\vsys = \SI{40}{km.s^{-1}}\) by using the slit position F (epoch 2003) that passes through the central star and is not saturated. 
-An additional slit (X, shown in Figure~\ref{fig:halo-knots}) was placed on the northern outskirts of the nebula 
-in the outer halo of NGC~6210 where filaments had been clearly detected in some of our deep images.
-% The observation was carried out on 18 September 2019.  The spectrum was obtained in order 87 (\Ha{} and \nii lines) with the 150 micron slit oriented at a position angle of 56 degrees.  The detector was again the Marconi 2048x2048 with a 3$\times$3 binning.  The spectral dispersion was 0.087 \AA/pix and 0.525\arcsec/pixel.
-
-
-
-Most of the spectra presented here are included in the \mbox{San Pedro Mártir} Kinematic Catalogue of Galactic Planetary Nebulae\footnote{
-  \url{http://kincatpn.astrosen.unam.mx}
-}
-and are publicly available as pdf or fits files
-\citep{Lopez:2012a}.
-
  \begin{figure}
    \centering
    \includegraphics[width=0.38\textwidth]{tere-figs/Figure2a}
@@ -349,16 +302,91 @@ the other runs placed at different position angles. }
 \end{tabular}
 \end{table}
 
-All data was reduced  by using standard IRAF\footnote{IRAF is
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.95\textwidth]{tere-figs/Figure3}
+  \caption{Position--velocity line profiles for the slit positions from the 2015 run are shown in sets where
+the H$\alpha$ bi-dimensional line profile is on the left panel of the set, the \oiii{} line profile is on the central panel 
+and the \nii{} line profile is on the right panel. The corresponding slit positions are indicated at the top of
+each set of line profiles. The velocity scale is heliocentric and the spatial scale is indicated in arcsec 
+with respect to the center of the nebula.}
+  \label{fig:pv-array}
+\end{figure*}
+
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-halo-slit-x}
+  \caption{
+    Deep images and spectra of the outer halo of NGC~6210, showing knotty structure.
+    (a)~Composite mosaic of \oiii{} images,
+    each with an exposure time of 1800~s,
+    giving a combined field of view of \(3' \times 3'\) centered on the nebula.
+    The position of slit position X is shown, for which a deep \Ha{} spectrum was obtained.
+    Note that different sections of the mosaic are shown with different brightness normalizations,
+    leading to abrupt jumps at the boundaries. 
+    (b)~\Ha{} spectrum from Slit~X, showing emission from two of the halo knots.
+    The red dotted line shows the nebular systemic velocity.
+  }
+  \label{fig:halo-knots}
+\end{figure}
+
+
+
+Longslit echelle spectroscopic observations of the nebula NGC~6210 were performed with the
+2.1~m telescope at the Observatorio Astronómico Nacional at San Pedro Mártir (OAN-SPM), Baja California, México.
+We used the Manchester Echelle Spectrometer (MES-SPM) \citep{Meaburn:2003a} on the 2.1 m telescope in its $f$/7.5 configuration.
+The MES-SPM is a long-slit, echelle spectrometer that has no cross-disperser; it isolates single orders using interference filters.
+We used a 90\,\AA\, and 50\,\AA\, bandwidth filter to isolate the 87th and 114th orders containing the \Ha\,$+$\,\NIIlam\, and \OIIIlam\, nebular emission lines, respectively.
+Spectroscopic data on NGC 6210 was collected within our regular observing programs over nine observing runs from 1998 to 2019.
+Table~\ref{table:pa5} shows the log of observations,
+and the location of each slit is shown on an \oiii{} \textit{HST} archive image in Figure~\ref{fig:slit-positions}.
+In the top panel the vertical solid lines represent the set of 11 slits obtained in the 2015 run.
+The vertical dashed lines represent 12 slit positions from other runs, in some cases they are highly coincident in location with the 2015 set but selected for reasons such as different exposure times or spectral range.
+The middle panel shows 5 slit positions oriented E-W and the bottom panel 6 slit positions obtained at position angles that align with specific features, such as collimated outflows or the twisted arms of the nebula.
+In order to establish the exact position with respect to the nebula of the slit in each pointing, we use an automatic procedure available in MES-SPM prior to the spectroscopic exposure.
+
+During the 21 year span of the observations, the spectrograph was fitted with a variety of CCD detectors: \mbox{TEK-1} (1998), \mbox{SITE-3} (2003--2004), Marconi E2V-4240 (2011-2019).
+The \mbox{TEK-1} and \mbox{SITE-3} detectors consisted of \(1024 \times 1024\) square pixels, 
+each \SI{24}{\um} on a side,
+used with \(2\times2\) binning to give a plate scale of \SI{0.624}{arcsec} per double-binned pixel
+and a projected slit length of \SI{5.32}{arcmin}.
+The spectral resolution was \SI{11.5}{km.s^{-1}} for the \SI{150}{\um} (\SI{1.9}{arcsec}) slit
+and \SI{4.6}{km.s^{-1}} for the \SI{70}{\um} (\SI{0.95}{arcsec}) slit.
+The Marconi detector has \(2048 \times 2048\) square pixels, each \SI{13.5}{\um} on a side.
+Again, \(2\times2\) binning was used to give a plate scale of \SI{0.352}{arcsec} per double-binned pixel
+and a projected slit length of \SI{5.47}{arcmin},
+with a spectral resolution of \SI{11.9}{km.s^{-1}} (\SI{150}{\um} slit)
+or \SI{5.9}{km.s^{-1}} (\SI{70}{\um} slit).
+
+% During data reduction we noticed saturation in several slit positions near the core of the nebula. Therefore we decided to obtain in 2015 a new set of uniform and evenly spaced observation. \Ha{}, \NIIlam{} and \OIIIlam{} where observed for each slit position. We used the Marconi 2 (E2V-4240) detector with an identical set up as the one used in the 2013 run. Long-slit spectra were obtained at 11 different positions across the nebula, stepped from east to west and the slit oriented N -S.
+
+All data was reduced using standard IRAF\footnote{IRAF is
   distributed by the National Optical Astronomy Observatory, which is
   operated by the Association of Universities for Research in
   Astronomy, Inc. under cooperative agreement with the National
   Science foundation} routines.
 Bias and cosmic-ray removal was followed by rectification and first-order wavelength 
 calibration of the two-dimensional spectra
-based on the comparison the spectrum
-of a Th/Ar lamp to an accuracy of $\pm$1 \kms{} when converted to radial velocity.
-All spectra presented in this paper are corrected to heliocentric velocity (\vhel). 
+based on the comparison spectrum
+of a Th/Ar lamp, yielding an accuracy in velocity units of \SI{\pm 1}{km.s^{-1}}.
+Figure~\ref{fig:pv-array} shows example position-velocity arrays of (left-to-right)
+\Ha{} \Wav{6563}, \nii{} \Wav{6583}, and \oiii{} \Wav{5007} for the 11 individual positions from the 2015 run.
+The velocity scale is heliocentric 
+and the scale along the slit is specified as arcsecond offsets from the central star.
+% We derive a heliocentric
+% systemic velocity, \(\vsys = \SI{40}{km.s^{-1}}\) by using the slit position F (epoch 2003) that passes through the central star and is not saturated. 
+An additional slit (X, shown in Figure~\ref{fig:halo-knots}) was placed on the northern outskirts of the nebula 
+in the outer halo of NGC~6210 where filaments had been clearly detected in some of our deep images.\footnote{For this spectrum only, \(3 \times 3\) pixel on-chip binning was used.}
+% The observation was carried out on 18 September 2019.  The spectrum was obtained in order 87 (\Ha{} and \nii lines) with the 150 micron slit oriented at a position angle of 56 degrees.  The detector was again the Marconi 2048x2048 with a 3$\times$3 binning.  The spectral dispersion was 0.087 \AA/pix and 0.525\arcsec/pixel.
+Most of the spectra presented here are publicly available from the \mbox{San Pedro Mártir} Kinematic Catalogue of Galactic Planetary Nebulae\footnote{
+  \url{http://kincatpn.astrosen.unam.mx}
+}
+\citep{Lopez:2012a}.
+
+
 
 
 
@@ -390,39 +418,6 @@ All spectra presented in this paper are corrected to heliocentric velocity (\vhe
 %  \caption{ }
 %\end{figure*}
 
-
-
-
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.95\textwidth]{tere-figs/Figure3}
-  \caption{Position--velocity line profiles for the slit positions from the 2015 run are shown in sets where
-the H$\alpha$ bi-dimensional line profile is on the left panel of the set, the \oiii{} line profile is on the central panel 
-and the \nii{} line profile is on the right panel. The corresponding slit positions are indicated at the top of
-each set of line profiles. The velocity scale is heliocentric and the spatial scale is indicated in arcsec 
-with respect to the center of the nebula.}
-  \label{fig:pv-array}
-\end{figure*}
-
-
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/turtle-halo-slit-x}
-  \caption{
-    Deep images and spectra of the outer halo of NGC~6210, showing knotty structure.
-    (a)~Composite mosaic of \oiii{} images,
-    each with an exposure time of 1800~s,
-    giving a combined field of view of \(3' \times 3'\) centered on the nebula.
-    The position of slit position X is shown, for which a deep \Ha{} spectrum was obtained.
-    Note that different sections of the mosaic are shown with different brightness normalizations,
-    leading to abrupt jumps at the boundaries. 
-    (b)~\Ha{} spectrum from Slit~X, showing emission from two of the halo knots.
-    The red dotted line shows the nebular systemic velocity.
-  }
-  \label{fig:halo-knots}
-\end{figure}
 
 
 
@@ -1027,7 +1022,16 @@ which is consistent with the predicted value for expansion velocities greater th
 \begin{figure*}
   \includegraphics[width=\linewidth]
   {figs/cut-axis-4panel}
-  \caption{Three dimensional reconstruction of the nebular structure and kinematics. }
+  \caption{
+    Three dimensional reconstruction of the nebular structure and kinematics,
+    assuming all outflows are strictly radial.
+    Panels (a), (b), and (c) show cut planes containing the line of sight
+    and the symmetry axes of the shells and lobes.
+    Some small artistic license is taken, since axis A and C are not strictly coplanar with the line of sight.
+    Knots and knot complexes do not share these axes, but are also shown projected onto the closest planes.
+    Arrows show the magnitude and direction of the derived three-dimensional velocity of each feature.
+    Faint gray dashed lines for Outer lobe system \SysM{2} show the range of possibilities for this feature given that no proper motions are available for it.
+  }
   \label{fig:cut-axis-3d}
 \end{figure*}
 
