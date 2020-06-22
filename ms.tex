@@ -177,7 +177,7 @@ NGC~6210 is a bright and relatively large planetary nebula (PN) in the northern 
 Early photographic images \citep{Curtis:1918a, Duncan:1937a} already revealed the complex shape of the nebula, described by \citeauthor{Duncan:1937a} as having a ``\textit{bizarre form}''.
 Other descriptions of the nebula include ``\textit{resembling the popular artist's conception of an atom}'' \citep{Feibelman:1971a},
 or ``\textit{a mid-air collision of two intergalactic warships}'' \citep{OMeara:2007a},
-or, more succinctly, ``\textit{messy}'' \citep{Soker:2016b}.
+or, more succinctly, ``\textit{messy}'' \citep{Soker:2004b}.
 
 More recent images, obtained with the \textit{Hubble Space Telescope} (\textit{HST})%
 \footnote{
@@ -185,13 +185,17 @@ More recent images, obtained with the \textit{Hubble Space Telescope} (\textit{H
   and \url{https://www.spacetelescope.org/images/potw1026a/}.}
 are shown in Figure~\ref{fig:hst},
 with the most important morphological features labelled in the upper panels.
-The brightest part of the nebula is within the inner shell, which is elongated approximately NNW--SSE,
+In most emission lines,
+such as \Ha{} \Wav{6563} and \oiii{} \Wav{5007},
+the brightest part of the nebula is the inner shell, which is elongated approximately NNW--SSE,
 with a peanut-like shape.
-The larger intermediate shell is elongated on a roughly perpendicular axis
+The larger and fainter intermediate shell is elongated on a roughly perpendicular axis
 and is not centered on the progenitor star, but is offset towards the WSW.
 Outside these shells are the four lobes of the nebula, which form the ``flippers'' of the Turtle.
-In \nii{}, all these components (with the exception of the lobes) can still be seen,
-but they are not as bright as a series of individual low-ionization knots and knot complexes (seen as pink emission in Figure~\ref{fig:hst}d).
+In low-ionization lines,
+such as \nii{} \Wav{6583},
+the shells emit only faintly and the lobes are not seen at all.
+Instead, the brightest emission comes from a series of individual knots and knot complexes (seen as pink in Figure~\ref{fig:hst}d).
 The N~knot is the farthest from the star and is superimposed on the N~lobe,
 with no counterpart to the S.
 The NW knot and SE knot form a symmetrical pair, although the SE knot is closer to the star.
@@ -212,23 +216,25 @@ The brightest of the more diffuse knot complexes are concentrated to the N and W
 \label{fig:hst}
 \end{figure}
 
-The distance estimates to NGC 6210 vary roughly from 1.5 to 2.0 kpc. \citep{Hajian:1995a} derive a distance to NGC 6210 from VLA 6 cm  expansion parallax measurements of 1.57$\pm0.40$ kpc, considering an expansion velocity of 23 \kms, whereas \citet{Frew:2016a} derives a distance of \SI{2.1 \pm 0.5}{kpc} to this object from its H$\alpha$ surface brightness method.
+% The distance estimates to NGC 6210 vary roughly from 1.5 to 2.0 kpc. \citep{Hajian:1995a} derive a distance to NGC 6210 from VLA 6 cm  expansion parallax measurements of 1.57$\pm0.40$ kpc, considering an expansion velocity of 23 \kms, whereas \citet{Frew:2016a} derives a distance of \SI{2.1 \pm 0.5}{kpc} to this object from its H$\alpha$ surface brightness method.
 
-Spectrophotometric studies have been carried out at UV, optical, and infrared wavelengths
-\citep{Rubin:1997a, Kwitter:1998a, Liu:2004a, Pottasch:2009a, Bohigas:2015c},
-which have allowed the determination of the ionic and elemental abundances,
-together with electron densities and temperatures in the bright inner shell. 
-There have also been many previous studies of the internal kinematics of the nebula
+Spectrophotometry of NGC~6210 at UV, optical, and infrared wavelengths
+\citep{Rubin:1997a, Kwitter:1998a, Liu:2004a, Pottasch:2009a, Bohigas:2015c}
+have provided ionic and elemental abundances,
+together with electron densities and temperatures in the bright inner shell.
+Distance estimates range from \num{1.5} to \SI{2.1}{kpc} \citep{Hajian:1995a, Frew:2016a},
+and we adopt \SI{2}{kpc} in this paper.
+There have been many previous studies of the internal kinematics of the nebula
 \citep{Osterbrock:1966a, Weedman:1968a, Becker:1984a, Icke:1989a, Rechy-Garcia:2020a}
 but the lack of a single dominant symmetry axis has made it difficult to derive a comprehensive spatio-kinematic model.
-
+The same lack of symmetry has led to speculation \citep{Soker:2004b, Bear:2017a}
+that the nebula has been shaped by an interacting triple star system.
 
 % These images showed for the first time the extraordinarily complex morphology of NGC 6210. Incidentally the  {\it HST} and ground-based imagery prompted the nickname "the turttle" for this nebula, given the shape of its main body and extended arms that resemble the shell of a turttle with a long neck and its fins.
 
-
-In this work we present a thorough spectral mapping of all the morphological elements of the PN obtained at high spectral resolution that allow 
-disentangling the various spatio-kinematic components and provide an overall view of its structure and evolution. Radial velocities are combined with 2-epoch HST \oiii ~and~ \nii ~archive image sets (http://archive.stsci.edu/) to derive proper motions. Individual long-slit echelle spectra obtained over 5 observing runs are analyzed as position - velocity data and combined into emission and velocity channel maps that serve as an excellent tool to visualize and understand the peculiar velocity fields, of the several structural components.
-
+In this work we present a thorough spectral mapping of all the morphological elements of the PN obtained at high spectral resolution,
+which allows us to disentangle the various spatio-kinematic components
+and provides an overall view of its structure and evolution.
 In \S~\ref{sec:observations}, we describe our spectroscopic observations and corresponding data-reduction steps.
 In \S~\ref{sec:proper-motions} we describe the proper motions that we derive from archival \textit{HST} images.
 In \S~\ref{sec:kinematic-components} we extract kinematic components from the slit spectra and classify them into different systems under the categories of shells, knots, lobes and halo, which are each analysed.
@@ -239,51 +245,47 @@ Technical details of the per-slit velocity components,
 density calibration,
 and ionization diagnostics are given in a series of appendices.
 
-
-\section{OBSERVATIONS AND DATA REDUCTION}
+\section{Longslit Spectroscopy}
 \label{sec:observations}
 
-Long-slit, echelle, spectroscopic observations of the nebula NGC~6210
-were performed with the 2.1~m telescope at the Observatorio
-Astron\'omico Nacional at San Pedro M\'artir, (OAN-SPM), Baja
-California, M\'exico. We used the Manchester Echelle Spectrometer
-(MES-SPM) \citep{Meaburn:2003a} on the 2.1 m telescope in its $f$/7.5
-configuration.  The MES-SPM is a long-slit, echelle spectrometer that
-has no cross-disperser; it isolates single orders using interference
-filters. We used a 90\,\AA\, and 50\,\AA\, bandwidth
-filter to isolate the 87th and 114th orders containing the
-\Ha\,$+$\,\NIIlam\, and \OIIIlam\, nebular emission lines,
-respectively. Spectroscopic data on NGC 6210 was collected within our regular observing programs over nine observing runs from 1998 till 2019. Table 1 shows the log of observations. In the first column the dates for the individual observing runs are listed; the second column lists the exposure times mostly used in the corresponding run; the third column lists the spectral range of the observations, namely, $H\alpha$ + [N II] and/or [O III]; the fourth column lists the slit width in microns and the fifth column the position angle of the slit. Finally, in the sixth column the nomenclature used to identify the slits obtained in each run is indicated. In the end 34 slit positions from all the runs were selected to analyse the kinematic structure of NGC 6210. The location of these slits are presented and labeled against an \oiii{} \textit{HST} archive image in Figure~\ref{fig:slit-positions}. In the top panel the vertical solid lines represent the set of 11 slits obtained in the 2015 run. The vertical dashed lines represent 12 slit positions from other runs, in some cases they are highly coincident in location with the 2015 set but selected for reasons such as different exposure times or spectral range. The middle panel shows 5 slit positions oriented E - W and the bottom panel 6 slit positions obtained at an angle intended to record specific features, such as collimated outflows or the twisted arms of the nebula. In order to establish the exact position of the slit in each pointing, the slit position on the sky was recorded with an automatic procedure available in MES-SPM prior to the spectroscopic exposure.
+Longslit echelle spectroscopic observations of the nebula NGC~6210 were performed with the
+2.1~m telescope at the Observatorio Astronómico Nacional at San Pedro Mártir (OAN-SPM), Baja California, México.
+We used the Manchester Echelle Spectrometer (MES-SPM) \citep{Meaburn:2003a} on the 2.1 m telescope in its $f$/7.5 configuration.
+The MES-SPM is a long-slit, echelle spectrometer that has no cross-disperser; it isolates single orders using interference filters.
+We used a 90\,\AA\, and 50\,\AA\, bandwidth filter to isolate the 87th and 114th orders containing the \Ha\,$+$\,\NIIlam\, and \OIIIlam\, nebular emission lines, respectively.
+Spectroscopic data on NGC 6210 was collected within our regular observing programs over nine observing runs from 1998 to 2019.
+Table~\ref{table:pa5} shows the log of observations,
+and the location of each slit is shown on an \oiii{} \textit{HST} archive image in Figure~\ref{fig:slit-positions}.
+In the top panel the vertical solid lines represent the set of 11 slits obtained in the 2015 run.
+The vertical dashed lines represent 12 slit positions from other runs, in some cases they are highly coincident in location with the 2015 set but selected for reasons such as different exposure times or spectral range.
+The middle panel shows 5 slit positions oriented E-W and the bottom panel 6 slit positions obtained at position angles that align with specific features, such as collimated outflows or the twisted arms of the nebula.
+In order to establish the exact position with respect to the nebula of the slit in each pointing, we use an automatic procedure available in MES-SPM prior to the spectroscopic exposure.
 
-During the 11 year span of the observations, we used different detectors with MES, 
-with general characteristics as follows.
-A \mbox{TEK-1} CCD detector was used for the 1998 observations,
-consisting of \(1024 \times 1024\) square pixels, 
+During the 21 year span of the observations, the spectrograph was fitted with a variety of CCD detectors: \mbox{TEK-1} (1998), \mbox{SITE-3} (2003--2004), Marconi E2V-4240 (2011-2019).
+The \mbox{TEK-1} and \mbox{SITE-3} detectors consisted of \(1024 \times 1024\) square pixels, 
 each \SI{24}{\um} on a side,
 used with \(2\times2\) binning to give a plate scale of \SI{0.624}{arcsec} per double-binned pixel
 and a projected slit length of \SI{5.32}{arcmin}.
 The spectral resolution was \SI{11.5}{km.s^{-1}} for the \SI{150}{\um} (\SI{1.9}{arcsec}) slit
 and \SI{4.6}{km.s^{-1}} for the \SI{70}{\um} (\SI{0.95}{arcsec}) slit.
-For the 2003, 2004, and 2011 observations, we used a \mbox{SITE-3} CCD detector with the same dimensions as the \mbox{TEK-1}. 
-For the 2011 and 2013 runs we used a Marconi CCD detector
-with \(2048 \times 2048\) square pixels, each \SI{13.5}{\um} on a side.
+The Marconi detector has \(2048 \times 2048\) square pixels, each \SI{13.5}{\um} on a side.
 Again, \(2\times2\) binning was used to give a plate scale of \SI{0.352}{arcsec} per double-binned pixel
 and a projected slit length of \SI{5.47}{arcmin},
 with a spectral resolution of \SI{11.9}{km.s^{-1}} (\SI{150}{\um} slit)
 or \SI{5.9}{km.s^{-1}} (\SI{70}{\um} slit).
 
-During data reduction we noticed saturation in several slit positions near the core of the nebula. Therefore we decided to obtain in 2015 a new set of uniform and evenly spaced observation. \Ha{}, \NIIlam{} and \OIIIlam{} where observed for each slit position. We used the Marconi 2 (E2V-4240) detector with an identical set up as the one used in the 2013 run. Long-slit spectra were obtained at 11 different positions across the nebula, stepped from east to west and the slit oriented N -S.
+% During data reduction we noticed saturation in several slit positions near the core of the nebula. Therefore we decided to obtain in 2015 a new set of uniform and evenly spaced observation. \Ha{}, \NIIlam{} and \OIIIlam{} where observed for each slit position. We used the Marconi 2 (E2V-4240) detector with an identical set up as the one used in the 2013 run. Long-slit spectra were obtained at 11 different positions across the nebula, stepped from east to west and the slit oriented N -S.
 
-Figure 2 shows the position-velocity ({\it P-V})  arrays of \Halam\,
-\NIIlam \AA, and \OIIIlam, respectively, for the 11 individual positions from the 2015 run. \Ha{} {\it P--V} is shown on the left panel,  on
-the middle panel is the corresponding \OIIIlam\, {\it P--V} and \NIIlam{} on the right panel. The velocity scale is heliocentric 
-and the scale along the slit is specified as arcsecond offsets from the core position. We derive a heliocentric
-systemic velocity, \vsys $=40$~\kms{} by using the slits position f (epoch 2003) that passes through the central star and is not saturated. 
+Figure~\ref{fig:pv-array} shows the position-velocity arrays of (left-to-rght)
+\Ha{} \Wav{6563}, \nii{} \Wav{6583}, and \oiii{} \Wav{5007} for the 11 individual positions from the 2015 run.
+The velocity scale is heliocentric 
+and the scale along the slit is specified as arcsecond offsets from the central star.
+% We derive a heliocentric
+% systemic velocity, \(\vsys = \SI{40}{km.s^{-1}}\) by using the slit position F (epoch 2003) that passes through the central star and is not saturated. 
+An additional slit (X, shown in Figure~\ref{fig:halo-knots}) was placed on the northern outskirts of the nebula 
+in the outer halo of NGC~6210 where filaments had been clearly detected in some of our deep images.
+% The observation was carried out on 18 September 2019.  The spectrum was obtained in order 87 (\Ha{} and \nii lines) with the 150 micron slit oriented at a position angle of 56 degrees.  The detector was again the Marconi 2048x2048 with a 3$\times$3 binning.  The spectral dispersion was 0.087 \AA/pix and 0.525\arcsec/pixel.
 
-A final slit was placed on the northern outskirts of the nebula 
-in the outer halo of NGC 6210 where filaments had been clearly detected in some of our deep images. The observation was carried out on 18 September 2019.  The spectrum was obtained in order 87 ($H\alpha$ and [N II] lines) with the 150 micron slit oriented at a position angle of 56 degrees.  The detector was again the Marconi 2048x2048 with a 3$\times$3 binning.  The spectral dispersion was 0.087 \AA/pix and 0.525\arcsec/pixel.
-
-Figure 3 shows the location of the slit in the halo of NGC 6210  against a deep ground-based image. The bottom panel shows the large scale view with the location of the slit indicated. The top right panel is an enhanced contrast image of the region that intersects the slit, the regions present a knotty, curved structure. The top left panel shows the corresponding spectrum from the 2019 run.
 
 
 Most of the spectra presented here are included in the \mbox{San Pedro Mártir} Kinematic Catalogue of Galactic Planetary Nebulae\footnote{
@@ -309,9 +311,11 @@ the other runs placed at different position angles. }
 \caption{OAN-SPM/Mezcal high-resolution spectroscopy of NGC~6210}
 \label{table:pa5}
 \begin{tabular}{@{}l@{} rrrr l@{}} \toprule
-  &   Exp.~Time & Spectral  & Slit & P.A.   & \\
-  Epoch   &    (s) & Range  &  (\AA)    &    (\(^\circ\))  & Slit Label \\
+  &   Exposure & Spectral  & Width & P.A.   & \\
+  Epoch   &    (s) & Range  &  (\si{\um})    &    (\(^\circ\))  & Slit Label \\
   \midrule
+  {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} \\
+    \addlinespace
 1998/06/28 & 30 & \Ha  & 150 & 90 & O\\
 1998/06/28 & 300 & \Ha  & 150 & 90 & N\\
 1998/06/28 & 1200 & \Ha   & 150 & 90 & M,P,Q \\
@@ -332,6 +336,16 @@ the other runs placed at different position angles. }
 2015/08/20 &  1800 &   \Ha, \oiii & 70 & 0 & H,J,K\\
 2019/09/18 &  1800 &   \Ha    & 150 & 56 & X\\
   \bottomrule
+  \addlinespace
+  \multicolumn{6}{@{}p{\columnwidth}@{}}{
+  \textsc{Columns:}
+  (1)~Date of each observing run.
+  (2)~Length of each spectroscopic exposure.
+  (3)~Spectral range of each observation.  \Ha{} includes \nii{} \Wav{6548, 83} and \heii{} \Wav{6560}.  \sii{} includes both doublet lines \Wav{6716, 31}.
+  (4)~Slit width in microns.
+  (5)~Position angle of slot orientation in degrees.
+  (6)~Labels assigned to each slit position, see Fig.~\ref{fig:slit-positions}.
+  }
 \end{tabular}
 \end{table}
 
@@ -346,8 +360,6 @@ based on the comparison the spectrum
 of a Th/Ar lamp to an accuracy of $\pm$1 \kms{} when converted to radial velocity.
 All spectra presented in this paper are corrected to heliocentric velocity (\vhel). 
 
-The morphology of NGC 6210 varies significantly in high and low excitation images. In Figure 4 we show in the lower panels [O III] (left) and [N II] (right) archive $\rm HST$ images that clearly reveal the different structures from each ion.
-The top panels are the corresponding images processed with a natural logarithm and edge detection algorithm where the most salient features are indicated and labeled for reference in the next sections.
 
 
 % Using FORTRAN and phython routines, we produced  velocity cubes in  \NIIlam{} and \oiii{} emission lines, in order to 
@@ -1185,23 +1197,13 @@ For the second we take the maximum chord length of the shell, calculated as \(dz
 (limiting cases are \(dz \approx 2 R_c\) for thick shells and \(dz \approx 2 (2 R_c\, dr)^{1/2}\) for thin shells).
 
 Resultant densities are shown in column~3 of Table~\ref{tab:summary} and are plotted against true (deprojected) radius in Figure~\ref{fig:density-plots}a.
+In Appendix~\ref{sec:density-calibration}, we compare the \Ha{}-derived densities with measurements of the \sii{} doublet ratio, finding good agreement.
 It can be seen that a very wide range of densities is present in the nebula, from \(\approx \SI{4000}{cm^{-3}}\) in the inner shell and knot complexes down to \(\approx \SI{30}{cm^{-3}}\) in the outer halo.
 For most components, there is a consistent steep decline of density with radius,
 which is well approximated by \(n \propto R^{-4}\) (gray dotted line in the figure).
 The exception to this rule is the outlying low-ionization knots,
 located at about \SI{0.2}{pc} from the star, which have a density 20--50 times higher than the other components at a comparable radius.
 
-As a check on our \Ha{}-derived densities, we also calculate densities from Mezcal observations of the red \sii{} doublet for a single slit position (Slit~S of Fig.~2).
-This passes through five distinct spatio-kinematic features in the inner nebula,
-allowing us to measure the line ratio \(I(6716)/I(6731)\) for each
-(unfortunately, \sii{} emission from the outer lobes and halo is undetectably weak).
-Because the relative spectrograph efficiency between the doublet wavelengths is not well-determined,
-we have calibrated the line ratios by forcing the average value over the entire slit to be \(I(6716)/I(6731) = 0.60\), in agreement with the spectrophotometry of \citet{Liu:2004a}.
-Results are shown in Figure~\ref{fig:density-plots}b,
-calculated with PyNeb \citep{Luridiana:2015a} using atomic data from \citet{Podobedova:2009a} and \citet{Tayal:2010a}.
-It can be seen that there is a reasonable agreement between the two density diagnostics,
-which justifies our decision not to use any filling factor correction in equation~\eqref{eq:sha-density}.
-The need for a filling factor is obviated by carefully calculating the line-of-sight depth of each emission component separately.
 
 
 \subsection{Reconstructed mass-loss history}
@@ -1583,7 +1585,7 @@ In this section we collect together the principle ways in which the nebula is lo
 \end{enumerate}
 
 What is the origin of the asymmetries?
-Mechanisms proposed to date \citet{Soker:2004b, Soker:2016b}
+Mechanisms proposed to date \citep{Soker:2004b, Soker:2016b}
 involve accretion disk and jet formation in a triple star system.
 This may be via accretion of the AGB wind onto a close binary on a wide orbit around the AGB,
 or, if the orbit is closer, via a common envelope or grazing envelope phase,
@@ -1891,8 +1893,15 @@ e Inovación Tecnológica  IN107019 and \textbf{Ensenada grants?}.
 \bibliography{turtle-paper-refs}
 \appendix
 
-\section{Velocity features in individual slits}
+\section{Velocity components in individual slits}
 \label{sec:veloc-feat-indiv}
+
+In this appendix, we collect figures that show the individual velocity components that we have identified in each slit spectrum.
+The figures are organized according to the different features discusses in \S~\ref{sec:kinematic-components}:
+shells (Figure~\ref{fig:shell-velocity-components} for \oiii{} and Figure~\ref{fig:heii-shell-components} for \heii{}),
+knot complexes (Figure~\ref{fig:knot-complex-map}),
+outer lobes (Figure~\ref{fig:outer-lobe-components}),
+and halo (Figure~\ref{fig:halo-components}).
 
 \begin{figure*}
   \centering
@@ -1950,7 +1959,8 @@ e Inovación Tecnológica  IN107019 and \textbf{Ensenada grants?}.
   \includegraphics[width=\linewidth]
   {figs/turtle-lobes-simplified-components}
   \caption{
-    Velocity components in the outer lobes.
+    Velocity components in the outer lobes,
+    which have been identified in the \oiii{} slits.
     (a)~Blue-shifted components identified in individual slits.
     (b)~Red-shifted components identified in individual slits.
   }
@@ -1986,6 +1996,17 @@ e Inovación Tecnológica  IN107019 and \textbf{Ensenada grants?}.
   \label{fig:density-calibration}
 \end{figure}
 
+As a check on our \Ha{}-derived densities, we also calculate densities from Mezcal observations of the red \sii{} doublet for a single slit position (Slit~S of Fig.~2).
+This passes through five distinct spatio-kinematic features in the inner nebula,
+allowing us to measure the line ratio \(I(6716)/I(6731)\) for each
+(unfortunately, \sii{} emission from the outer lobes and halo is undetectably weak).
+Because the relative spectrograph efficiency between the doublet wavelengths is not well-determined,
+we have calibrated the line ratios by forcing the average value over the entire slit to be \(I(6716)/I(6731) = 0.60\), in agreement with the spectrophotometry of \citet{Liu:2004a}.
+Results are shown in Figure~\ref{fig:density-plots}b,
+calculated with PyNeb \citep{Luridiana:2015a} using atomic data from \citet{Podobedova:2009a} and \citet{Tayal:2010a}.
+It can be seen that there is a reasonable agreement between the two density diagnostics,
+which justifies our decision not to use any filling factor correction in equation~\eqref{eq:sha-density}.
+The need for a filling factor is obviated by carefully calculating the line-of-sight depth of each emission component separately.
 
 \section{Ionization structure of the nebula}
 \label{sec:ioniz-struct-nebula}

@@ -11,3 +11,4 @@ turtle-paper.pdf
 *.synctex.gz
 *.llt
 *.synctex*
+/.DS_Store
