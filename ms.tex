@@ -248,10 +248,14 @@ and ionization diagnostics are given in appendices.
  \begin{figure}
    \centering
    \includegraphics[width=0.38\textwidth]{tere-figs/Figure2a}
-  \caption{Top panel shows the slit positions from the 2015 run, these are indicated as solid lines and 
-labeled at the top against an [O III] HST image. Dashed lines refer to additional slit positions from other runs
-and are labeled at the bottom of the image. The middle and bottom panels show the slit positions from 
-the other runs placed at different position angles. }
+   \caption{
+     Spectrograph slit positions for vertical orientations (upper panel),
+     horizontal orientations (middle panel),
+     and diagonal orientations (lower panel).
+     Background image in each case is an \textit{HST} \oiii{} image of the nebula.
+     In the top panel, slit positions from the 2015 season are indicated as solid lines
+     and positions from other seasons are shown as dashed lines (see Table~\ref{table:pa5} for details). 
+   }
   \label{fig:slit-positions}
 \end{figure}
 
@@ -363,17 +367,17 @@ or \SI{5.9}{km.s^{-1}} (\SI{70}{\um} slit).
 
 % During data reduction we noticed saturation in several slit positions near the core of the nebula. Therefore we decided to obtain in 2015 a new set of uniform and evenly spaced observation. \Ha{}, \NIIlam{} and \OIIIlam{} where observed for each slit position. We used the Marconi 2 (E2V-4240) detector with an identical set up as the one used in the 2013 run. Long-slit spectra were obtained at 11 different positions across the nebula, stepped from east to west and the slit oriented N -S.
 
-All data was reduced using standard IRAF\footnote{IRAF is
-  distributed by the National Optical Astronomy Observatory, which is
-  operated by the Association of Universities for Research in
-  Astronomy, Inc. under cooperative agreement with the National
-  Science foundation} routines.
+All data was reduced using standard IRAF\footnote{IRAF was originally
+  distributed by the National Optical Astronomy Observatory,
+  \url{http://ast.noao.edu/data/software},
+  and is currently available from \url{https://iraf-community.github.io}.}
+routines.
 Bias and cosmic-ray removal was followed by rectification and first-order wavelength 
 calibration of the two-dimensional spectra
 based on the comparison spectrum
 of a Th/Ar lamp, yielding an accuracy in velocity units of \SI{\pm 1}{km.s^{-1}}.
 Figure~\ref{fig:pv-array} shows example position-velocity arrays of (left-to-right)
-\Ha{} \Wav{6563}, \nii{} \Wav{6583}, and \oiii{} \Wav{5007} for the 11 individual positions from the 2015 run.
+\Ha{} \Wav{6563}, \oiii{} \Wav{5007}, and \nii{} \Wav{6583} for the 11 individual positions from the 2015 run.
 The velocity scale is heliocentric 
 and the scale along the slit is specified as arcsecond offsets from the central star.
 % We derive a heliocentric
@@ -844,7 +848,7 @@ show significant internal gradients of \(\approx \SI{10}{km.s^{-1}}\) in the sam
 There is an approximate kinematic and spatial symmetry
 between pairs of opposite knot complexes:
 SW Red with NE Blue, NW Red with SE Blue,
-and NE Red with SE Faint Blue.
+and NE Red with SW Faint Blue.
 % It is possible that the west and east sides of the N Red complex
 % are actually two separate complexes,
 % in which case the east side would pair with the SW Faint Blue complex,
@@ -1230,7 +1234,7 @@ we have measured the \Ha{} surface brightness \(S(\Ha)\) and flux \(F(\Ha) = S(\
 where \(d\Omega\) is the solid angle of each feature.
 Results aggregated by type of feature are presented in Table~\ref{tab:summary}.
 Column~2 gives the fraction of the total \Ha{} flux due to each component,
-which is dominated by roughly equal contributions from the high-ionization inner shell and the low-ionization knot complexes, summing to over 85\% of the total.
+which is dominated by the high-ionization inner shell.
 
 \begin{figure}
   \includegraphics[width=0.8\linewidth]
@@ -1486,6 +1490,9 @@ is higher than that of the intermediate shell (\num{20} to \SI{30}{km.s^{-1}}),
 which is the opposite to the trend that is typically seen in multiple-shell planetary nebulae \citep{Corradi:2007a}.
 In a sample of 20 high-luminosity nebulae, \citet{Schonberner:2014a} find that the intermediate shell expansion velocity lies in the range \num{20} to \SI{40}{km.s^{-1}},
 while the inner shell velocity is always slower at \num{10} to \SI{30}{km.s^{-1}}.
+In general, the expansion velocities are found to increase with stellar effective temperature
+during the high-luminosity phase of central star evolution
+\citep{Richer:2008a, Richer:2010a, Pereyra:2016a}.
 On the other hand, a faster inner shell such as the Turtle's
 is not totally unprecedented,
 with a particularly extreme example being NGC~2392,
@@ -1587,7 +1594,14 @@ They found that the observed distribution of radial velocities can be reproduced
 70\% of nebulae have low-velocity jets with \(V = \SI{66 \pm 26}{km.s^{-1}}\),
 while 30\% have high-velocity jets with \(V = \SI{180 \pm 60}{km.s^{-1}}\).
 All of the collimated outflows that we find in the Turtle,
-with \(V = \num{30}\) to \SI{90}{km.s^{-1}}, are typical of the low-velocity jet population. 
+with \(V = \num{30}\) to \SI{90}{km.s^{-1}}, are typical of the low-velocity jet population.
+When compared with the general taxonomy of collimated outflows seen in planetary nebulae \citep{Lopez:1997a},
+the outer lobes are similar to the class of Bipolar Rotating Episodic Jets
+\citetext{BRETs, \citealp{Lopez:1993a}}
+while the knot complexes are similar to the class of
+Fast Low-Ionization Emission Regions \citetext{FLIERs, \citealp{Balick:1994a}}
+with the exception that we find no evidence for enhanced N abundance in the knots,
+as is often found in FLIERs.
 
 \subsubsection{Halo}
 \label{sec:halo}
@@ -1641,8 +1655,9 @@ In this section we collect together the principle ways in which the nebula is lo
   while blueshifted emission is 1.5 times brighter on the south side.
   Because the inner shell dominates the total flux, this leads to a north--south asymmetry in the nebula as a whole,
   with the peak brightness region lying 2~arcsec north of the central star. 
-\item In the \heii{} line, the inner shell has an opposite asymmetry: it is brighter to the south than to the north.
+\item In the \heii{} line, the inner shell has an opposite asymmetry: it is brighter to the south than to the north, as measured in our slit spectra.
   Such an asymmetry is hard to explain if the \chem{He^{2+}} zone of the nebula is ionization-bounded and the central star emits isotropically.
+  Note however that there is a gap in our slit coverage in precisely the region of maximum \Ha{} brightness, so it is possible that this discrepancy only apparent.
 \item The intermediate shell shows an egg-shaped morphology that is lop-sided along its major axis (axis~B),
   extending roughly 30\% further from the star to the WSW than to the ENE.\@ 
 \item The outer lobes are probably the \emph{least} asymmetric component of the entire nebula,
@@ -1670,6 +1685,9 @@ but there is no direct evidence that the Turtle's central star is binary or trip
 The fact that the basic parameters of the nebula and its central star can be consistently interpreted in terms of single-star evolution (see \S~\ref{sec:comparison-with-post})
 suggests that a triple interaction was not required for the initial ejection of the envelope that forms the intermediate shell,
 although it may be responsible for its subsequent shaping.
+The possible role of magnetic fields in shaping the nebula and its bipolar outflows
+\citep{Garcia-Segura:2000a}
+is also unclear.
 
 \subsection{A plausible history of outflows in the Turtle}
 \label{sec:poss-hist-outfl}
@@ -1783,15 +1801,16 @@ all at the same physical scale.
 
 We also select a secondary sample of Peimbert Type~IIb,
 which otherwise meet the 5 criteria given above,
-yielding another six sources:
-NGC~6891 (\G{054.1}{-12.1}), 
-NGC~6892 (\G{009.4}{-05.0}), 
- IC~2448  (\G{285.7}{-14.9}), 
+yielding another seven sources:
+NGC~6891 (\G{054.1}{-12.1}),
+NGC~6629 (\G{009.4}{-05.0}),
+IC~2448 (\G{285.7}{-14.9}), 
 NGC~3242 (\G{261.0}{+32.0}), 
 NGC~6826 (\G{083.5}{+12.7}),
-and NGC~6309 (\G{009.6}{+14.8}).\footnote{
+and NGC~6309 (\G{009.6}{+14.8}),\footnote{
   We relax criterion 5 to admit NGC~6309, which has spectral classification ``O(He)?''.  
 }
+and IC~4634 (\G{000.3}{+12.2}).
 Applying the same criteria to Type~IIa nebulae yields more than 10 sources,
 from which we cherry pick five of the most famous:
 NGC~6578 (\G{010.8}{-01.8}), 
