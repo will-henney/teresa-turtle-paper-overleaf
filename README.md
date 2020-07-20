@@ -18,7 +18,7 @@ until I have checked that the overleaf version hasn't changed in the meantime.
 ### Title
 
 The five axes of the Turtle: symmetry and asymmetry in NGC 6210
-
+	
 ### Running head
 
 Symmetry and asymmetry in the Turtle Nebula

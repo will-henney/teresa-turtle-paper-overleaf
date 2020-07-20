@@ -1,0 +1,44 @@
+* First version
+** Reduce file size
+[2020-07-20 Mon]
++ Initial rejection because of PDF being too large (>10 MB)
+*** Make lores versions of some figures
++ ~figs/cousins-of-the-turtle-lores.pdf~
+  + spectacular reduction using "Reduce file size" quartz filter in Preview export
++ ~figs/{oiii,nii}-propermotions.jpg~
+  + reduce quality in export jpg settings in Preview
++ ~figs/*-map.pdf~
+  + export as jpg at 150 dpi and lowest quality
+*** Check file sizes of included figures
+#+begin_src sh
+  grep 'Graphic file' ms.log | cut -d ' ' -f2 |xargs du -sk |sort -nr
+#+end_src
+
+#+RESULTS:
+| 2112 | figs/oiii-propermotions-lores.jpg                      |
+|  832 | figs/turtle-lobes-simplified-components-lores.jpg      |
+|  832 | figs/nii-propermotions-lores.jpg                       |
+|  792 | figs/turtle-lobes-simplified-systems.pdf               |
+|  776 | figs/turtle-overview.pdf                               |
+|  740 | figs/turtle-halo-slit-x.pdf                            |
+|  544 | figs/turtle-halo-map-lores.jpg                         |
+|  532 | figs/cut-axis-4panel.pdf                               |
+|  392 | figs/turtle-heii-shell-components.pdf                  |
+|  364 | tere-figs/Figure3.pdf                                  |
+|  364 | figs/turtle-nii-knot-complexes.pdf                     |
+|  224 | figs/turtle-peanut-map-lores.jpg                       |
+|  180 | figs/cousins-of-the-turtle-lores.pdf                   |
+|  176 | figs/turtle-knot-complex-map-lores.jpg                 |
+|   76 | figs/turtle-knot-complexes-velocity-axes-annotated.pdf |
+|   76 | figs/line-ratios-vs-ion-parameter.pdf                  |
+|   68 | figs/turtle-heii-shell-annotated.pdf                   |
+|   48 | tere-figs/Figure2a.pdf                                 |
+|   48 | figs/vel-radius-systems-annotated.pdf                  |
+|   48 | figs/turtle-shell-velocity-axes-annotated.pdf          |
+|   44 | figs/hr-pne-annotated.pdf                              |
+|   40 | figs/mass-loss-history-annotated.pdf                   |
+|   32 | figs/turtle-density-profile.pdf                        |
+|   32 | figs/turtle-density-calibration.pdf                    |
+|   28 | figs/turtle-flow-axis-history.pdf                      |
+|   24 | figs/turtle-heii-shell-velocity-axes-annotated.pdf     |
+|   20 | figs/turtle-inclination-histogram.pdf                  |
