@@ -1,0 +1,44 @@
+% A useful set of packages for my papers
+% 
+% (c) William Henney
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{wjh-packages}
+  [2020/08/21 v0.01 Load a default set of packages]
+
+\ifdefined\pdfsuppresswarningpagegroup
+   \pdfsuppresswarningpagegroup=1
+\else
+   \message{Command \string\pdfsuppresswarningpagegroup\space not defined}
+\fi
+%
+\usepackage[spanish,es-minimal,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{newtxtext}
+
+%
+% Adding the stix2 option to the global list of class options
+%
+\ifx\@empty\@classoptionslist
+  \g@addto@macro\@classoptionslist{stix2}
+\else
+  \g@addto@macro\@classoptionslist{,stix2}
+\fi
+% now we can safely request stix2 option to newtxmath
+% even though older versions do not have it
+%\usepackage[stix2,smallerops]{newtxmath}
+%% Unfortunately that does not work
+\usepackage[smallerops]{newtxmath}
+
+\endinput
+%%
+%% End of file `wjh-packages.sty’.
