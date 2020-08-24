@@ -1,3 +1,30 @@
+* Second version
+
+** Referee report 
+
+This is in [[file:./ref-report.txt]]
+
+** Reply to referee
+
+Text is a markdown document: [[file:./ref-reply.md]]
+
+** Dealing with the referee's points
+
+1. [ ] Representative spectra or colorscale PV image 
+2. [ ] Slit labelling - collision with axis labelling 
+   - (lower case letters for slits?)
+3. [ ] Better indicate axis direction on figures
+4. [ ] Proper motion nitpicks
+5. [ ] More details on how velocities are derived
+6. [ ] Something about axes of inner shell
+7. [ ] Velocity gradients versus amplitudes
+   - Michael was right!
+8. [ ] Last sentence of section 4.2
+9. [ ] More discussion on knot complex
+10. [ ] Can we rule out a brief ejection event?
+11. [ ] Older lobes that have faded?
+
+
 * First version
 ** Reduce file size
 [2020-07-20 Mon]
