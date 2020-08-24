@@ -24,7 +24,7 @@ Below we quote the referee's report in full, interspersed with our responses.
 
 > Axis directions in figures are indicated in E vs W, but none of the figures explicitly state the orientation. It may be helpful to add which direction is east in Fig. 1. (It can of course be deduced from any of the figures which shows coordinates).
 
-**TODO**
+We have added a compass to Fig 1, indicating N and E.
 
 > Other comments
 
