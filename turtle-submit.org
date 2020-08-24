@@ -10,7 +10,7 @@ Text is a markdown document: [[file:./ref-reply.md]]
 
 ** Dealing with the referee's points
 
-1. [ ] Representative spectra or colorscale PV image 
+1. [-] Representative spectra or color-scale PV image 
 2. [ ] Slit labelling - collision with axis labelling 
    - (lower case letters for slits?)
 3. [ ] Better indicate axis direction on figures
@@ -23,6 +23,44 @@ Text is a markdown document: [[file:./ref-reply.md]]
 9. [ ] More discussion on knot complex
 10. [ ] Can we rule out a brief ejection event?
 11. [ ] Older lobes that have faded?
+
+
+** Detailed log of changes
+
+*** TODO Move Affinity Designer files to this repo
++ I now have Affinity Designer installed on the iPad [2020-08-24 Mon] but the entire ~teresa-turtle~ repo is too large to sync with Working Copy
++ So, I will just copy all the ~.afdesign~ files into this repo on the MacMini and sync that via github
+
+
+**** Find which figure files have associated .afdesign files and copy them into this project
+#+begin_src sh :results verbatim
+  files=$(grep 'Graphic file' ms.log | cut -d ' ' -f2 | grep "^figs/" | grep ".pdf$" | sed -e 's/-lores//'| sed -e 's/pdf/afdesign/' | sed -e 's/figs/..\/Teresa-Turtle\/figs/')
+  for f in $files; do
+      cp -v $f figs
+  done
+#+end_src
+
+#+RESULTS:
+#+begin_example
+../Teresa-Turtle/figs/turtle-overview.afdesign -> figs/turtle-overview.afdesign
+../Teresa-Turtle/figs/turtle-halo-slit-x.afdesign -> figs/turtle-halo-slit-x.afdesign
+../Teresa-Turtle/figs/turtle-heii-shell-components.afdesign -> figs/turtle-heii-shell-components.afdesign
+../Teresa-Turtle/figs/turtle-shell-velocity-axes-annotated.afdesign -> figs/turtle-shell-velocity-axes-annotated.afdesign
+../Teresa-Turtle/figs/turtle-heii-shell-annotated.afdesign -> figs/turtle-heii-shell-annotated.afdesign
+../Teresa-Turtle/figs/turtle-heii-shell-velocity-axes-annotated.afdesign -> figs/turtle-heii-shell-velocity-axes-annotated.afdesign
+../Teresa-Turtle/figs/turtle-nii-knot-complexes.afdesign -> figs/turtle-nii-knot-complexes.afdesign
+../Teresa-Turtle/figs/turtle-knot-complexes-velocity-axes-annotated.afdesign -> figs/turtle-knot-complexes-velocity-axes-annotated.afdesign
+../Teresa-Turtle/figs/turtle-lobes-simplified-systems.afdesign -> figs/turtle-lobes-simplified-systems.afdesign
+../Teresa-Turtle/figs/cut-axis-4panel.afdesign -> figs/cut-axis-4panel.afdesign
+../Teresa-Turtle/figs/vel-radius-systems-annotated.afdesign -> figs/vel-radius-systems-annotated.afdesign
+../Teresa-Turtle/figs/turtle-flow-axis-history.afdesign -> figs/turtle-flow-axis-history.afdesign
+../Teresa-Turtle/figs/turtle-density-profile.afdesign -> figs/turtle-density-profile.afdesign
+../Teresa-Turtle/figs/mass-loss-history-annotated.afdesign -> figs/mass-loss-history-annotated.afdesign
+../Teresa-Turtle/figs/hr-pne-annotated.afdesign -> figs/hr-pne-annotated.afdesign
+../Teresa-Turtle/figs/cousins-of-the-turtle.afdesign -> figs/cousins-of-the-turtle.afdesign
+../Teresa-Turtle/figs/turtle-density-calibration.afdesign -> figs/turtle-density-calibration.afdesign
+../Teresa-Turtle/figs/line-ratios-vs-ion-parameter.afdesign -> figs/line-ratios-vs-ion-parameter.afdesign
+#+end_example
 
 
 * First version
