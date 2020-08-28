@@ -38,10 +38,15 @@ Text is a markdown document: [[file:./ref-reply.md]]
 
 
 **** Find which figure files have associated .afdesign files and copy them into this project
-#+begin_src sh :results verbatim
-  files=$(grep 'Graphic file' ms.log | cut -d ' ' -f2 | grep "^figs/" | grep ".pdf$" | sed -e 's/-lores//'| sed -e 's/pdf/afdesign/' | sed -e 's/figs/..\/Teresa-Turtle\/figs/')
+
++ /Do not run this script again/ like *EVER* - since it will overwrite the edited ~.afdesign~ files
+#+begin_src sh :results verbatim :eval no
+  files=$(grep 'Graphic file' ms.log | cut -d ' ' -f2 | grep "^figs/" | sed -e 's/-lores//' | cut -d '.' -f1)
   for f in $files; do
-      cp -v $f figs
+      if [[ -f ../Teresa-Turtle/$f.afdesign ]]; then
+          # ls -l ../Teresa-Turtle/$f.afdesign
+          cp -v ../Teresa-Turtle/$f.afdesign figs
+      fi
   done
 #+end_src
 
@@ -49,7 +54,11 @@ Text is a markdown document: [[file:./ref-reply.md]]
 #+begin_example
 ../Teresa-Turtle/figs/turtle-overview.afdesign -> figs/turtle-overview.afdesign
 ../Teresa-Turtle/figs/turtle-halo-slit-x.afdesign -> figs/turtle-halo-slit-x.afdesign
+../Teresa-Turtle/figs/turtle-peanut-map.afdesign -> figs/turtle-peanut-map.afdesign
 ../Teresa-Turtle/figs/turtle-heii-shell-components.afdesign -> figs/turtle-heii-shell-components.afdesign
+../Teresa-Turtle/figs/turtle-knot-complex-map.afdesign -> figs/turtle-knot-complex-map.afdesign
+../Teresa-Turtle/figs/turtle-lobes-simplified-components.afdesign -> figs/turtle-lobes-simplified-components.afdesign
+../Teresa-Turtle/figs/turtle-halo-map.afdesign -> figs/turtle-halo-map.afdesign
 ../Teresa-Turtle/figs/turtle-shell-velocity-axes-annotated.afdesign -> figs/turtle-shell-velocity-axes-annotated.afdesign
 ../Teresa-Turtle/figs/turtle-heii-shell-annotated.afdesign -> figs/turtle-heii-shell-annotated.afdesign
 ../Teresa-Turtle/figs/turtle-heii-shell-velocity-axes-annotated.afdesign -> figs/turtle-heii-shell-velocity-axes-annotated.afdesign
@@ -66,6 +75,7 @@ Text is a markdown document: [[file:./ref-reply.md]]
 ../Teresa-Turtle/figs/turtle-density-calibration.afdesign -> figs/turtle-density-calibration.afdesign
 ../Teresa-Turtle/figs/line-ratios-vs-ion-parameter.afdesign -> figs/line-ratios-vs-ion-parameter.afdesign
 #+end_example
+
 
 
 * First version
