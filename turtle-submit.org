@@ -32,7 +32,8 @@ Text is a markdown document: [[file:./ref-reply.md]]
 
 ** Detailed log of changes
 
-*** TODO Move Affinity Designer files to this repo
+*** DONE Move Affinity Designer files to this repo
+CLOSED: [2020-10-03 Sat 16:57]
 + I now have Affinity Designer installed on the iPad [2020-08-24 Mon] but the entire ~teresa-turtle~ repo is too large to sync with Working Copy
 + So, I will just copy all the ~.afdesign~ files into this repo on the MacMini and sync that via github
 
