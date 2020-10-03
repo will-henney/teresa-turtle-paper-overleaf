@@ -89,7 +89,9 @@ Note that some of these had lores versions, which will need to be recreated late
 + [X] Fig 7 - turtle-peanut-map
 + [X] Fig 10 - turtle-lobes-simplified-components
 
-*** TODO Fix the slit lettering in the text
+*** DONE Fix the slit lettering in the text
+CLOSED: [2020-10-03 Sat 17:34]
++ I used ~occur~ (~M-s o~) with the regexp ~\bslit[ ~][A-Z]\b~ to find all the occurences.
 * First version
 ** Reduce file size
 [2020-07-20 Mon]
