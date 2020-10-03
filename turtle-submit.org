@@ -79,6 +79,17 @@ CLOSED: [2020-10-03 Sat 16:57]
 
 
 
+
+*** DONE [5/5] Fix the slit lettering on the figures
+CLOSED: [2020-10-03 Sat 17:21]
+Note that some of these had lores versions, which will need to be recreated later
++ [X] Fig 4 - turtle-halo-slit-x
++ [X] Fig 11 - turtle-halo-map
++ [X] Fig 9 - turtle-knot-complex-map
++ [X] Fig 7 - turtle-peanut-map
++ [X] Fig 10 - turtle-lobes-simplified-components
+
+*** TODO Fix the slit lettering in the text
 * First version
 ** Reduce file size
 [2020-07-20 Mon]
