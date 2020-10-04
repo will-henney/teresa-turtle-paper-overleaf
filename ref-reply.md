@@ -49,7 +49,10 @@ In other cases, we have kept the unit as km/s but changed "gradient" to  "differ
 
 > Last sentence of section 4.2; I did not understand how diffuse versus compact emission can show a spatial velocity gradient. The statement does not seem to  link well with the previous sentence.
 
-**TODO**
+It is only at HST resolution that the [O III] appears more diffuse.  
+Both are compact at the arcsecond scales of the ground-based spectra. 
+We agree however that the statement was poorly phrased.
+We have rewritten it as: "the [O III] emission ... seems to arise from the inner surface of the [N II] knots"
 
 > I find the knot complex the hardest to understand. It has a velocity that differs from the rest of structures, has a clear red-blue asymmetry, and is offset from the centre of the nebula in Fig. 1. It gives the impression of an asymmetric toroidal structure.  The abstract stresses the structure as tracing a 180 degree flip of ejection axis 2000 years ago.   I would be quite interested in further discussion.  It can be difficult to measure acccurate kinematic ages for structures near the line of sight. Is there an alternative interpretation possible which does not require the 180 degree change at one point, something not seen in any other structure in the nebula, even those which overlap in age with the knot complex, nor is it known from other PNe? How about non-radial velocity components, as are apparent in Fig 5? The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. In Fig. 20, if I were to plot just the crosses, it would give the suggestion of an expanding shell. I have no opinion on this but would be interested in further discussion in the paper. 
 
