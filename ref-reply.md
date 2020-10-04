@@ -20,7 +20,7 @@ Below we quote the referee's report in full, interspersed with our responses.
 
 > The labeling of slits is comprehensive. But I found myself confused when some of the labels were also used for structural axes, e.g. in Fig. 12 'A' and 'B' refers to axes, but in Fig. 7 which it refers to, these designate slit positions. It is not a show stopper but  could perhaps be .
 
-**TODO**
+This is a good point.  We have changed the slit labels to be lower-case, which hopefully should avoid this potential confusion. 
 
 > Axis directions in figures are indicated in E vs W, but none of the figures explicitly state the orientation. It may be helpful to add which direction is east in Fig. 1. (It can of course be deduced from any of the figures which shows coordinates).
 
@@ -37,6 +37,9 @@ We have added a compass to Fig 1, indicating N and E.
 **TODO**
 
 > In Fig. 12, the spatial extent of the emission along the major axis (A) and the minor axis (B) is very nearly the same (14 vs 12 arcsec), whereas in the image of Fig 11 they look more distinct. That raises the question whether all the velocities identified as such belong to the inner-most shell. 
+
+Does the referee mean Fig 1 rather than Fig 11?  It is certainly true that the assignment of components to different structures is subjective to some extent.  Part of the issue here is that the thick blue line that traces the inner shell in the lower panel (axis B) of Fig 12 is not necessarily realistic.  In particular, it extends a few arcsec beyond the measured data in the WSW direction, which makes it look as though the minor axis is longer than it really is (should be only 10 arcsec).  We have redrawn this part of the line, which is only there to guide the eye, so as to more accurately reflect the evidence.
+We use a thinner dashed line-style to indicate that it may or may not be a closed shell in that direction (also now referred to in the text). 
 
 **TODO**
 

@@ -12,14 +12,14 @@ Text is a markdown document: [[file:./ref-reply.md]]
 
 1. [-] Representative spectra or color-scale PV image
    - A 1D spectrum could be used to address points 5 and 8
-2. [-] Slit labelling - collision with axis labelling 
+2. [X] Slit labelling - collision with axis labelling 
    - [X] Change to lower case letters for slits in Fig 2
-   - [ ] Same for other figures
-   - [ ] Update text
+   - [X] Same for other figures
+   - [X] Update text
 3. [X] Better indicate axis direction on figures
 4. [ ] Proper motion nitpicks
 5. [ ] More details on how velocities are derived
-6. [ ] Discrepancy in axis ratio of inner shell?
+6. [X] Discrepancy in axis ratio of inner shell?
 7. [ ] Velocity gradients versus amplitudes
    - Michael was right!
 8. [ ] Last sentence of section 4.2
@@ -92,6 +92,20 @@ Note that some of these had lores versions, which will need to be recreated late
 *** DONE Fix the slit lettering in the text
 CLOSED: [2020-10-03 Sat 17:34]
 + I used ~occur~ (~M-s o~) with the regexp ~\bslit[ ~][A-Z]\b~ to find all the occurences.
+
+*** TODO Proper motion image distortions?
+
+
+*** Make 1D spectrum
++ This will address points 1, 5, and 8
++ It has to be of a spectrum where we have shell and knot contribution
++ Also, we need to formalize how the velocities were determined
+  + They were mostly determined from contour maps in DS9
+  + In some cases, from 1D profiles and Gaussian-by-eye
+
+
+*** Axes of inner shell
++ I have added a dashed line on the figure in the direction that might not be closed.
 * First version
 ** Reduce file size
 [2020-07-20 Mon]
