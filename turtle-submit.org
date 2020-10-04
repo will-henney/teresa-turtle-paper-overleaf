@@ -20,9 +20,9 @@ Text is a markdown document: [[file:./ref-reply.md]]
 4. [ ] Proper motion nitpicks
 5. [ ] More details on how velocities are derived
 6. [X] Discrepancy in axis ratio of inner shell?
-7. [ ] Velocity gradients versus amplitudes
+7. [X] Velocity gradients versus amplitudes
    - Michael was right!
-8. [ ] Last sentence of section 4.2
+8. [X] Last sentence of section 4.2
    - Referee has doubt how we can find a velocity difference between diffuse and compact component
    - The answer is that [O III] is only more "diffuse" at HST resolution. At arcsecond scales it is compact.
 9. [ ] More discussion on knot complexes
@@ -96,7 +96,7 @@ CLOSED: [2020-10-03 Sat 17:34]
 *** TODO Proper motion image distortions?
 
 
-*** Make 1D spectrum
+*** TODO Make 1D spectrum
 + This will address points 1, 5, and 8
 + It has to be of a spectrum where we have shell and knot contribution
 + Also, we need to formalize how the velocities were determined
@@ -104,8 +104,15 @@ CLOSED: [2020-10-03 Sat 17:34]
   + In some cases, from 1D profiles and Gaussian-by-eye
 
 
-*** Axes of inner shell
+*** DONE Axes of inner shell
+CLOSED: [2020-10-03 Sat 19:02]
 + I have added a dashed line on the figure in the direction that might not be closed.
+
+*** DONE Gradient terminology
+CLOSED: [2020-10-03 Sat 20:13]
++ Added explicit length for each velocity difference, so that they really are gradients now
+
+
 * First version
 ** Reduce file size
 [2020-07-20 Mon]

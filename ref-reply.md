@@ -41,11 +41,11 @@ We have added a compass to Fig 1, indicating N and E.
 Does the referee mean Fig 1 rather than Fig 11?  It is certainly true that the assignment of components to different structures is subjective to some extent.  Part of the issue here is that the thick blue line that traces the inner shell in the lower panel (axis B) of Fig 12 is not necessarily realistic.  In particular, it extends a few arcsec beyond the measured data in the WSW direction, which makes it look as though the minor axis is longer than it really is (should be only 10 arcsec).  We have redrawn this part of the line, which is only there to guide the eye, so as to more accurately reflect the evidence.
 We use a thinner dashed line-style to indicate that it may or may not be a closed shell in that direction (also now referred to in the text). 
 
-**TODO**
-
 > This paper frequently mentions velocity gradients in the analysis, but the numbers are given as velocity amplitude (e.g. +-3 km/s) rather than as a gradient. Either the terminology or the units need updating. 
 
-**TODO**
+In most cases, we have kept "gradient" but modified the units.  
+For example, "+/- 3 km/s over +/- 7 arcsec". 
+In other cases, we have kept the unit as km/s but changed "gradient" to  "differential".
 
 > Last sentence of section 4.2; I did not understand how diffuse versus compact emission can show a spatial velocity gradient. The statement does not seem to  link well with the previous sentence.
 
