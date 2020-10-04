@@ -3,8 +3,8 @@ NGC 6210 paper. Synced with the version owned by Tere on Overleaf
 
 ## Work on the revised version
 
-* Log of progress on dealing with the referee's points: <./turtle-submit.org>
-* Draft of reply to referee: <ref-reply.md>
+* Log of progress on dealing with the referee's points: [turtle-submit.org](https://github.com/will-henney/teresa-turtle-paper-overleaf/blob/master/turtle-submit.org) 
+* Draft of reply to referee: [ref-reply.md](https://github.com/will-henney/teresa-turtle-paper-overleaf/blob/master/ref-reply.md)
 
 ## Procedure for syncing with overleaf
 
