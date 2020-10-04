@@ -1,6 +1,13 @@
 # teresa-turtle-paper-overleaf
 NGC 6210 paper. Synced with the version owned by Tere on Overleaf
 
+## Work on the revised version
+
+* Log of progress on dealing with the referee's points: <./turtle-submit.org>
+* Draft of reply to referee: <ref-reply.md>
+
+## Procedure for syncing with overleaf
+
 Assuming changes have been made both to overleaf version and to version on my laptop:
 
 1. Push changes from overleaf to github

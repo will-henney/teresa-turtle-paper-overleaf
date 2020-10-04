@@ -43,13 +43,13 @@ We use a thinner dashed line-style to indicate that it may or may not be a close
 
 > This paper frequently mentions velocity gradients in the analysis, but the numbers are given as velocity amplitude (e.g. +-3 km/s) rather than as a gradient. Either the terminology or the units need updating. 
 
-In most cases, we have kept "gradient" but modified the units.  
+In most cases, we have kept "gradient" but modified the units. 
 For example, "+/- 3 km/s over +/- 7 arcsec". 
 In other cases, we have kept the unit as km/s but changed "gradient" to  "differential".
 
 > Last sentence of section 4.2; I did not understand how diffuse versus compact emission can show a spatial velocity gradient. The statement does not seem to  link well with the previous sentence.
 
-It is only at HST resolution that the [O III] appears more diffuse.  
+It is only at HST resolution that the [O III] appears more diffuse. 
 Both are compact at the arcsecond scales of the ground-based spectra. 
 We agree however that the statement was poorly phrased.
 We have rewritten it as: "the [O III] emission ... seems to arise from the inner surface of the [N II] knots"
