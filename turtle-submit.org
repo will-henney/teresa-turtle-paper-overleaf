@@ -157,3 +157,9 @@ CLOSED: [2020-10-03 Sat 20:13]
 |   28 | figs/turtle-flow-axis-history.pdf                      |
 |   24 | figs/turtle-heii-shell-velocity-axes-annotated.pdf     |
 |   20 | figs/turtle-inclination-histogram.pdf                  |
+* Comments from Beto 2020-11-05
++ Be more explicit about gray arrows in the figures - say which figures they are
++ Rewrite Roche lobe sentence
++ Clarify this:
+  : but in opposite senses: redshifted emission is 2.5 times brighter on the north side, while blueshifted emission is 1.5 times brighter on the south side. 
+  
