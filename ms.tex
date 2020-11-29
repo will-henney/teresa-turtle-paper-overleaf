@@ -306,7 +306,29 @@ with respect to the central star.}
 \end{figure*}
 
 
-
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/turtle-1d-line-profiles}
+  \caption{
+    Thick colored lines show one-dimensional extracted velocity profiles
+    of (top to bottom) \nii{} (red), \Ha{} (purple) and \oiii{} (light blue)
+    for a  short section of slit~e
+    (length \SI{2}{arcsec},
+    centered \SI{3}{arcsec} north of the central star).
+    For the \nii{} and \oiii{} lines, four-gaussian fits are shown
+    (continuous thin black lines show the individual components,
+    while thin dashed line shows the total profile).
+    The bottom panel shows the residuals of these fits on an expanded scale.
+    Short vertical colored lines mark the centroid velocity of each of the four components,
+    with thicker lines corresponding to the high-ionization shell
+    and thinner lines low-ionization knot complexes.
+    The vertical dashed line shows the systemic velocity.
+    No fits are performed to the \Ha{} line
+    because the larger thermal broadening means that
+    the four components cannot be reliably separated.
+  }
+  \label{fig:spec-1d}
+\end{figure}
 
 \begin{figure}
   \centering
@@ -370,6 +392,8 @@ Figure~\ref{fig:pv-array} shows example position-velocity arrays of (left-to-rig
 \Ha{} \Wav{6563}, \oiii{} \Wav{5007}, and \nii{} \Wav{6583} for the 11 individual positions from the 2015 run.
 The velocity scale is heliocentric 
 and the scale along the slit is specified as arcsecond offsets from the central star.
+Figure~\ref{fig:spec-1d} shows example one-dimensional spectra,
+extracted from a short section of slit~e.
 % We derive a heliocentric
 % systemic velocity, \(\vsys = \SI{40}{km.s^{-1}}\) by using the slit position F (epoch 2003) that passes through the central star and is not saturated. 
 An additional slit (x, shown in Figure~\ref{fig:halo-knots}) was placed on the northern outskirts of the nebula 
@@ -591,6 +615,11 @@ these are consistent within the stated errors with our own average results for e
 In order to investigate the kinematics of the nebula in detail,
 we have measured the velocities of distinct emission components in each slit spectrum
 and organized them into broad systems based on their location, morphology and degree of ionization.
+The velocities were determined by fitting gaussians to one-dimensional line profiles,
+as illustrated in Figure~\ref{fig:spec-1d}.
+The higher ionization features are measured in \oiii{},
+while the lower ionization features are measured in \nii{}.
+
 Maps of the individual slit positions,
 marked with the position and velocity of each component
 are presented in Figures~\ref{fig:shell-velocity-components} to \ref{fig:halo-components}.
@@ -853,7 +882,8 @@ and NE Red with SW Faint Blue.
 The knot complexes are also visible in the \oiii{} spectra,
 although they are fainter than the shells in this line.
 There is also a slight difference in velocity,
-with \oiii{} showing expansion velocities that are \num{2} to \SI{5}{km.s^{-1}} smaller than \nii{}.
+with \oiii{} showing expansion velocities that are \num{2} to \SI{5}{km.s^{-1}} smaller than \nii{},
+as can be seen in Figure~\ref{fig:spec-1d}.
 If the expansion velocities within the knot complexes are assumed to increase with radius,
 then this is evidence for ionization stratification along the line of sight
 with the \oiii{} emission arising slightly closer to the star than \nii{}.

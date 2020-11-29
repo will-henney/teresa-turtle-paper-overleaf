@@ -96,7 +96,8 @@ CLOSED: [2020-10-03 Sat 17:34]
 *** TODO Proper motion image distortions?
 
 
-*** TODO Make 1D spectrum
+*** DONE Make 1D spectrum
+CLOSED: [2020-11-12 Thu 12:56]
 + This will address points 1, 5, and 8
 + It has to be of a spectrum where we have shell and knot contribution
 + Also, we need to formalize how the velocities were determined

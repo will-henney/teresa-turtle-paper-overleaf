@@ -16,7 +16,7 @@ Below we quote the referee's report in full, interspersed with our responses.
 
 > The spectra are shown in Fig. 3 as greyscale.  They have limited contrast and lack  information on the intensity scale, and so it is not possible to estimate line profiles from these.  The authors may want to show representative line profiles, or use a colour representation with a  colour-intensity scale.
 
-**TODO**
+We have added a new figure 4, which shows representative one-dimensional line profiles.
 
 > The labeling of slits is comprehensive. But I found myself confused when some of the labels were also used for structural axes, e.g. in Fig. 12 'A' and 'B' refers to axes, but in Fig. 7 which it refers to, these designate slit positions. It is not a show stopper but  could perhaps be .
 
@@ -34,7 +34,7 @@ We have added a compass to Fig 1, indicating N and E.
 
 > How are the velocities of the components calculated? Are they the velocity of peak intensity, mid-velocity, etc? An example spectrum with a derived velocity may be useful.
 
-**TODO**
+This is now addressed by the new figure 4, which shows results of multiple gaussian fits to the line profiles.  A short description is added to the first paragraph of section 4.
 
 > In Fig. 12, the spatial extent of the emission along the major axis (A) and the minor axis (B) is very nearly the same (14 vs 12 arcsec), whereas in the image of Fig 11 they look more distinct. That raises the question whether all the velocities identified as such belong to the inner-most shell. 
 
@@ -53,6 +53,9 @@ It is only at HST resolution that the [O III] appears more diffuse.
 Both are compact at the arcsecond scales of the ground-based spectra. 
 We agree however that the statement was poorly phrased.
 We have rewritten it as: "the [O III] emission ... seems to arise from the inner surface of the [N II] knots"
+We have also added a reference to the new 1D line profile figure
+(new Figure 4),
+which clearly shows this difference.
 
 > I find the knot complex the hardest to understand. It has a velocity that differs from the rest of structures, has a clear red-blue asymmetry, and is offset from the centre of the nebula in Fig. 1. It gives the impression of an asymmetric toroidal structure.  The abstract stresses the structure as tracing a 180 degree flip of ejection axis 2000 years ago.   I would be quite interested in further discussion.  It can be difficult to measure acccurate kinematic ages for structures near the line of sight. Is there an alternative interpretation possible which does not require the 180 degree change at one point, something not seen in any other structure in the nebula, even those which overlap in age with the knot complex, nor is it known from other PNe? How about non-radial velocity components, as are apparent in Fig 5? The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. In Fig. 20, if I were to plot just the crosses, it would give the suggestion of an expanding shell. I have no opinion on this but would be interested in further discussion in the paper. 
 
