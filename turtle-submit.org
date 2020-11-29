@@ -114,6 +114,68 @@ CLOSED: [2020-10-03 Sat 20:13]
 + Added explicit length for each velocity difference, so that they really are gradients now
 
 
+
+** Discussion about revisions
+*** Comments from Beto 2020-11-05
++ Be more explicit about gray arrows in the figures - say which figures they are
++ Rewrite Roche lobe sentence
++ Clarify this:
+  : but in opposite senses: redshifted emission is 2.5 times brighter on the north side, while blueshifted emission is 1.5 times brighter on the south side.
+*** Email thread started by Micheal
+**** Michael message [2020-11-03 Tue]
+: Buenas tardes a todos,
+: 
+: Van unas opiniones sobre temas que Will no ha tocado (9-11).  Cambio el orden, porque se me hacen más fáciles atacar así.  No se sorprenderán que la Fig. 23 juega un papel importante.  Lo siento que es algo largo, sobre todo el último tema.  
+: 
+: - older lobes that have faded:
+: 
+: The lobes we identify are likely structures inflated by jets.  They appear to have been inflated more or less at the same time as the inner shell.  It’s not obvious why these lobes should still be visible and others not.  I don’t think it’s necessary to say this in the manuscript, but we could comment it to the referee.    
+: 
+: - can we rule out a brief ejection event:
+: 
+: It appears to me that some of the structures within NGC 6210 can be explained this way, but not most of it.  Evidently, the general picture of GISW produces the halo first, then the intermediate and inner shells. The latter are really part of the same structure, but influenced by different mechanisms.  The foregoing is a drawn-out process in the GISW picture, i.e., not a brief ejection event.  As for the knots and knot complexes, their appearance coincides with the appearance of the intermediate shell (red knots and NW knot, Table 3) and the inner shell (blue knots, N and SE knots, Table 3).  What could be a “brief event” is the ionization of the intermediate shell and the carving out of the lobes, which mostly coincide with the age of the inner shell.  This is a rather large simplification of section 6.2, but perhaps it’s useful to provide it to tie things together.  
+: 
+: Note that I think that there is an inconsistency between the ages attributed to the SE knot in Tables 2 and 3.  I think the numbers in Table 3 are too small.  That may affect Fig. 23 unduly, i.e., the age ranges for the inner shell and the knot complexes don’t seem to reflect the numbers in Table 3.  
+: 
+: - more discussion on the knot complexes:
+: 
+: The knots represent the thorniest issue.  Part of the problem I see with the knots and knot complexes is that they span all of the time from the beginning of the intermediate shell (NW knot) until the most recent events of the inner shell (SE knot, SE blue complex).  At least, that’s my impression from Table 3, but Fig. 23 doesn’t convey this information. 
+: 
+: From mulling over Table 2, it seems clear to me that, if axis E represents an outflow, axis E is really the axis of a cone with a large opening angle, 30-40 degrees w.r.t. to the axis of the cone.  Thus, if we consider the knot complexes as part of a “system”, it’s very much less collimated than are the lobes, though each knot or knot complex may be similarly collimated.  The average inclination of the blue side is about 55˚ while the average for the red side is more like 75˚.  So, whatever mechanism is responsible for it, it appears that it is not nearly as collimated as the mechanism that created the lobes.  So, if the lobes are the results of jets, the knots and knot complexes are something more complex or unusual.  
+: 
+: If we want to avoid a 180 degree axis flip between the red- and blue-shifted knots and knot complexes, I wondered whether the knots and knot complexes are sequential in age and position angle.  That way, you can image a sort of rotating sprinkler or fountain launching these in a plane in the sky.  (Why this would occur is a good question, but that’s not my objective here!)  The positions on this plane need not project to an ellipse on the sky since the velocities (Vtot) and times of the individual ejections vary.  Based upon Table 3, the age sequence of knot complexes is NE red, NW red, SW red, SW blue, NE blue, and SE blue.  As for the knots, the NW knot (redshifted) has an age intermediate between those of the NE and NW red complexes, while the SE knot’s (blue-shifted) age falls between those of the NE and SE blue complexes.  To get these all in both age and position order, the NE blue complex should come last, but it’s a bit of a stretch to do that given the uncertainty on its age. 
+: 
+: As for the plane in the sky, I’ve looked at this in Excel (Sorry Will!) and all of the knots and knot complexes seem to be reasonably close to a single plane, except SW red and SW blue knot complexes.  I’m not sure what to conclude from that.  However, even if we liked this plane idea, it’d be nice to explain why it’s a sensible idea, and I don’t have much to contribute there…  
+: 
+: Regarding ages, while it’s true that all of the red-shifted knots and knot complexes are older than the blue-shifted knots and knot complexes, there could be much less age range than Table 2 allows.  The oldest of these have very substantial uncertainties, so everything could conceivably have occurred in the last 4,000 years, say, and not necessarily the last 8,000 (or 15,000) years.  Most of this uncertainty comes from the proper motions, which is normal if axis E is at a large angle to the plane of the sky.  That is, the knots and knot complexes could, like the lobes, be contemporaneous with the inner shell.  
+: 
+: For what it’s worth, the NE red complex, NW knot, and NW red complex have similar velocities (Vtot), between 26 and 30 km/s.  The SW red complex and SW blue complex have velocities of 49 and 41 km/s, respectively.  Finally, the NE blue complex, SE knot, and SE blue complex have velocities between 54 and 65 kms/.  So knots or knot complexes in similar directions, if they were ejected sequentially, have similar velocities.  
+: 
+: Of all the knots, only the N knot is not associated with axis E.  However, if we recognize axis E as a poorly collimated system, the N knot may not be so much of a misfit, but including it in this system really messes up the age sequence mentioned above, since the N knot is just a shade older than the SW faint blue knot complex, but it should fall between the NE red and NW red knot complexes, which are nominally much older, though very uncertain.  Including it also messes up the “similar velocities in similar directions”, since the N knot has a velocity of 67 km/s, but maybe that doesn’t matter.  Note that the N knot does fall near-ash the plane mentioned above.  We could conclude that either the N knot is not part of this system (axis E) or it even more clearly indicates that there was a 180 degree flip between the red- and blue-shifted knots.  
+: 
+: 
+: 
+: My basic points are:  (a) The knots and knot complexes do appear to arise from something out of the ordinary, if we define “ordinary” as GISW plus jets.  (b) The knots and knot complexes appear to be approximately contemporaneous with the intermediate and inner shells (Table 3), though the SE knot and SE blue complex may be somewhat younger.  So, The mass-loss process may have been more varied than usual, but it could have all happened more or less when expected based upon the GISW.  
+: 
+: Finally, I think that Fig. 23 should be modified to reflect Table 3 more closely, or we should better explain why they appear to differ, because I don’t understand the difference.  
+**** Beto first reply [2020-11-04 Wed]
+: Intenté enviar un resumen de nuestra discusión del viernes pasado pero terminé con mucho texto y poca claridad y no lo envié  Michael lo ha hecho mejor que lo que yo escribí. Solo subrayo en este momento como lo comenté el viernes pasado que lo que mas me inquieta es la idea de jets monopolares que se invierten 180  con el tiempo. En fin nos vemos mañana a las 11:00 PT
+: Tere no olvides checar el espectro dw HeII
+**** Michael
+Pensando más en esto anoche (tenía que pensar en otra cosa que la elección), me pregunto si un mecanismo como plantea Luis Carlos Bermúdez en su tesis, vean 
+
+https://academic.oup.com/mnras/article-abstract/493/2/2606/5734510?redirectedFrom=PDF
+
+donde se trata de masa perdida en el plano de un sistema binario pudiera producir un anillo parcial del knots en el cielo.  Hay otras simulaciones que mencionan en ese artículo.  
+
+Lo que no he investigado es si el plano que encontré es perpendicular a uno de los ejes A o C.  
+**** Beto
+La situación es complicada y no encontraremos una solución totalmemte convincente por el momento. Sugiero tratar de apegarnos lo mas posible a lo que el árbitros  ya vió y no objetó para que este artículo ya no se demore en publicarse este año. Podemos analizar nuevas interpretaciones y/o modelos en una parte 2.  Hasta mañana!
+**** M
+Una cosa más:  Usamos el nombre “Turtle” en el artículo sin indicar el origen.  Buscando ese origen, no lo encontré.  Hay una referencia de parte de James Kaler, http://stars.astro.illinois.edu/sow/n6210.html, que hace referencia a “Hubble”, pero no he podido averiguar si se trata de la persona o del telescopio, aunque sospecho que es el telescopio.  
+**** M
+Una cosa más, pero es importante:  En mi ajuste ayer del plano a los nudos, cometí un error en la conversión entre coordenadas esféricas y cartesianas, z = Rcos(i) que está mal, en lugar de z = Rsin(i), dado que la inclinación, i, es desde el plano del cielo y no de la normal…  Con la conversión correcta, no hay “plano”.  
+
 * First version
 ** Reduce file size
 [2020-07-20 Mon]
@@ -158,9 +220,4 @@ CLOSED: [2020-10-03 Sat 20:13]
 |   28 | figs/turtle-flow-axis-history.pdf                      |
 |   24 | figs/turtle-heii-shell-velocity-axes-annotated.pdf     |
 |   20 | figs/turtle-inclination-histogram.pdf                  |
-* Comments from Beto 2020-11-05
-+ Be more explicit about gray arrows in the figures - say which figures they are
-+ Rewrite Roche lobe sentence
-+ Clarify this:
-  : but in opposite senses: redshifted emission is 2.5 times brighter on the north side, while blueshifted emission is 1.5 times brighter on the south side. 
   
