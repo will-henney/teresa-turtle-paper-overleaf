@@ -566,19 +566,27 @@ We employ archival emission line images from the Wide-Field Planetary Camera~2 \
 The images, which we downloaded from the Barbara~A. Mikulski Archive for Space Telescopes,%
 \footnote{MAST, \url{https://archive.stsci.edu/}}
 come from observations made between 1997 (Cycle 6) and 2008 (Cycle~16) via proposal IDs 6792, 7501, 8773, and 11122.
-Images were aligned with Astrodrizzle%
-\footnote{\url{https://drizzlepac.readthedocs.io}}
-and proper motions were estimated from pairs of images seperated by 10 to 12 years,
-% The data used in this study to measure the proper motions of the turttle nebula consist of images which were retrieved from the HST archive. The \nii{} observations were made in two separate observing runs: on 1998 June 30, as part of program 7501, with Hajian, Arsen R., as PI. During this run, six images were obtained with the WFPC2, with an exposure time of 100 s (three images) y 40 s (three images) using the F658N filter. The second-epoch data were obtained on 2008 January 18, from the science program 11122, with Bruce Balick, as PI, who employed the same configuration as in program 7501 to acquire three images with the F658N filter, using 400 s exposure times for all of them. For all of the images, we used the drizzled images (processed with Astrodrizzle). 
-using the FLCT method \citep{Welsch:2004a, Fisher:2008a}.\footnote{
+Original images had the source centered on the
+WFPC2 camera's WFC3 chip (first epoch)
+or PC chip (second epoch). 
+Images were aligned to the celestial coordinate frame using Astrodrizzle%
+\footnote{\url{https://drizzlepac.readthedocs.io}},
+which also corrected for the optical distortions of the camera
+and remapped all the images to a common uniform square pixel grid
+at the WFC resolution of \SI{0.1}{arcsec.pix^{-1}}. 
+Proper motions were then estimated from pairs of images
+separated by 10 to 12 years,
+using the Fourier Local Correlation Tracking (FLCT) method \citep{Welsch:2004a, Fisher:2008a}\footnote{
   We used version 1.07 of FLCT, obtained from \url{http://cgem.ssl.berkeley.edu/cgi-bin/cgem/FLCT/home},
   together with version 1.04 of the Python wrapper pyflct,
   obtained from \url{https://github.com/PyDL/pyflct}.}
+with a kernel width of 10~pixels.
 Results are shown in Figures~\ref{fig:proper-motions-oiii} and~\ref{fig:proper-motions-nii} for \oiii{} (filter F502N) and \nii{} (filter F658N), respectively.
-In both cases, the images were remapped to a uniform square pixel grid at the WFC resolution of \SI{0.1}{arcsec.pix^{-1}} before applying the algorithm.
 The resultant per-pixel motions between the two epochs are found to be of order \SI{0.5}{pix} (\(\approx \SI{5}{mas.yr^{-1}}\))
 and these raw results were then corrected by applying a global shift to force the motion of the central star to be zero.
-The systematic error from the global alignment of the two epochs is estimated to be \SI{1.5}{mas.yr^{-1}},
+The systematic error from the global alignment of the two epochs
+and residual uncertainties in the distortion correction
+is estimated to be \SI{1.5}{mas.yr^{-1}},
 which is expected to dominate the proper motion uncertainties in the brighter parts of the nebula.
 In fainter and more featureless regions of the nebula, the proper motions are increasingly affected by random noise, 
 which we indicate by partially transparent arrows in the figures, 
@@ -587,6 +595,9 @@ To convert the angular motions into transverse velocities, we assume a distance 
 so that \SI{10}{mas.yr^{-1}} is equivalent to \SI{95}{km.s^{-1}}.
 
 In both lines, we find motions that are predominantly radial from the central star.
+Although some non-radial vectors are seen in the figure,
+these tend to be in the faintest parts of the nebula
+and are likely to be dominated by random noise.
 From the \oiii{} images (Fig.~\ref{fig:proper-motions-oiii}),
 the fastest plane-of-sky motions are of order \SI{60}{km.s^{-1}},
 and are chiefly along the NNW--SSE direction,

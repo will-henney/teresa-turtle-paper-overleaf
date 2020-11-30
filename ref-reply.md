@@ -30,7 +30,12 @@ We have added a compass to Fig 1, indicating N and E.
 
 > In section 3, the  pattern of the proper motions, with edge curvature and a minimum above the centre  of the nebula has some similarity to the pattern of image distortion in WFPC2 (https://www.stsci.edu/hst/wfpc2/Wfpc2_hand_current/ch5_psf12.html, Fig. 5.17). The current paper does not describe the images, whether the pointing and image rotation was identical, nor how the image distortion was corrected. This should be clarified. I believe that the WFPC2 drizzle images downloaded from the STScI archive are not corrected for distortions but I may be wrong. Note the presence of non-radial vectors, while later in the paper velocities are assumed to be radial.
 
-**TODO**
+We have expanded the description of how the images were treated,
+which will hopefully make things clearer. 
+In particular, the geometric distortion that the referee mentions is automatically dealt with by the AstroDrizzle program. 
+The residual uncertainties in these corrections are less than 0.1 pixels and these are included in our systematic error budget. 
+
+With respect to the non-radial vectors, we suspect that these are mainly due to random noise. We have added a short mention of this.
 
 > How are the velocities of the components calculated? Are they the velocity of peak intensity, mid-velocity, etc? An example spectrum with a derived velocity may be useful.
 

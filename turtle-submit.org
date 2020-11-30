@@ -10,15 +10,15 @@ Text is a markdown document: [[file:./ref-reply.md]]
 
 ** Dealing with the referee's points
 
-1. [-] Representative spectra or color-scale PV image
+1. [X] Representative spectra or color-scale PV image
    - A 1D spectrum could be used to address points 5 and 8
 2. [X] Slit labelling - collision with axis labelling 
    - [X] Change to lower case letters for slits in Fig 2
    - [X] Same for other figures
    - [X] Update text
 3. [X] Better indicate axis direction on figures
-4. [ ] Proper motion nitpicks
-5. [ ] More details on how velocities are derived
+4. [X] Proper motion nitpicks
+5. [X] More details on how velocities are derived
 6. [X] Discrepancy in axis ratio of inner shell?
 7. [X] Velocity gradients versus amplitudes
    - Michael was right!
@@ -93,8 +93,10 @@ Note that some of these had lores versions, which will need to be recreated late
 CLOSED: [2020-10-03 Sat 17:34]
 + I used ~occur~ (~M-s o~) with the regexp ~\bslit[ ~][A-Z]\b~ to find all the occurences.
 
-*** TODO Proper motion image distortions?
-
+*** DONE Proper motion image distortions?
+CLOSED: [2020-11-29 Sun 19:31]
++ [X] Expanded discussion of AstroDrizzle
++ [X] Mention that non-radial motions are probably noise
 
 *** DONE Make 1D spectrum
 CLOSED: [2020-11-12 Thu 12:56]
