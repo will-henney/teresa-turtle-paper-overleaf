@@ -173,8 +173,12 @@ donde se trata de masa perdida en el plano de un sistema binario pudiera produci
 Lo que no he investigado es si el plano que encontré es perpendicular a uno de los ejes A o C.  
 **** Beto
 La situación es complicada y no encontraremos una solución totalmemte convincente por el momento. Sugiero tratar de apegarnos lo mas posible a lo que el árbitros  ya vió y no objetó para que este artículo ya no se demore en publicarse este año. Podemos analizar nuevas interpretaciones y/o modelos en una parte 2.  Hasta mañana!
-**** M
-Una cosa más:  Usamos el nombre “Turtle” en el artículo sin indicar el origen.  Buscando ese origen, no lo encontré.  Hay una referencia de parte de James Kaler, http://stars.astro.illinois.edu/sow/n6210.html, que hace referencia a “Hubble”, pero no he podido averiguar si se trata de la persona o del telescopio, aunque sospecho que es el telescopio.  
+**** TODO M
+: Una cosa más:  Usamos el nombre “Turtle” en el artículo sin indicar el origen.  Buscando ese origen, no lo encontré.  Hay una referencia de parte de James Kaler, http://stars.astro.illinois.edu/sow/n6210.html, que hace referencia a “Hubble”, pero no he podido averiguar si se trata de la persona o del telescopio, aunque sospecho que es el telescopio.
+
+To the best of my knowledge, it comes from this press release:
++ https://hubblesite.org/contents/news-releases/1998/news-1998-36.html
++ "a turtle swallowing a seashell"
 **** M
 Una cosa más, pero es importante:  En mi ajuste ayer del plano a los nudos, cometí un error en la conversión entre coordenadas esféricas y cartesianas, z = Rcos(i) que está mal, en lugar de z = Rsin(i), dado que la inclinación, i, es desde el plano del cielo y no de la normal…  Con la conversión correcta, no hay “plano”.  
 
