@@ -119,9 +119,9 @@ CLOSED: [2020-10-03 Sat 20:13]
 
 ** Discussion about revisions
 *** Comments from Beto 2020-11-05
-+ Be more explicit about gray arrows in the figures - say which figures they are
-+ Rewrite Roche lobe sentence
-+ Clarify this:
++ [X] Be more explicit about gray arrows in the figures - say which figures they are
++ [X] Rewrite Roche lobe sentence
++ [X] Clarify this:
   : but in opposite senses: redshifted emission is 2.5 times brighter on the north side, while blueshifted emission is 1.5 times brighter on the south side.
 *** Email thread started by Micheal
 **** Michael message [2020-11-03 Tue]
