@@ -62,9 +62,53 @@ We have also added a reference to the new 1D line profile figure
 (new Figure 4),
 which clearly shows this difference.
 
-> I find the knot complex the hardest to understand. It has a velocity that differs from the rest of structures, has a clear red-blue asymmetry, and is offset from the centre of the nebula in Fig. 1. It gives the impression of an asymmetric toroidal structure.  The abstract stresses the structure as tracing a 180 degree flip of ejection axis 2000 years ago.   I would be quite interested in further discussion.  It can be difficult to measure acccurate kinematic ages for structures near the line of sight. Is there an alternative interpretation possible which does not require the 180 degree change at one point, something not seen in any other structure in the nebula, even those which overlap in age with the knot complex, nor is it known from other PNe? How about non-radial velocity components, as are apparent in Fig 5? The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. In Fig. 20, if I were to plot just the crosses, it would give the suggestion of an expanding shell. I have no opinion on this but would be interested in further discussion in the paper. 
+> I find the knot complex the hardest to understand. It has a velocity that differs from the rest of structures, has a clear red-blue asymmetry, and is offset from the centre of the nebula in Fig. 1. It gives the impression of an asymmetric toroidal structure.  The abstract stresses the structure as tracing a 180 degree flip of ejection axis 2000 years ago.   I would be quite interested in further discussion.  
+
+We agree that the knot complex is the most puzzling aspect of this nebula.
+We have added some additional discussion and address particular points below.
+However, we would take issue with the description "an asymmetric toroidal structure".
+On the contrary, our analysis implies that the structure is primarily bipolar rather than toroidal.
+Since the bipolar axis is close to the line of sight,
+the appearance on the HST images is confused by projection effects.
+
+> It can be difficult to measure acccurate kinematic ages for structures near the line of sight. Is there an alternative interpretation possible which does not require the 180 degree change at one point, something not seen in any other structure in the nebula, even those which overlap in age with the knot complex, nor is it known from other PNe? How about non-radial velocity components, as are apparent in Fig 5? 
+
+We agree that the kinematical ages have considerable uncertainty because of this effect
+and it is worthwhile to interrogate our proposed interpretation and look for alternative explanations.
+
+To do this, we concentrate on the NW knot and SE knot as proxies for the red and blue complexes. 
+The derived ages depend entirely on the proper motions and projected radii. 
+The projected radii have no significant sources of uncertainty,
+but the proper motions have a systematic uncertainty of +/- 1.5 mas/yr (roughly 14 km/s) due to potential inaccuracies in the alignment of the two epoch images. 
+We investigate the 
+
+We have added 
 
 **TODO**
+
+> The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. 
+
+In Table 2, we give both the observed and de-projected radii.
+It is true that the observed radii of the knot complexes are closer to the center than the lobes,
+but the knots tend to be close to the line of sight, so this is not always true for the deprojected radii.
+The blue-shifted knots all have deprojected radii < 0.15 pc,
+but the redshifted knots have deprojected radii around 0.2 pc,
+with some of them seeming to lie outside of the lobes.
+However, the uncertainty in the de-projection is high in these cases,
+which was not reflected in the Figure (was 22, now 23). 
+We have added some error bars to the Figure in order to address this
+and have also taken advantage to correct some of the points in that figure,
+which were based on an earlier provisional version of the analysis. 
+
+
+> In Fig. 20, if I were to plot just the crosses, it would give the suggestion of an expanding shell. I have no opinion on this but would be interested in further discussion in the paper. 
+
+Although that figure (now Fig 21) does plot velocity versus distance,
+it is not really a "position-velocity" diagram in the observational sense
+since both velocity and position have been de-projected 
+and information on position angle has been suppressed. 
+Hence, a circular arrangement of points on this diagram cannot be 
+simply interpreted as an expanding shell.
 
 > As the authors point out, the derived ages assume that velocities have remained constant. Photo-ionization and interacting winds both cause significant velocity changes, and in that case the lines of constant age in Fig 20 can also be the onset of acceleration of gas that may have been ejected earlier. This may complicate the derivation of a detailed mass loss history. It seems to me that the most important conclusion of Sect 5.3 would be whether a  very brief ejection event can be ruled out: such a near-instantaneous event is expected from a common envelope system.
 

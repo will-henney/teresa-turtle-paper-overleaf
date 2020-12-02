@@ -25,7 +25,11 @@ Text is a markdown document: [[file:./ref-reply.md]]
 8. [X] Last sentence of section 4.2
    - Referee has doubt how we can find a velocity difference between diffuse and compact component
    - The answer is that [O III] is only more "diffuse" at HST resolution. At arcsecond scales it is compact.
-9. [ ] More discussion on knot complexes
+9. [-] More discussion on knot complexes
+   - [X] difficulty in measuring accurate ages for structures near line of sight
+   - [ ] Is it possible to avoid flip in the knot axis?
+   - [X] Tension between Fig 22 (now 23) and Table 2
+   - 
 10. [ ] Can we rule out a brief ejection event?
 11. [ ] Older lobes that have faded?
 
@@ -115,8 +119,16 @@ CLOSED: [2020-10-03 Sat 19:02]
 CLOSED: [2020-10-03 Sat 20:13]
 + Added explicit length for each velocity difference, so that they really are gradients now
 
+*** DONE Origin of Turtle name
+CLOSED: [2020-11-29 Sun 20:06]
+Added to introduction
 
 
+*** Discussion of knot complexes
+
+**** De-projected radius of knots
++ Referee points to apparent discrepancy between Table 2, which has knots at smaller radius than lobes, and Fig 22 (now 23) that has them at a larger radius
++ This is because the figure shows the de-projected radii, and the knots are closer to the line of sight
 ** Discussion about revisions
 *** Comments from Beto 2020-11-05
 + [X] Be more explicit about gray arrows in the figures - say which figures they are
@@ -173,14 +185,16 @@ donde se trata de masa perdida en el plano de un sistema binario pudiera produci
 Lo que no he investigado es si el plano que encontré es perpendicular a uno de los ejes A o C.  
 **** Beto
 La situación es complicada y no encontraremos una solución totalmemte convincente por el momento. Sugiero tratar de apegarnos lo mas posible a lo que el árbitros  ya vió y no objetó para que este artículo ya no se demore en publicarse este año. Podemos analizar nuevas interpretaciones y/o modelos en una parte 2.  Hasta mañana!
-**** TODO M
+**** DONE M
+CLOSED: [2020-11-29 Sun 20:04]
 : Una cosa más:  Usamos el nombre “Turtle” en el artículo sin indicar el origen.  Buscando ese origen, no lo encontré.  Hay una referencia de parte de James Kaler, http://stars.astro.illinois.edu/sow/n6210.html, que hace referencia a “Hubble”, pero no he podido averiguar si se trata de la persona o del telescopio, aunque sospecho que es el telescopio.
 
 To the best of my knowledge, it comes from this press release:
 + https://hubblesite.org/contents/news-releases/1998/news-1998-36.html
 + "a turtle swallowing a seashell"
-**** M
-Una cosa más, pero es importante:  En mi ajuste ayer del plano a los nudos, cometí un error en la conversión entre coordenadas esféricas y cartesianas, z = Rcos(i) que está mal, en lugar de z = Rsin(i), dado que la inclinación, i, es desde el plano del cielo y no de la normal…  Con la conversión correcta, no hay “plano”.  
+**** DONE M
+CLOSED: [2020-11-29 Sun 20:04]
+: Una cosa más, pero es importante:  En mi ajuste ayer del plano a los nudos, cometí un error en la conversión entre coordenadas esféricas y cartesianas, z = Rcos(i) que está mal, en lugar de z = Rsin(i), dado que la inclinación, i, es desde el plano del cielo y no de la normal…  Con la conversión correcta, no hay “plano”.  
 
 * First version
 ** Reduce file size

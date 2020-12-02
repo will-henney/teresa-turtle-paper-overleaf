@@ -1082,7 +1082,7 @@ the halo components are more easily identifiable in regions where the outer lobe
     NW Red complex & 300 & \AxP{E}(i) & +21 \pm 2 & 10 \pm 4 & 27 \pm 3 & 68 \pm 8 & 6 \pm 2 & 0.16 \pm 0.08 & 6.0 \pm 3.1\\
     Outer lobe \SysM{10} & 120 & \AxM{D} & -8 \pm 4 & 24 \pm 14 & 26 \pm 13 & -22 \pm 15 & 13 \pm 3 & 0.14 \pm 0.04 & 5.2 \pm 3.3\\
     SE Blue complex & 135 &  \AxM{E}(i) & -31 \pm 3 & 39 \pm 10 & 54 \pm 8 & -44 \pm 8 & 5 \pm 1 & 0.07 \pm 0.02 & 1.1 \pm 0.4\\
-    SE knot & 135 & \AxM{E}(i) & -35 \pm 3 & 39 \pm 10 & 57 \pm 7 & -47 \pm 8 & 8 \pm 1 & 0.09 \pm 0.02 & 1.5 \pm 0.4\\
+    SE knot & 135 & \AxM{E}(i) & -35 \pm 3 & 39 \pm 10 & 57 \pm 7 & -47 \pm 8 & 6 \pm 1 & 0.09 \pm 0.02 & 1.5 \pm 0.4\\
     \bottomrule
     \multicolumn{10}{p{15cm}}{
     \textsc{Columns:}
@@ -1222,6 +1222,33 @@ Axes~A to~D tend to show matched pairs of ejections with similar ages along the 
 There is evidence that the ejections along axes~A and B are more recent than those along C and~D.\@
 Axis~E is very different, with all the ejections along the positive arm occurring first,
 followed by all the ejections along the negative arm.
+
+This dichotomy between the two arms of axis~E
+is such a surprising result that it is important to establish how robust it is in the face of the uncertainties in our analysis.
+The kinematic ages depend on the plane-of-sky positions and proper motions (columns 8 and 5 of Table~\ref{tab:3d}),
+and the uncertainties in the proper motions are of two types: random and systematic.
+The random uncertainties for individual features are quite large,
+greater than 50\% for the \AxP{E} axis and \(\approx 30\%\) for the \AxM{E} axis,
+but these can be reduced by aggregating multiple independent measurements.
+For instance, by averaging all of the features
+associated with each arm of the axis,
+we find \(t_{\text{kin}}(\AxP{E}) = \SI{6.7 \pm 1.6}{kyr}\) 
+versus \(t_{\text{kin}}(\AxM{E}) = \SI{1.6 \pm 0.2}{kyr}\),
+which significantly differ by more than \(3\sigma\).
+However, this does not account for the systematic uncertainty
+in the image alignment between observational epochs,
+which we estimate to be equivalent to
+\SI{1.5}{arcsec.yr^{-1}} or \SI{\pm 14}{km.s^{-1}}
+(see section~\ref{sec:proper-motions}).
+We therefore consider a worst-case scenario in which a shift of this magnitude
+is applied along \(\text{PA} = \ang{315}\),
+which is the average projected axis of the knot outflow.
+Repeating all the proper motion measurements for this then yields
+\(t_{\text{kin}}(\AxP{E}) = \SI{3.7 \pm 0.5}{kyr}\) 
+versus \(t_{\text{kin}}(\AxM{E}) = \SI{2.3 \pm 0.3}{kyr}\).
+The difference between the timescales of the positive and negative axes is smaller in this scenario, \(\SI{1.4 \pm 0.6}{kyr}\),
+but it is still significant at the \(2\sigma\) level.
+
 
 \subsection{Density structure of the nebula}
 \label{sec:density-structure}
