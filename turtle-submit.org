@@ -166,12 +166,20 @@ Added to introduction
 : For what it’s worth, the NE red complex, NW knot, and NW red complex have similar velocities (Vtot), between 26 and 30 km/s.  The SW red complex and SW blue complex have velocities of 49 and 41 km/s, respectively.  Finally, the NE blue complex, SE knot, and SE blue complex have velocities between 54 and 65 kms/.  So knots or knot complexes in similar directions, if they were ejected sequentially, have similar velocities.  
 : 
 : Of all the knots, only the N knot is not associated with axis E.  However, if we recognize axis E as a poorly collimated system, the N knot may not be so much of a misfit, but including it in this system really messes up the age sequence mentioned above, since the N knot is just a shade older than the SW faint blue knot complex, but it should fall between the NE red and NW red knot complexes, which are nominally much older, though very uncertain.  Including it also messes up the “similar velocities in similar directions”, since the N knot has a velocity of 67 km/s, but maybe that doesn’t matter.  Note that the N knot does fall near-ash the plane mentioned above.  We could conclude that either the N knot is not part of this system (axis E) or it even more clearly indicates that there was a 180 degree flip between the red- and blue-shifted knots.  
-: 
+:
+
+I think it is clear that the N knot is not part of the "knots".  Its position and kinematics are identical to the lobe I+ in [O III] (axis A).
+
 : 
 : 
 : My basic points are:  (a) The knots and knot complexes do appear to arise from something out of the ordinary, if we define “ordinary” as GISW plus jets.  (b) The knots and knot complexes appear to be approximately contemporaneous with the intermediate and inner shells (Table 3), though the SE knot and SE blue complex may be somewhat younger.  So, The mass-loss process may have been more varied than usual, but it could have all happened more or less when expected based upon the GISW.  
 : 
-: Finally, I think that Fig. 23 should be modified to reflect Table 3 more closely, or we should better explain why they appear to differ, because I don’t understand the difference.  
+: Finally, I think that Fig. 23 should be modified to reflect Table 3 more closely, or we should better explain why they appear to differ, because I don’t understand the difference.
+
+Consistency between Table 3 and Fig 24 (née 23).
+
+
+
 **** Beto first reply [2020-11-04 Wed]
 : Intenté enviar un resumen de nuestra discusión del viernes pasado pero terminé con mucho texto y poca claridad y no lo envié  Michael lo ha hecho mejor que lo que yo escribí. Solo subrayo en este momento como lo comenté el viernes pasado que lo que mas me inquieta es la idea de jets monopolares que se invierten 180  con el tiempo. En fin nos vemos mañana a las 11:00 PT
 : Tere no olvides checar el espectro dw HeII
