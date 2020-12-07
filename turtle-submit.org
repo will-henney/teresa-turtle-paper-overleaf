@@ -1,14 +1,64 @@
 * Second version
 
+** Mechanics of resubmission
+
+*** Version with highlighted changes
+
+
+
+
+*** Reduce figure sizes for editorial
++ [2020-12-07 Mon] Current size is 13.6 MB, whereas limit is 10 MB
+  + We could try using Preview.app export filters on the entire file
+
+
+**** Script to check sizes
+
+#+begin_src sh
+  grep 'Graphic file' ms.log | cut -d ' ' -f2 |xargs du -sk |sort -nr
+#+end_src
+
+#+RESULTS:
+| 2112 | figs/turtle-lobes-simplified-components.pdf            |
+| 2112 | figs/turtle-halo-map.pdf                               |
+| 2112 | figs/oiii-propermotions-lores.jpg                      |
+| 1024 | figs/turtle-knot-complex-map.pdf                       |
+|  960 | figs/turtle-peanut-map.pdf                             |
+|  832 | figs/nii-propermotions-lores.jpg                       |
+|  792 | figs/turtle-lobes-simplified-systems.pdf               |
+|  768 | figs/turtle-overview.pdf                               |
+|  768 | figs/turtle-halo-slit-x.pdf                            |
+|  532 | figs/cut-axis-4panel.pdf                               |
+|  448 | figs/turtle-heii-shell-components.pdf                  |
+|  364 | tere-figs/Figure3.pdf                                  |
+|  364 | figs/turtle-nii-knot-complexes.pdf                     |
+|  180 | figs/cousins-of-the-turtle-lores.pdf                   |
+|  128 | figs/vel-radius-systems-annotated.pdf                  |
+|  120 | figs/turtle-slits.pdf                                  |
+|   76 | figs/turtle-knot-complexes-velocity-axes-annotated.pdf |
+|   76 | figs/line-ratios-vs-ion-parameter.pdf                  |
+|   68 | figs/turtle-heii-shell-annotated.pdf                   |
+|   48 | figs/turtle-shell-velocity-axes-annotated.pdf          |
+|   44 | figs/mass-loss-history-annotated.pdf                   |
+|   44 | figs/hr-pne-annotated.pdf                              |
+|   32 | figs/turtle-flow-axis-history.pdf                      |
+|   32 | figs/turtle-density-profile.pdf                        |
+|   32 | figs/turtle-density-calibration.pdf                    |
+|   24 | figs/turtle-heii-shell-velocity-axes-annotated.pdf     |
+|   24 | figs/turtle-1d-line-profiles.pdf                       |
+|   20 | figs/turtle-inclination-histogram.pdf                  |
+
 ** Referee report 
 
 This is in [[file:./ref-report.txt]]
 
-** Reply to referee
+** DONE Reply to referee
+CLOSED: [2020-12-07 Mon 11:56]
 
 Text is a markdown document: [[file:./ref-reply.md]]
 
-** Dealing with the referee's points
+** DONE Dealing with the referee's points
+CLOSED: [2020-12-07 Mon 11:56]
 
 1. [X] Representative spectra or color-scale PV image
    - A 1D spectrum could be used to address points 5 and 8
@@ -29,8 +79,35 @@ Text is a markdown document: [[file:./ref-reply.md]]
    - [X] difficulty in measuring accurate ages for structures near line of sight
    - [X] Is it possible to avoid flip in the knot axis?
    - [X] Tension between Fig 22 (now 23) and Table 2
-10. [ ] Can we rule out a brief ejection event?
-11. [ ] Older lobes that have faded?
+10. [X] Can we rule out a brief ejection event?
+11. [X] Older lobes that have faded?
+
+
+** DONE Final Michael comments [2020-12-02 Wed]
+CLOSED: [2020-12-07 Mon 11:56]
++ [X] Table 1:  La línea separador del encabezado viene arriba de los números de las columnas, pero supongo que debería ir abajo de estos números.  Por otra parte, el mismo diseño existe para Table 2-3…  Si esto es un “design feature” de MNRAS, ignore este comentario por favor.
+
++ [X] Figures 8-11:  The star symbol is not explained.  (The explanation is in the footer to Fig. 14.)  It might be better to move the explanation to Fig. 8, then omit it.  
+
++ [X] section 4.3, first paragraph:  The reference to Fig. 11 in the second sentence refers to panels “a” and “b” instead of left/right as was done for the previous figures.  
+
++ [X] section 4.4:  Do we see a velocity ellipse in the halo?  Or, are the lines just wide?
+
++ [X] Fig. 19:  The caption states "axis A and C are not strictly coplanar with the line of sight.”  It should be “axes”.    
+
++ [X] Fig. 21:  I presume the darker halo ellipse is for the inner halo, but it might be a good idea to say which is which.
+
++ [X] section 6.2.4, item 2:  The text “so it is possible that this discrepancy only apparent.” should presumably be “… discrepancy is only …”, i.e., “is” is missing.
+
++ [X] section 6, musings about triple systems:  The central star is not centred in the intermediate shells.  I suppose that this could be construed as evidence of a “kick” from the ejection of a stellar component occurring before the beginning of the fast wind…   
+
++ [X] another question:  Is the N knot compatible with axis E?  If so, it could be the youngest of the red-shifted knots.  
+
++ [X] Conclusions:  In the first paragraph, add a sentence to indicate that “Our preferred systemic velocity for NGC 6210 is -39.3 km/s.”
+
++ [X] Figure A1:  It might be useful to state that the dotted line indicates equality. 
+
+
 
 
 ** Detailed log of changes

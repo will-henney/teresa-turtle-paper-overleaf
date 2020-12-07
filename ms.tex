@@ -262,10 +262,10 @@ and ionization diagnostics are given in appendices.
 \label{table:pa5}
 \begin{tabular}{@{}l@{} rrrr l@{}} \toprule
   Epoch&   Exposure & Spectral  & Width & P.A.   & Slit Label\\
-     &    (s) & Range  &  (\si{\um})    &    (\(^\circ\))  &  \\
-  \midrule
+       &    (s) & Range  &  (\si{\um})    &    (\(^\circ\))  &  \\
+  \addlinespace[1pt]
   {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} \\
-    \addlinespace
+  \midrule
 1998/06/28 & 30 & \Ha  & 150 & 90 & o\\
 1998/06/28 & 300 & \Ha  & 150 & 90 & n\\
 1998/06/28 & 1200 & \Ha   & 150 & 90 & m,p,q \\
@@ -464,15 +464,16 @@ Most of the spectra presented here are publicly available from the \mbox{San Ped
   \caption{
     Velocity features in the high-ionization shells,
     which have been identified in the \oiii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
+    (a)~Blue-shifted features. 
+    (b)~Red-shifted features.
+    Each are labelled with their line-of-sight velocity
     with respect to the nominal systemic velocity of \SI{-40}{km.s^{-1}}.
     Solid lines show features in the inner shell,
     dashed lines show features in the intermediate shell,
     and dot-dashed lines show miscellaneous features between the two shells.
     The line width is a qualitative indicator of the brightness of each feature.
     The background grayscale shows a high-pass filtered version of the HST \oiii{} image.
+    The star symbol in this and subsequent figures indicates the position of the central star.
   }
   \label{fig:shell-velocity-components}
 \end{figure*}
@@ -483,9 +484,8 @@ Most of the spectra presented here are publicly available from the \mbox{San Ped
   \caption{
     Velocity features in the highest-ionization gas,
     which have been identified in the \heii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
+    (a)~Blue-shifted features. (b)~Red-shifted features.
+    Each are labelled with their line-of-sight velocity
     with respect to the nominal systemic velocity of \SI{-40}{km.s^{-1}}.
     The line width is a qualitative indicator of the brightness of each feature,
     with dashed lines showing the very faintest features.
@@ -501,9 +501,9 @@ Most of the spectra presented here are publicly available from the \mbox{San Ped
   \caption{
     Velocity features in the low-ionization knot complexes,
     which have been identified in the \nii{} slits.
-    Left panel shows blue-shifted features,
-    while right panel shows red-shifted features,
-    each labelled with their line-of-sight velocity
+    (a)~Blue-shifted features.
+    (b)~Red-shifted features.
+    Each is labelled with their line-of-sight velocity
     with respect to the nominal systemic velocity of \SI{-40}{km.s^{-1}}.
     The line width is a qualitative indicator of the brightness of each feature.
   }
@@ -657,7 +657,7 @@ Figure~\ref{fig:shell-velocity-components} shows the \oiii{} emission components
 as derived from the longslit spectra,
 separated into negative and positive velocities
 with respect to the nominal systemic velocity
-(left and right panels, respectively).
+(panels~a and~b, respectively).
 The inner shell, with a radius of \(5''\) to \(7''\), is the brightest
 and is indicated by thick-lined colored ellipses. 
 The edge of the more extended intermediate shell, with a radius of \(8''\) to \(12''\), is 10 to 100 times fainter than the inner shell
@@ -728,7 +728,6 @@ but are broadly compatible with the velocities of nearby portions of the interme
     showing the highest ionization gas in the nebula.
     The color image is constructed from 3 channels, each of width \SI{20}{km.s^{-1}},
     as indicated in the figure.  Contours show the \oiii{} HST image.
-    The star symbol indicates the position of the central star.
     No spatial interpolation is performed, so regions between the slits are lacking data,
     indicated by olive green color.
   }
@@ -1054,9 +1053,9 @@ the halo components are more easily identifiable in regions where the outer lobe
     \toprule
     & {PA} &        & {\(V_\text{los}\)} &  {\(V_\text{pos}\)} &  {\(V_\text{tot}\)} & {\(i\)} & {\(R_\text{proj}\)} & {\(R\)} & {\(t_\text{kin}\)}\\
     {Feature} & {\si{\degree}} & {Axis} & {\si{km.s^{-1}}}   &  {\si{km.s^{-1}}}  & {\si{km.s^{-1}}} & {\si{\degree}} & {\si{\arcsecond}} & {pc} & {\SI{1000}{yr}}\\
-    \midrule
+    \addlinespace[1pt]
     {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} & {(7)} & {(8)} & {(9)} & {(10)} \\
-    \addlinespace
+    \midrule
     Inner shell A NNW & 340 & \AxP{A} & +8 \pm 3 & 48 \pm 7 & 49 \pm 7 & 11 \pm 4 & 7 \pm 1 & 0.07 \pm 0.01 & 1.4 \pm 0.2\\
     Outer lobe \SysP{1}/\SysP{7} & 340 & \AxP{A} & +28 \pm 2 & 82 \pm 29 & 89 \pm 27 & 22 \pm 7 & 16 \pm 1 & 0.17 \pm 0.01 & 1.9 \pm 0.7\\
     North knot & 340 & \AxP{A} & +24 \pm 1 & 60 \pm 4 & 67 \pm 4 & 26 \pm 2 & 17 \pm 1 & 0.19 \pm 0.01 & 2.7 \pm 0.2\\
@@ -1128,7 +1127,7 @@ which is consistent with the predicted value for expansion velocities greater th
     assuming all outflows are strictly radial.
     Panels (a), (b), and (c) show cut planes containing the line of sight
     and the symmetry axes of the shells and lobes.
-    Some small artistic license is taken, since axis A and C are not strictly coplanar with the line of sight.
+    Some small artistic license is taken, since axes A and C are not strictly coplanar with the line of sight.
     Knots and knot complexes do not share these axes, but are also shown projected onto the closest planes.
     Arrows show the magnitude and direction of the derived three-dimensional velocity of each feature.
     Faint gray dashed lines for Outer lobe system \SysM{2} show the range of possibilities for this feature given that no proper motions are available for it.
@@ -1193,7 +1192,7 @@ which we denote E(i), E(ii), and E(iii) in Table~\ref{tab:3d}.
     The color of each symbol corresponds the position angle of the feature, as shown by the key at right,
     which also indicates the values for each of the four axes: A, B, C, and D.
     The position angle is calculated modulo \ang{180} so that the positive and negative arm of each axis have the same color.
-    Also shown (gray ellipses) are the expansion velocity and range of radii of the inner and outer halo features (\S~\ref{sec:haloes}).
+    Also shown (gray ellipses) are the expansion velocity and range of radii of the inner (dark) and outer (light) halo features (\S~\ref{sec:haloes}).
   }
   \label{fig:ages}
 \end{figure}
@@ -1217,6 +1216,9 @@ which we denote E(i), E(ii), and E(iii) in Table~\ref{tab:3d}.
 
 Figure~\ref{fig:ages} plots the deprojected velocity versus position for each feature,
 classified by type (symbol shape) and position angle (symbol color).
+In the case of the halo, no line splitting is observed,
+so we estimate the expansion velocity as \(V = 0.5 W\),
+where \(W\) is the intrinsic FWHM of the line (section~\ref{sec:haloes}).
 Diagonal lines show constant values of kinematic time (distance divided by velocity)
 with values between \num{1000} and \SI{16000} years.
 There is no clear trend for the velocity to increase as a function of distance,
@@ -1284,8 +1286,8 @@ would not change this conclusion unless it acted differentially on the two sides
     \toprule
     {}          & {\Ha{} flux} & {Ionized Density} & {Ionized Mass}    & {Ionization Parameter} & {\(t_{\text{start}}\)} & {\(t_{\text{end}}\)} & {\(\dot{M}\)} & {\(V\)}\\
     {Component} & {\% of total}& {\si{H.cm^{-3}}} & {\(M_\odot\)} &          & {\SI{1000}{yr}}      & {\SI{1000}{yr}}    & {\si{\msun.yr^{-1}}} & {\si{km.s^{-1}}}\\
-    \midrule
-    {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} & {(7)} & {(8)} & {(9)}\\
+    % \midrule
+    % {(1)} & {(2)} & {(3)} & {(4)} & {(5)} & {(6)} & {(7)} & {(8)} & {(9)}\\
     \addlinespace
     Inner shell & 70\% & 4000--5000 & 0.078 & 0.0036--0.0070 & -4 & -1.5 & 3.1e-5 & 40--55\\
     Intermediate shell & 13\% & 700--1000 & 0.135 & 0.0080--0.0140 & -10 & -4 & 2.3e-5& 35--38\\
@@ -1744,7 +1746,7 @@ In this section we collect together the principle ways in which the nebula is lo
   with the peak brightness region lying \SI{2}{arcsec} north of the central star. 
 \item In the \heii{} line, the inner shell has an opposite asymmetry: it is brighter to the south than to the north, as measured in our slit spectra.
   Such an asymmetry is hard to explain if the \chem{He^{2+}} zone of the nebula is ionization-bounded and the central star emits isotropically.
-  Note however that there is a gap in our slit coverage in precisely the region of maximum \Ha{} brightness, so it is possible that this discrepancy only apparent.
+  Note however that there is a gap in our slit coverage in precisely the region of maximum \Ha{} brightness, so it is possible that this discrepancy is only apparent.
 \item The intermediate shell shows an egg-shaped morphology that is lop-sided along its major axis (axis~B),
   extending roughly 30\% further from the star to the WSW than to the ENE.\@ 
 \item The outer lobes are probably the \emph{least} asymmetric component of the entire nebula,
@@ -1997,6 +1999,8 @@ via longslit spectroscopy at 34 slit positions in \Ha, \heii, \oiii, and \nii{} 
 By combining the spectroscopy with proper motion measurements from HST imaging,
 we derive the three-dimensional structure and kinematics
 of the multiple components that comprise this complex, asymmetrical nebula.
+Our preferred systemic heliocentric velocity for NGC~6210 is \SI{-39.3}{km.s^{-1}},
+based on the centroid velocity of the slowly expanding halo. 
 
 We find five separate ejection axes in the nebula,
 which show an intricate interplay between symmetries and asymmetries.
@@ -2122,7 +2126,8 @@ at \url{https://dx.doi.org/10.17909/t9-9g3w-nd31}.
   \includegraphics[width=0.8\linewidth]
   {figs/turtle-density-calibration}
   \caption{
-    Comparison between densities derived from \Ha{} surface brightness and densities derived from the \sii{} 6716/6731 line ratio for the small number of features that are detected in our single MES-SPM \sii{} slit spectrum. 
+    Comparison between densities derived from \Ha{} surface brightness and densities derived from the \sii{} 6716/6731 line ratio for the small number of features that are detected in our single MES-SPM \sii{} slit spectrum.
+    The dashed line indicates equality of the two estimates.
   }
   \label{fig:density-calibration}
 \end{figure}
