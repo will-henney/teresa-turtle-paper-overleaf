@@ -109,4 +109,4 @@ This is a valid point. We have added an extra proviso to section 5.3 that the ti
 
 > And as a final point: PN lobes have quite a short visibility life. Gesicki et al. (2016) find a few thousand years, similar to the numbers in this paper. That raises the question whether there could be older lobes that have faded beyond visibility. Perhaps the authors wish to comment on this.
 
-**TODO**
+Although we cannot rule out this possibility, there is nothing in our data to suggest it.  We point out that we find several lobes to have ages > 3000 years, which is at least twice as old as those studied in the Gesicki paper.  We do find structure (knots) in the halo, but these are kinematically indistinguishable from the rest of the halo and are therefore unlikely to be relics of older lobes. 
