@@ -76,6 +76,7 @@ the appearance on the HST images is confused by projection effects.
 We agree that the kinematical ages have considerable uncertainty because of this effect and it is worthwhile to interrogate our proposed interpretation and look for alternative explanations.  
 We have therefore added a paragraph to the end of section 5.1 that describes a re-analysis of the proper motions under a worst-case scenario for the systematic error in image alignment between epochs.
 We find that although this does reduce the contrast between the red and blue knot axes, there is still a significant difference in the average dynamic ages.  It is difficult to see how non-radial motions, if present, might change this result. 
+We have added these new results to the figures and tables. 
 
 
 > The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. 
