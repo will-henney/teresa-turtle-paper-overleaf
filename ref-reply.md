@@ -76,7 +76,7 @@ the appearance on the HST images is confused by projection effects.
 We agree that the kinematical ages have considerable uncertainty because of this effect and it is worthwhile to interrogate our proposed interpretation and look for alternative explanations.  
 We have therefore added a paragraph to the end of section 5.1 that describes a re-analysis of the proper motions under a worst-case scenario for the systematic error in image alignment between epochs.
 We find that although this does reduce the contrast between the red and blue knot axes, there is still a significant difference in the average dynamic ages.  It is difficult to see how non-radial motions, if present, might change this result. 
-We have added these new results to the figures and tables. 
+We have added these new results to the figures and tables.
 
 
 > The reconstruction of Fig. 22 puts the knot complex outside of the lobes while the numbers of Table 2 places them closer to the centre than the lobes (if I understand this correctly). It seems unexpected such dense structures are embedded in a very low density halo. 
@@ -105,7 +105,7 @@ simply interpreted as an expanding shell.
 
 > As the authors point out, the derived ages assume that velocities have remained constant. Photo-ionization and interacting winds both cause significant velocity changes, and in that case the lines of constant age in Fig 20 can also be the onset of acceleration of gas that may have been ejected earlier. This may complicate the derivation of a detailed mass loss history. It seems to me that the most important conclusion of Sect 5.3 would be whether a  very brief ejection event can be ruled out: such a near-instantaneous event is expected from a common envelope system.
 
-**TODO**
+This is a valid point. We have added an extra proviso to section 5.3 that the timescales of mass-loss history might be underestimated if acceleration to the currently observed velocity was delayed significantly after ejection from the star.  This would seem to be less likely to be an issue for the discrete components (lobes and knots), which tend to have higher velocities.  The range of dynamic times of these components spans an interval of at least 2000 years, so we believe that this does indeed rule out a single brief ejection event.  However, within the errors all the lobes and knots might feasible be explained by two ejection events: 3500 years ago and 1500 years ago.  We have added a discussion of this.
 
 > And as a final point: PN lobes have quite a short visibility life. Gesicki et al. (2016) find a few thousand years, similar to the numbers in this paper. That raises the question whether there could be older lobes that have faded beyond visibility. Perhaps the authors wish to comment on this.
 

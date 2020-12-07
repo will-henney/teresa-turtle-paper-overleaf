@@ -25,11 +25,10 @@ Text is a markdown document: [[file:./ref-reply.md]]
 8. [X] Last sentence of section 4.2
    - Referee has doubt how we can find a velocity difference between diffuse and compact component
    - The answer is that [O III] is only more "diffuse" at HST resolution. At arcsecond scales it is compact.
-9. [-] More discussion on knot complexes
+9. [X] More discussion on knot complexes
    - [X] difficulty in measuring accurate ages for structures near line of sight
-   - [ ] Is it possible to avoid flip in the knot axis?
+   - [X] Is it possible to avoid flip in the knot axis?
    - [X] Tension between Fig 22 (now 23) and Table 2
-   - 
 10. [ ] Can we rule out a brief ejection event?
 11. [ ] Older lobes that have faded?
 
