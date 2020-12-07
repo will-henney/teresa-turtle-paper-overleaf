@@ -12,3 +12,4 @@ turtle-paper.pdf
 *.llt
 *.synctex*
 **/.DS_Store
+/latexdiff/ms-diff-v1v2.pdf

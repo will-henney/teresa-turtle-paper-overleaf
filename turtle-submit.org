@@ -5,7 +5,66 @@
 *** Version with highlighted changes
 
 
+**** Getting the expanded versions of V1 and V2
++ I checked out the relevant commit to a temp directory: [[file:/tmp/turtle-paper-v1/]]
+  #+begin_example
+    (science) will@gris turtle-paper-v1 % git status
+    HEAD detached at 4039321
+  #+end_example
++ I latexed it to make the bbl file
++ Now, do latexpand to get everything in one file
+  #+begin_src sh :dir /tmp/turtle-paper-v1
+    latexpand ms.tex \
+                --verbose --keep-comments --explain \
+                --expand-bbl ms.bbl \
+                --show-graphics \
+                -o ms-v1-expand.tex
+  #+end_src
++ Copy expanded version to here
+  #+begin_src sh :results none
+    mkdir -p latexdiff
+    cp /tmp/turtle-paper-v1/ms-v1-expand.tex latexdiff
+  #+end_src
++ And expand the current version
+  #+begin_src sh :results silent
+    latexpand ms.tex \
+                --verbose --keep-comments --explain \
+                --expand-bbl ms.bbl \
+                --show-graphics \
+                -o latexdiff/ms-v2-expand.tex
+  #+end_src
++ And get the config file from the bow shock projects
+  #+begin_src sh
+    cp -v ~/Work/Bowshocks/Jorge/bowshock-shape/papers/bs-bw-dw-03-submit/latexdiff/wjh-latexdiff-preamble.tex latexdiff
+  #+end_src
 
+  #+RESULTS:
+  : /Users/will/Work/Bowshocks/Jorge/bowshock-shape/papers/bs-bw-dw-03-submit/latexdiff/wjh-latexdiff-preamble.tex -> latexdiff/wjh-latexdiff-preamble.tex
+
+**** Performing the diff
+#+name: run-latexdiff
+#+header: :dir latexdiff
+#+header: :var FILE_A="ms-v1-expand.tex"
+#+header: :var FILE_B="ms-v2-expand.tex"
+#+header: :var FILE_DIFF="ms-diff-v1v2.tex"
+#+header: :var OPTIONS="--preamble=wjh-latexdiff-preamble.tex --append-context2cmd='label' --packages=amsmath,hyperref,siunitx --verbose --ignore-warnings --math-markup=1 --allow-spaces"
+#+BEGIN_SRC sh
+  latexdiff $OPTIONS --verbose $FILE_A $FILE_B > $FILE_DIFF 2> latexdiff.log
+#+END_SRC
+
+#+RESULTS: run-latexdiff
+
+**** Compiling the diffed version
++ We could set up symbolic links so it finds the figures, but that would confuse Dropbox
++ Better to add ~\graphicspath{{../}}~ to file
++ Also needed
+  #+begin_src sh :results silent
+    cp wjh-packages.sty latexdiff
+  #+end_src
++ Note that I had to change the column types in table 2, because the siunitx versions caused problems
++ Also, I couldn't get table 3 to work at all
++ Final version is [[file:latexdiff/ms-diff-v1v2.pdf]]
+  
 
 *** Reduce figure sizes for editorial
 + [2020-12-07 Mon] Current size is 13.6 MB, whereas limit is 10 MB
