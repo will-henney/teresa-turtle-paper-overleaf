@@ -107,6 +107,34 @@
 |   24 | figs/turtle-1d-line-profiles.pdf                       |
 |   20 | figs/turtle-inclination-histogram.pdf                  |
 
+*** Metadata for revised submission
+
+**** Revised abstract
+: We carry out a comprehensive kinematic and morphological study of the
+: asymmetrical planetary nebula: NGC 6210, known as the Turtle.  The
+: nebula's spectacularly chaotic appearance has led to proposals that it
+: was shaped by mass transfer in a triple star system.  We study the
+: three-dimensional structure and kinematics of its shells, lobes,
+: knots, and haloes by combinin. radial velocity mapping from multiple
+: long-slit spectra with proper motion measurements from multi-epoch
+: imaging.  We find that the nebula has five distinct ejection axes.
+: The first is the axis of the bipolar, wind-blown inner shell, while
+: the second is the axis of the lop-sided, elliptical, fainter, but more
+: massive intermediate shell.  A further two axes are bipolar flows that
+: form the point symmetric, high-ionization outer lobes, all with
+: inclinations close to the plane of the sky.  The final axis, which is
+: inclined close to the line of sight, traces collimated outflows of
+: low-ionization knots.  We detect major changes in outflow directions
+: during the planetary nebula phase, starting at or before the initial
+: ionization of the nebula 3500~years ago.  Most notably, the majority
+: of redshifted low-ionization knots have kinematic ages greater than
+: 2000 years, whereas the majority of blueshifted knots have ages
+: younger than 2000 years.  Such a sudden and permanent 180-degree flip
+: in the ejection axis at a relatively late stage in the nebular
+: evolution is a challenge to models of planetary nebula formation and
+: shaping.
+
+
 ** Referee report 
 
 This is in [[file:./ref-report.txt]]

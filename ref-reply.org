@@ -11,7 +11,7 @@
 * Response to referee
 
 We thank the referee for an insightful and useful report.  
-Below we quote the referee's report in full, interspersed with our responses. 
+Below we quote the referee's report in full, interspersed with our responses.   We provide two versions of our updated manuscript: ms.pdf is the standard updated version, while ms-diff-v1v2.pdf is a redlined version that highlights the changes from the original submitted version (but does not include Table 3 due to technical difficulties with the latexdiff program).
 
 : Reviewer's Comments:
 : Reviewer: Prof. Albert Zijlstra 
