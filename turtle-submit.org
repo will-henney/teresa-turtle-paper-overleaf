@@ -2,6 +2,112 @@
 
 ** Mechanics of resubmission
 
+*** Final production version
+**** Script to check sizes
+
+#+begin_src sh :dir production
+  grep 'Graphic file' ms.log | cut -d ' ' -f2 |xargs du -sk |sort -nr
+#+end_src
+
+#+RESULTS:
+| 6340 | ../figs/oiii-propermotions.jpg                            |
+| 4312 | ../figs/cousins-of-the-turtle.pdf                         |
+| 2704 | ../figs/nii-propermotions.jpg                             |
+| 2112 | ../figs/turtle-lobes-simplified-components.pdf            |
+| 2112 | ../figs/turtle-halo-map.pdf                               |
+| 1024 | ../figs/turtle-knot-complex-map.pdf                       |
+|  960 | ../figs/turtle-peanut-map.pdf                             |
+|  792 | ../figs/turtle-lobes-simplified-systems.pdf               |
+|  768 | ../figs/turtle-overview.pdf                               |
+|  768 | ../figs/turtle-halo-slit-x.pdf                            |
+|  532 | ../figs/cut-axis-4panel.pdf                               |
+|  448 | ../figs/turtle-heii-shell-components.pdf                  |
+|  364 | ../figs/turtle-nii-knot-complexes.pdf                     |
+|  364 | ../figs/tere-figure.pdf                                   |
+|  128 | ../figs/vel-radius-systems-annotated.pdf                  |
+|  120 | ../figs/turtle-slits.pdf                                  |
+|   76 | ../figs/turtle-knot-complexes-velocity-axes-annotated.pdf |
+|   76 | ../figs/line-ratios-vs-ion-parameter.pdf                  |
+|   68 | ../figs/turtle-heii-shell-annotated.pdf                   |
+|   48 | ../figs/turtle-shell-velocity-axes-annotated.pdf          |
+|   44 | ../figs/mass-loss-history-annotated.pdf                   |
+|   44 | ../figs/hr-pne-annotated.pdf                              |
+|   32 | ../figs/turtle-flow-axis-history.pdf                      |
+|   32 | ../figs/turtle-density-profile.pdf                        |
+|   32 | ../figs/turtle-density-calibration.pdf                    |
+|   24 | ../figs/turtle-heii-shell-velocity-axes-annotated.pdf     |
+|   24 | ../figs/turtle-1d-line-profiles.pdf                       |
+|   20 | ../figs/turtle-inclination-histogram.pdf                  |
+**** Copy all figures to the production folder
+#+begin_src sh :dir production :results verbatim
+  FILES=" ../figs/oiii-propermotions.jpg
+  ../figs/cousins-of-the-turtle.pdf ../figs/nii-propermotions.jpg
+  ../figs/turtle-lobes-simplified-components.pdf
+  ../figs/turtle-halo-map.pdf ../figs/turtle-knot-complex-map.pdf
+  ../figs/turtle-peanut-map.pdf
+  ../figs/turtle-lobes-simplified-systems.pdf
+  ../figs/turtle-overview.pdf ../figs/turtle-halo-slit-x.pdf
+  ../figs/cut-axis-4panel.pdf ../figs/turtle-heii-shell-components.pdf
+  ../figs/turtle-nii-knot-complexes.pdf ../figs/tere-figure.pdf
+  ../figs/vel-radius-systems-annotated.pdf ../figs/turtle-slits.pdf
+  ../figs/turtle-knot-complexes-velocity-axes-annotated.pdf
+  ../figs/line-ratios-vs-ion-parameter.pdf
+  ../figs/turtle-heii-shell-annotated.pdf
+  ../figs/turtle-shell-velocity-axes-annotated.pdf
+  ../figs/mass-loss-history-annotated.pdf ../figs/hr-pne-annotated.pdf
+  ../figs/turtle-flow-axis-history.pdf
+  ../figs/turtle-density-profile.pdf
+  ../figs/turtle-density-calibration.pdf
+  ../figs/turtle-heii-shell-velocity-axes-annotated.pdf
+  ../figs/turtle-1d-line-profiles.pdf
+  ../figs/turtle-inclination-histogram.pdf"
+  mkdir -p figs
+  for f in $FILES; do
+      cp -v $f figs
+  done
+#+end_src
+
+#+RESULTS:
+#+begin_example
+../figs/oiii-propermotions.jpg -> figs/oiii-propermotions.jpg
+../figs/cousins-of-the-turtle.pdf -> figs/cousins-of-the-turtle.pdf
+../figs/nii-propermotions.jpg -> figs/nii-propermotions.jpg
+../figs/turtle-lobes-simplified-components.pdf -> figs/turtle-lobes-simplified-components.pdf
+../figs/turtle-halo-map.pdf -> figs/turtle-halo-map.pdf
+../figs/turtle-knot-complex-map.pdf -> figs/turtle-knot-complex-map.pdf
+../figs/turtle-peanut-map.pdf -> figs/turtle-peanut-map.pdf
+../figs/turtle-lobes-simplified-systems.pdf -> figs/turtle-lobes-simplified-systems.pdf
+../figs/turtle-overview.pdf -> figs/turtle-overview.pdf
+../figs/turtle-halo-slit-x.pdf -> figs/turtle-halo-slit-x.pdf
+../figs/cut-axis-4panel.pdf -> figs/cut-axis-4panel.pdf
+../figs/turtle-heii-shell-components.pdf -> figs/turtle-heii-shell-components.pdf
+../figs/turtle-nii-knot-complexes.pdf -> figs/turtle-nii-knot-complexes.pdf
+../figs/tere-figure.pdf -> figs/tere-figure.pdf
+../figs/vel-radius-systems-annotated.pdf -> figs/vel-radius-systems-annotated.pdf
+../figs/turtle-slits.pdf -> figs/turtle-slits.pdf
+../figs/turtle-knot-complexes-velocity-axes-annotated.pdf -> figs/turtle-knot-complexes-velocity-axes-annotated.pdf
+../figs/line-ratios-vs-ion-parameter.pdf -> figs/line-ratios-vs-ion-parameter.pdf
+../figs/turtle-heii-shell-annotated.pdf -> figs/turtle-heii-shell-annotated.pdf
+../figs/turtle-shell-velocity-axes-annotated.pdf -> figs/turtle-shell-velocity-axes-annotated.pdf
+../figs/mass-loss-history-annotated.pdf -> figs/mass-loss-history-annotated.pdf
+../figs/hr-pne-annotated.pdf -> figs/hr-pne-annotated.pdf
+../figs/turtle-flow-axis-history.pdf -> figs/turtle-flow-axis-history.pdf
+../figs/turtle-density-profile.pdf -> figs/turtle-density-profile.pdf
+../figs/turtle-density-calibration.pdf -> figs/turtle-density-calibration.pdf
+../figs/turtle-heii-shell-velocity-axes-annotated.pdf -> figs/turtle-heii-shell-velocity-axes-annotated.pdf
+../figs/turtle-1d-line-profiles.pdf -> figs/turtle-1d-line-profiles.pdf
+../figs/turtle-inclination-histogram.pdf -> figs/turtle-inclination-histogram.pdf
+#+end_example
+**** Check that it all compiles
++ Seems to be fine
++ [[file:production/ms.pdf]]
+**** Make a tarball for the uploading to MNRAS
+#+begin_src sh
+  tar -czvf source-files-for-production.tar.gz --exclude '*.synctex.gz' --exclude 'auto' --exclude '*.fdb_latexmk' production
+#+end_src
+
+#+RESULTS:
+
 *** Version with highlighted changes
 
 
@@ -124,7 +230,7 @@
 : form the point symmetric, high-ionization outer lobes, all with
 : inclinations close to the plane of the sky.  The final axis, which is
 : inclined close to the line of sight, traces collimated outflows of
-: low-ionization knots.  We detect major changes in outflow directions
+: low-ionization knots.  We detect major changes in outflow direction.
 : during the planetary nebula phase, starting at or before the initial
 : ionization of the nebula 3500~years ago.  Most notably, the majority
 : of redshifted low-ionization knots have kinematic ages greater than
